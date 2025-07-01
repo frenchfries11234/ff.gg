@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>FF.GG</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <h1>FantasyEdge Player Rankings</h1>
+  <table>
+    <tr>
+      <th>Player</th>
+      <th>Team</th>
+      <th>Odds</th>
+    </tr>
+    {% for player in players %}
+    <tr>
+      <td>{{ player.name }}</td>
+      <td>{{ player.team }}</td>
+      <td>{{ player.odds }}</td>
+    </tr>
+    {% endfor %}
+  </table>
+</body>
+</html>
