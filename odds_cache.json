@@ -1,0 +1,238 @@
+{
+  "id": "75733d0036dc1f8de4c15b87f6a6a697",
+  "sport_key": "baseball_mlb",
+  "sport_title": "MLB",
+  "commence_time": "2025-07-28T22:35:00Z",
+  "home_team": "Baltimore Orioles",
+  "away_team": "Toronto Blue Jays",
+  "bookmakers": [
+    {
+      "key": "draftkings",
+      "title": "DraftKings",
+      "markets": [
+        {
+          "key": "batter_hits_runs_rbis",
+          "last_update": "2025-07-28T14:47:31Z",
+          "outcomes": [
+            {
+              "name": "Over",
+              "description": "George Springer",
+              "price": 2.1,
+              "point": 2.5
+            },
+            {
+              "name": "Under",
+              "description": "George Springer",
+              "price": 1.67,
+              "point": 2.5
+            },
+            {
+              "name": "Over",
+              "description": "Bo Bichette",
+              "price": 2.15,
+              "point": 2.5
+            },
+            {
+              "name": "Under",
+              "description": "Bo Bichette",
+              "price": 1.65,
+              "point": 2.5
+            },
+            {
+              "name": "Over",
+              "description": "Vladimir Guerrero Jr.",
+              "price": 2.2,
+              "point": 2.5
+            },
+            {
+              "name": "Under",
+              "description": "Vladimir Guerrero Jr.",
+              "price": 1.62,
+              "point": 2.5
+            },
+            {
+              "name": "Over",
+              "description": "Nathan Lukes",
+              "price": 2.25,
+              "point": 2.5
+            },
+            {
+              "name": "Under",
+              "description": "Nathan Lukes",
+              "price": 1.59,
+              "point": 2.5
+            },
+            {
+              "name": "Over",
+              "description": "Addison Barger",
+              "price": 1.62,
+              "point": 1.5
+            },
+            {
+              "name": "Under",
+              "description": "Addison Barger",
+              "price": 2.2,
+              "point": 1.5
+            },
+            {
+              "name": "Over",
+              "description": "Jackson Holliday",
+              "price": 1.67,
+              "point": 1.5
+            },
+            {
+              "name": "Under",
+              "description": "Jackson Holliday",
+              "price": 2.1,
+              "point": 1.5
+            },
+            {
+              "name": "Over",
+              "description": "Gunnar Henderson",
+              "price": 1.69,
+              "point": 1.5
+            },
+            {
+              "name": "Under",
+              "description": "Gunnar Henderson",
+              "price": 2.1,
+              "point": 1.5
+            },
+            {
+              "name": "Over",
+              "description": "Jordan Westburg",
+              "price": 1.71,
+              "point": 1.5
+            },
+            {
+              "name": "Under",
+              "description": "Jordan Westburg",
+              "price": 2.05,
+              "point": 1.5
+            },
+            {
+              "name": "Over",
+              "description": "Ernie Clement",
+              "price": 1.74,
+              "point": 1.5
+            },
+            {
+              "name": "Under",
+              "description": "Ernie Clement",
+              "price": 2.0,
+              "point": 1.5
+            },
+            {
+              "name": "Over",
+              "description": "Ryan O'Hearn",
+              "price": 1.77,
+              "point": 1.5
+            },
+            {
+              "name": "Under",
+              "description": "Ryan O'Hearn",
+              "price": 1.95,
+              "point": 1.5
+            },
+            {
+              "name": "Over",
+              "description": "Ramon Laureano",
+              "price": 1.87,
+              "point": 1.5
+            },
+            {
+              "name": "Under",
+              "description": "Ramon Laureano",
+              "price": 1.87,
+              "point": 1.5
+            },
+            {
+              "name": "Over",
+              "description": "Colton Cowser",
+              "price": 1.91,
+              "point": 1.5
+            },
+            {
+              "name": "Under",
+              "description": "Colton Cowser",
+              "price": 1.83,
+              "point": 1.5
+            },
+            {
+              "name": "Over",
+              "description": "Joey Loperfido",
+              "price": 2.0,
+              "point": 1.5
+            },
+            {
+              "name": "Under",
+              "description": "Joey Loperfido",
+              "price": 1.74,
+              "point": 1.5
+            },
+            {
+              "name": "Over",
+              "description": "Cedric Mullins",
+              "price": 2.05,
+              "point": 1.5
+            },
+            {
+              "name": "Under",
+              "description": "Cedric Mullins",
+              "price": 1.71,
+              "point": 1.5
+            },
+            {
+              "name": "Over",
+              "description": "Myles Straw",
+              "price": 2.05,
+              "point": 1.5
+            },
+            {
+              "name": "Under",
+              "description": "Myles Straw",
+              "price": 1.69,
+              "point": 1.5
+            },
+            {
+              "name": "Over",
+              "description": "Tyler O'Neill",
+              "price": 2.05,
+              "point": 1.5
+            },
+            {
+              "name": "Under",
+              "description": "Tyler O'Neill",
+              "price": 1.71,
+              "point": 1.5
+            },
+            {
+              "name": "Over",
+              "description": "Tyler Heineman",
+              "price": 2.15,
+              "point": 1.5
+            },
+            {
+              "name": "Under",
+              "description": "Tyler Heineman",
+              "price": 1.65,
+              "point": 1.5
+            },
+            {
+              "name": "Over",
+              "description": "Jacob Stallings",
+              "price": 1.56,
+              "point": 0.5
+            },
+            {
+              "name": "Under",
+              "description": "Jacob Stallings",
+              "price": 2.3,
+              "point": 0.5
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

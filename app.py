@@ -1,63 +1,34 @@
 from flask import Flask, render_template
-import requests
-from dotenv import load_dotenv
-import os
-
-load_dotenv()
-API_KEY = os.getenv("ODDS_API_KEY")
 
 app = Flask(__name__)
 
-@app.route("/")
-def home():
-    # You can replace this with dynamic data later
-    players = [
-        {"name": "Patrick Mahomes", "team": "KC Chiefs", "odds": "+350"},
-        {"name": "Christian McCaffrey", "team": "49ers", "odds": "+900"},
-    ]
-    return render_template("index.html", players=players)
-
-def get_available_sports():
-    url = "https://api.the-odds-api.com/v4/sports"
-    params = {"apiKey": API_KEY}
-
-    try:
-        response = requests.get(url, params=params)
-        response.raise_for_status()  # Raise exception for HTTP errors
-        sports = response.json()
-        return sports
-    except requests.exceptions.RequestException as e:
-        print("Error fetching sports:", e)
-        return []
-    
-def get_player_props(markets="player_pass_yards", sport = "americanfootball_nfl"):
-    url = f"https://api.the-odds-api.com/v4/sports/{sport}/odds"
-    print(url)
-    params = {
-        "apiKey": API_KEY,
-        "regions": "us",
-        "markets": markets,
-        "oddsFormat": "american",
+players = {
+    "batters": {
+        "columns": ["AVG", "HR", "RBI"],
+        "rows": [
+            {"name": "Aaron Judge", "stats": [0.321, 30, 70]},
+            {"name": "Juan Soto", "stats": [0.298, 25, 62]},
+        ]
+    },
+    "pitchers": {
+        "columns": ["ERA", "SO", "W"],
+        "rows": [
+            {"name": "Gerrit Cole", "stats": [2.45, 110, 10]},
+            {"name": "Blake Snell", "stats": [2.90, 97, 8]},
+        ]
     }
-    try:
-        res = requests.get(url, params=params)
-        res.raise_for_status()
-        return res.json()
-    except requests.RequestException as e:
-        print("Error fetching NFL odds:", e)
-        return None
+}
 
-if __name__ == "__main__":
-    #app.run(debug=True)
 
-    props = get_player_props("player_pass_yards")
-    if props:
-        print(f"Found {len(props)} games with player passing yard props.\n")
-        for game in props[:2]:  # Show a few games
-            print(f"{game['home_team']} vs {game['away_team']}")
-            for bookmaker in game["bookmakers"]:
-                print(f"  Bookmaker: {bookmaker['title']}")
-                for market in bookmaker["markets"]:
-                    for outcome in market["outcomes"]:
-                        print(f"    {outcome['name']}: {outcome['price']} | Line: {outcome.get('point')}")
-            print()
+@app.route('/nfl')
+def nfl():
+    return render_template('nfl.html', players=players)
+
+@app.route('/')
+@app.route('/mlb')
+def mlb():
+    
+    return render_template("mlb.html", players=players)
+
+if __name__ == '__main__':
+    app.run(debug=True)
