@@ -30,4 +30,5 @@ def mlb():
     return render_template("mlb.html", players=players)
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    port = int(os.environ.get("PORT", 10000))  # default fallback
+    app.run(host="0.0.0.0", port=port)
