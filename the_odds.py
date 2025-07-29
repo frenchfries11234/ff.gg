@@ -1,5 +1,6 @@
 import requests
 from dotenv import load_dotenv
+from collections import defaultdict
 import os
 import json
 
@@ -37,7 +38,7 @@ def get_odds(eventId, market):
     params = {"apiKey": API_KEY,
               'markets': market, #, player_rush_yds, player_reception_yds
               "regions": "us",
-              "bookmakers":"fanduel,draftkings"}
+              "bookmakers":"draftkings"}
     
 
     try:
@@ -47,7 +48,45 @@ def get_odds(eventId, market):
     except requests.exceptions.RequestException as e:
         print("Error fetching odds:", e)
         return []
-    
+
+def parse_json(file):
+    with open(file, "r") as f:
+        odds_data = json.load(f)
+
+    players = defaultdict(dict)
+    for bookmaker in odds_data["bookmakers"]:
+        for outcome in bookmaker["markets"][0]["outcomes"]:
+            name = outcome["description"]
+            line = outcome["point"]
+
+            players[name]["name"] = name
+            players[name]["line"] = line
+            if outcome["name"] == "Over":
+                players[name]["over_odds"] = outcome["price"]
+            else:
+                players[name]["under_odds"] = outcome["price"]
+        
+    cleaned_players = []
+
+    for player in players.values():
+        if "over_odds" in player and "under_odds" in player:
+            over_odds = player["over_odds"]
+            under_odds = player["under_odds"]
+            line = player["line"]
+
+            # Calculate implied probabilities
+            p_over = 1 / over_odds
+            p_under = 1 / under_odds
+            total = p_over + p_under
+            p_over /= total
+            p_under /= total
+
+            # Approximate expected value
+            ev = p_over * (line + 0.5) + p_under * (line - 0.5)
+
+            cleaned_players.append({"name": player["name"], "stats": [round(ev, 3), player["line"], player["over_odds"], player["under_odds"]]})
+
+    return cleaned_players
 
 
 
@@ -58,15 +97,6 @@ def get_odds(eventId, market):
 
 # with open("odds_cache.json", "w") as f:
 #     json.dump(odds, f, indent=2)
-
-with open("odds_cache.json", "r") as f:
-    odds_data = json.load(f)
-
-for i in odds_data["bookmakers"]:
-    print(i["key"])
-
-
-
 
 
 # events = get_events()

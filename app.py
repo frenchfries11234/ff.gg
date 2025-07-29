@@ -1,23 +1,9 @@
 from flask import Flask, render_template
+import json
+import the_odds
 
 app = Flask(__name__)
 
-players = {
-    "batters": {
-        "columns": ["AVG", "HR", "RBI"],
-        "rows": [
-            {"name": "Aaron Judge", "stats": [0.321, 30, 70]},
-            {"name": "Juan Soto", "stats": [0.298, 25, 62]},
-        ]
-    },
-    "pitchers": {
-        "columns": ["ERA", "SO", "W"],
-        "rows": [
-            {"name": "Gerrit Cole", "stats": [2.45, 110, 10]},
-            {"name": "Blake Snell", "stats": [2.90, 97, 8]},
-        ]
-    }
-}
 
 
 @app.route('/nfl')
@@ -27,7 +13,20 @@ def nfl():
 @app.route('/')
 @app.route('/mlb')
 def mlb():
-    
+    with open("odds_cache.json", "r") as f:
+        odds_data = json.load(f)
+
+    players = {
+    "batters": {
+        "columns": ["batter_hits_runs_rbis", "Line", "Over", "Under"],
+        "rows": the_odds.parse_json("odds_cache.json")
+    },
+    "pitchers": {
+        "columns": ["ERA", "SO", "W"],
+        "rows": []
+    }
+}
+
     return render_template("mlb.html", players=players)
 
 if __name__ == '__main__':
