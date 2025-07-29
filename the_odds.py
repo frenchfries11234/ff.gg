@@ -3,6 +3,7 @@ from dotenv import load_dotenv
 from collections import defaultdict
 import os
 import json
+import statsapi
 
 load_dotenv()
 SPORT = "baseball_mlb" #"americanfootball_nfl"
@@ -83,22 +84,30 @@ def parse_json(file):
 
             # Approximate expected value
             ev = p_over * (line + 0.5) + p_under * (line - 0.5)
-
-            cleaned_players.append({"name": player["name"], "stats": [round(ev, 3), player["line"], player["over_odds"], player["under_odds"]]})
+            
+            # home = statsapi.lookup_team(odds_data["home_team"])[0]
+            # away = statsapi.lookup_team(odds_data["away_team"])[0]
+            
+            game = f"{odds_data["home_team"]} vs {odds_data["away_team"]}"
+            
+            # lookup_player = statsapi.lookup_player(name)
+            # if (len(lookup_player) == 1):
+            #     print(lookup_player[0]["id"])
+            
+            cleaned_players.append({"name": player["name"], "stats": [game, round(ev, 3), player["line"], player["over_odds"], player["under_odds"]]})
 
     return cleaned_players
 
 
 
-# odds = get_odds("75733d0036dc1f8de4c15b87f6a6a697", "batter_hits_runs_rbis")
-# for odd in odds:
-#     print(odd)
-# print(odds)
-
-# with open("odds_cache.json", "w") as f:
-#     json.dump(odds, f, indent=2)
-
-
-# events = get_events()
-# for event in events:
-#     print(event)
+def get_today_data():
+    events = get_events()
+    date = events[0]["commence_time"][:10]
+    for event in events:
+        if event["commence_time"][:10] == date:
+            id = event["id"]
+            file = f"data/batters/batter_hits_runs_rbis-{id}-{date.replace("-","_")}.json"
+            
+            with open(file, "w") as f:
+                json.dump(get_odds(id, "batter_hits_runs_rbis"), f, indent=2)
+                

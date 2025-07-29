@@ -1,0 +1,238 @@
+{
+  "id": "dd1bed5ccb6011df48c2a6f50f6aa62b",
+  "sport_key": "baseball_mlb",
+  "sport_title": "MLB",
+  "commence_time": "2025-07-29T23:41:00Z",
+  "home_team": "Milwaukee Brewers",
+  "away_team": "Chicago Cubs",
+  "bookmakers": [
+    {
+      "key": "draftkings",
+      "title": "DraftKings",
+      "markets": [
+        {
+          "key": "batter_hits_runs_rbis",
+          "last_update": "2025-07-29T22:33:29Z",
+          "outcomes": [
+            {
+              "name": "Over",
+              "description": "Jackson Chourio",
+              "price": 1.69,
+              "point": 1.5
+            },
+            {
+              "name": "Under",
+              "description": "Jackson Chourio",
+              "price": 2.05,
+              "point": 1.5
+            },
+            {
+              "name": "Over",
+              "description": "Kyle Tucker",
+              "price": 1.74,
+              "point": 1.5
+            },
+            {
+              "name": "Under",
+              "description": "Kyle Tucker",
+              "price": 2.0,
+              "point": 1.5
+            },
+            {
+              "name": "Over",
+              "description": "Christian Yelich",
+              "price": 1.77,
+              "point": 1.5
+            },
+            {
+              "name": "Under",
+              "description": "Christian Yelich",
+              "price": 1.95,
+              "point": 1.5
+            },
+            {
+              "name": "Over",
+              "description": "Andrew Vaughn",
+              "price": 1.8,
+              "point": 1.5
+            },
+            {
+              "name": "Under",
+              "description": "Andrew Vaughn",
+              "price": 1.91,
+              "point": 1.5
+            },
+            {
+              "name": "Over",
+              "description": "Sal Frelick",
+              "price": 1.83,
+              "point": 1.5
+            },
+            {
+              "name": "Under",
+              "description": "Sal Frelick",
+              "price": 1.87,
+              "point": 1.5
+            },
+            {
+              "name": "Over",
+              "description": "Seiya Suzuki",
+              "price": 1.83,
+              "point": 1.5
+            },
+            {
+              "name": "Under",
+              "description": "Seiya Suzuki",
+              "price": 1.91,
+              "point": 1.5
+            },
+            {
+              "name": "Over",
+              "description": "William Contreras",
+              "price": 1.83,
+              "point": 1.5
+            },
+            {
+              "name": "Under",
+              "description": "William Contreras",
+              "price": 1.91,
+              "point": 1.5
+            },
+            {
+              "name": "Over",
+              "description": "Michael Busch",
+              "price": 1.87,
+              "point": 1.5
+            },
+            {
+              "name": "Under",
+              "description": "Michael Busch",
+              "price": 1.83,
+              "point": 1.5
+            },
+            {
+              "name": "Over",
+              "description": "Pete Crow-Armstrong",
+              "price": 1.87,
+              "point": 1.5
+            },
+            {
+              "name": "Under",
+              "description": "Pete Crow-Armstrong",
+              "price": 1.87,
+              "point": 1.5
+            },
+            {
+              "name": "Over",
+              "description": "Nico Hoerner",
+              "price": 1.91,
+              "point": 1.5
+            },
+            {
+              "name": "Under",
+              "description": "Nico Hoerner",
+              "price": 1.83,
+              "point": 1.5
+            },
+            {
+              "name": "Over",
+              "description": "Brice Turang",
+              "price": 1.95,
+              "point": 1.5
+            },
+            {
+              "name": "Under",
+              "description": "Brice Turang",
+              "price": 1.77,
+              "point": 1.5
+            },
+            {
+              "name": "Over",
+              "description": "Dansby Swanson",
+              "price": 2.1,
+              "point": 1.5
+            },
+            {
+              "name": "Under",
+              "description": "Dansby Swanson",
+              "price": 1.67,
+              "point": 1.5
+            },
+            {
+              "name": "Over",
+              "description": "Anthony Seigler",
+              "price": 2.2,
+              "point": 1.5
+            },
+            {
+              "name": "Under",
+              "description": "Anthony Seigler",
+              "price": 1.61,
+              "point": 1.5
+            },
+            {
+              "name": "Over",
+              "description": "Ian Happ",
+              "price": 2.2,
+              "point": 1.5
+            },
+            {
+              "name": "Under",
+              "description": "Ian Happ",
+              "price": 1.62,
+              "point": 1.5
+            },
+            {
+              "name": "Over",
+              "description": "Isaac Collins",
+              "price": 2.2,
+              "point": 1.5
+            },
+            {
+              "name": "Under",
+              "description": "Isaac Collins",
+              "price": 1.61,
+              "point": 1.5
+            },
+            {
+              "name": "Over",
+              "description": "Matt Shaw",
+              "price": 2.25,
+              "point": 1.5
+            },
+            {
+              "name": "Under",
+              "description": "Matt Shaw",
+              "price": 1.61,
+              "point": 1.5
+            },
+            {
+              "name": "Over",
+              "description": "Reese McGuire",
+              "price": 2.3,
+              "point": 1.5
+            },
+            {
+              "name": "Under",
+              "description": "Reese McGuire",
+              "price": 1.57,
+              "point": 1.5
+            },
+            {
+              "name": "Over",
+              "description": "Joey Ortiz",
+              "price": 1.57,
+              "point": 0.5
+            },
+            {
+              "name": "Under",
+              "description": "Joey Ortiz",
+              "price": 2.3,
+              "point": 0.5
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

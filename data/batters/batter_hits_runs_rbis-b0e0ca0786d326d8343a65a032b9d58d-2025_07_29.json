@@ -1,0 +1,238 @@
+{
+  "id": "b0e0ca0786d326d8343a65a032b9d58d",
+  "sport_key": "baseball_mlb",
+  "sport_title": "MLB",
+  "commence_time": "2025-07-29T22:40:00Z",
+  "home_team": "Detroit Tigers",
+  "away_team": "Arizona Diamondbacks",
+  "bookmakers": [
+    {
+      "key": "draftkings",
+      "title": "DraftKings",
+      "markets": [
+        {
+          "key": "batter_hits_runs_rbis",
+          "last_update": "2025-07-29T22:33:24Z",
+          "outcomes": [
+            {
+              "name": "Over",
+              "description": "Corbin Carroll",
+              "price": 2.15,
+              "point": 2.5
+            },
+            {
+              "name": "Under",
+              "description": "Corbin Carroll",
+              "price": 1.65,
+              "point": 2.5
+            },
+            {
+              "name": "Over",
+              "description": "Kerry Carpenter",
+              "price": 1.67,
+              "point": 1.5
+            },
+            {
+              "name": "Under",
+              "description": "Kerry Carpenter",
+              "price": 2.1,
+              "point": 1.5
+            },
+            {
+              "name": "Over",
+              "description": "Colt Keith",
+              "price": 1.69,
+              "point": 1.5
+            },
+            {
+              "name": "Under",
+              "description": "Colt Keith",
+              "price": 2.05,
+              "point": 1.5
+            },
+            {
+              "name": "Over",
+              "description": "Ketel Marte",
+              "price": 1.69,
+              "point": 1.5
+            },
+            {
+              "name": "Under",
+              "description": "Ketel Marte",
+              "price": 2.05,
+              "point": 1.5
+            },
+            {
+              "name": "Over",
+              "description": "Gleyber Torres",
+              "price": 1.74,
+              "point": 1.5
+            },
+            {
+              "name": "Under",
+              "description": "Gleyber Torres",
+              "price": 2.0,
+              "point": 1.5
+            },
+            {
+              "name": "Over",
+              "description": "Riley Greene",
+              "price": 1.77,
+              "point": 1.5
+            },
+            {
+              "name": "Under",
+              "description": "Riley Greene",
+              "price": 1.95,
+              "point": 1.5
+            },
+            {
+              "name": "Over",
+              "description": "Spencer Torkelson",
+              "price": 1.87,
+              "point": 1.5
+            },
+            {
+              "name": "Under",
+              "description": "Spencer Torkelson",
+              "price": 1.87,
+              "point": 1.5
+            },
+            {
+              "name": "Over",
+              "description": "Dillon Dingler",
+              "price": 1.95,
+              "point": 1.5
+            },
+            {
+              "name": "Under",
+              "description": "Dillon Dingler",
+              "price": 1.77,
+              "point": 1.5
+            },
+            {
+              "name": "Over",
+              "description": "Geraldo Perdomo",
+              "price": 1.95,
+              "point": 1.5
+            },
+            {
+              "name": "Under",
+              "description": "Geraldo Perdomo",
+              "price": 1.77,
+              "point": 1.5
+            },
+            {
+              "name": "Over",
+              "description": "Wenceel Perez",
+              "price": 1.95,
+              "point": 1.5
+            },
+            {
+              "name": "Under",
+              "description": "Wenceel Perez",
+              "price": 1.77,
+              "point": 1.5
+            },
+            {
+              "name": "Over",
+              "description": "Zach McKinstry",
+              "price": 1.95,
+              "point": 1.5
+            },
+            {
+              "name": "Under",
+              "description": "Zach McKinstry",
+              "price": 1.77,
+              "point": 1.5
+            },
+            {
+              "name": "Over",
+              "description": "Adrian Del Castillo",
+              "price": 2.0,
+              "point": 1.5
+            },
+            {
+              "name": "Under",
+              "description": "Adrian Del Castillo",
+              "price": 1.77,
+              "point": 1.5
+            },
+            {
+              "name": "Over",
+              "description": "Jake McCarthy",
+              "price": 2.0,
+              "point": 1.5
+            },
+            {
+              "name": "Under",
+              "description": "Jake McCarthy",
+              "price": 1.71,
+              "point": 1.5
+            },
+            {
+              "name": "Over",
+              "description": "Matt Vierling",
+              "price": 2.1,
+              "point": 1.5
+            },
+            {
+              "name": "Under",
+              "description": "Matt Vierling",
+              "price": 1.67,
+              "point": 1.5
+            },
+            {
+              "name": "Over",
+              "description": "Alek Thomas",
+              "price": 2.15,
+              "point": 1.5
+            },
+            {
+              "name": "Under",
+              "description": "Alek Thomas",
+              "price": 1.65,
+              "point": 1.5
+            },
+            {
+              "name": "Over",
+              "description": "Tristin English",
+              "price": 2.2,
+              "point": 1.5
+            },
+            {
+              "name": "Under",
+              "description": "Tristin English",
+              "price": 1.62,
+              "point": 1.5
+            },
+            {
+              "name": "Over",
+              "description": "Blaze Alexander",
+              "price": 2.25,
+              "point": 1.5
+            },
+            {
+              "name": "Under",
+              "description": "Blaze Alexander",
+              "price": 1.59,
+              "point": 1.5
+            },
+            {
+              "name": "Over",
+              "description": "James McCann",
+              "price": 2.25,
+              "point": 1.5
+            },
+            {
+              "name": "Under",
+              "description": "James McCann",
+              "price": 1.59,
+              "point": 1.5
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
