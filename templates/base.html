@@ -5,12 +5,11 @@
     <meta charset="utf-8">
     <title>ff.gg</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <link href="https://unpkg.com/@tabler/core@latest/dist/css/tabler.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.3/css/theme.bootstrap_5.min.css"
         rel="stylesheet">
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.3/css/theme.default.min.css">
-    <link rel="stylesheet" href="static/style.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 
 <body data-bs-theme="dark">
@@ -29,25 +28,21 @@
             <div class="container-xl mt-3">
                 {% block content %}{% endblock %}
 
-
                 <ul class="nav nav-tabs" id="roleTabs">
                     {% for role in players %}
                     <li class="nav-item">
                         <a class="nav-link {% if loop.first %}active{% endif %}" data-bs-toggle="tab"
-                            href="#{{ role }}">{{
-                            role|capitalize }}</a>
+                            href="#{{ role }}">
+                            {{ role|capitalize }}
+                        </a>
                     </li>
                     {% endfor %}
                 </ul>
 
-                <!-- Tab content -->
                 <div class="tab-content mt-3">
                     {% for role, data in players.items() %}
                     <div class="tab-pane fade {% if loop.first %}show active{% endif %}" id="{{ role }}">
-                        <table id="theTable"
-                            class="table table-dark table-vcenter card-table tablesorter">
-
-
+                        <table class="table table-vcenter card-table tablesorter table-dark sortable-table">
                             <thead>
                                 <tr>
                                     <th>Name</th>
@@ -75,29 +70,24 @@
                     {% endfor %}
                 </div>
             </div>
-
-
         </div>
     </div>
 
-    <script src="https://unpkg.com/@tabler/core@latest/dist/js/tabler.esm.js" type="module"></script>
-    <script src="https://unpkg.com/tablesort@5.2.1/dist/tablesort.min.js"></script>
+    <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
     <script
         src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.3/js/jquery.tablesorter.min.js"></script>
-
-    <script src="{{ url_for('static', filename='table.js') }}"></script>
-
+    <script src="https://unpkg.com/@tabler/core@latest/dist/js/tabler.min.js"></script>
 
     <script>
         $(document).ready(function () {
-            $("#theTable").tablesorter({
-                sortList: [[2, 1]] // Default sort
+            $(".sortable-table").each(function () {
+                $(this).tablesorter({
+                    sortList: [[2, 1]] // Adjust default column index as needed
+                });
             });
         });
     </script>
-
 </body>
 
 </html>

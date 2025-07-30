@@ -1,0 +1,46 @@
+{
+  "id": "498d89a353fdb3e58f60f84808c20cfc",
+  "sport_key": "baseball_mlb",
+  "sport_title": "MLB",
+  "commence_time": "2025-07-29T23:46:00Z",
+  "home_team": "St. Louis Cardinals",
+  "away_team": "Miami Marlins",
+  "bookmakers": [
+    {
+      "key": "draftkings",
+      "title": "DraftKings",
+      "markets": [
+        {
+          "key": "pitcher_strikeouts",
+          "last_update": "2025-07-30T00:05:13Z",
+          "outcomes": [
+            {
+              "name": "Over",
+              "description": "Sonny Gray",
+              "price": 1.62,
+              "point": 4.5
+            },
+            {
+              "name": "Under",
+              "description": "Sonny Gray",
+              "price": 2.26,
+              "point": 4.5
+            },
+            {
+              "name": "Over",
+              "description": "Sandy Alcantara",
+              "price": 1.7,
+              "point": 4.5
+            },
+            {
+              "name": "Under",
+              "description": "Sandy Alcantara",
+              "price": 2.1,
+              "point": 4.5
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

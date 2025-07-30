@@ -1,0 +1,46 @@
+{
+  "id": "d7fe8ebc68bc3b1f1a4cc9ffe7f1bd60",
+  "sport_key": "baseball_mlb",
+  "sport_title": "MLB",
+  "commence_time": "2025-07-29T23:41:00Z",
+  "home_team": "Chicago White Sox",
+  "away_team": "Philadelphia Phillies",
+  "bookmakers": [
+    {
+      "key": "draftkings",
+      "title": "DraftKings",
+      "markets": [
+        {
+          "key": "pitcher_strikeouts",
+          "last_update": "2025-07-30T00:06:03Z",
+          "outcomes": [
+            {
+              "name": "Over",
+              "description": "Jesus Luzardo",
+              "price": 2.1,
+              "point": 5.5
+            },
+            {
+              "name": "Under",
+              "description": "Jesus Luzardo",
+              "price": 1.7,
+              "point": 5.5
+            },
+            {
+              "name": "Over",
+              "description": "Jonathan Cannon",
+              "price": 1.87,
+              "point": 3.5
+            },
+            {
+              "name": "Under",
+              "description": "Jonathan Cannon",
+              "price": 1.87,
+              "point": 3.5
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

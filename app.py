@@ -6,6 +6,7 @@ import os
 app = Flask(__name__)
 
 batters_dir = "data/batters"
+pitchers_dir = "data/pitchers"
 
 @app.route('/nfl')
 def nfl():
@@ -29,6 +30,11 @@ def mlb():
     for filename in os.listdir(batters_dir):   
         filepath = os.path.join(batters_dir, filename)
         batter_rows += the_odds.parse_json(filepath)
+        
+    pitcher_rows = []
+    for filename in os.listdir(pitchers_dir):   
+        filepath = os.path.join(pitchers_dir, filename)
+        pitcher_rows += the_odds.parse_json(filepath)
     
     players = {
         "batters": {
@@ -36,8 +42,8 @@ def mlb():
             "rows": batter_rows
         },
         "pitchers": {
-            "columns": ["ERA", "SO", "W"],
-            "rows": []
+            "columns": ["Game", "pitcher_strikeouts", "Line", "Over", "Under"],
+            "rows": pitcher_rows
         }
     }    
 

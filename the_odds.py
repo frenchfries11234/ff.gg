@@ -100,14 +100,15 @@ def parse_json(file):
 
 
 
-def get_today_data():
+def get_today_data(line, role):
+    # batter_hits_runs_rbis     batters
+    # pitcher_strikeouts        hitters
     events = get_events()
     date = events[0]["commence_time"][:10]
     for event in events:
         if event["commence_time"][:10] == date:
             id = event["id"]
-            file = f"data/batters/batter_hits_runs_rbis-{id}-{date.replace("-","_")}.json"
+            file = f"data/{role}/{line}-{id}-{date.replace("-","_")}.json"
             
             with open(file, "w") as f:
-                json.dump(get_odds(id, "batter_hits_runs_rbis"), f, indent=2)
-                
+                json.dump(get_odds(id, line), f, indent=2)
