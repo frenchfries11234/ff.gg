@@ -5,3 +5,7 @@ selenium
 webdriver-manager
 gunicorn
 MLB-StatsAPI
+pymongo
+flask-dance
+flask-login
+flask_cors

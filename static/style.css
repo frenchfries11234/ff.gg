@@ -1,3 +1,43 @@
 th {
     cursor: pointer;
 }
+
+th.tablesorter-headerAsc,
+th.tablesorter-headerDesc {
+    background-color: #343a40 !important; /* dark gray */
+    color: #ffc107 !important; /* highlight color */
+}
+
+/* Highlight the entire column (data cells) */
+td.sorted-column {
+    background-color: rgba(255, 193, 7, 0.2); /* light yellow */
+    transition: background-color 0.3s ease;
+}
+
+
+.nav-link {
+    position: relative;
+    padding-bottom: 4px;
+    transition: color 0.2s;
+    padding-top: 12px;
+}
+
+.topbar {
+    padding-top: 8px;
+    color: #0d6efd;
+}
+
+.nav-link:hover {
+    color: #0d6efd; /* Bootstrap primary or change to your color */
+}
+
+.nav-link.active::after,
+.nav-link:hover::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+    background-color: #0d6efd; /* Match your theme color */
+}
