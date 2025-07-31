@@ -1,16 +1,26 @@
 {
   "manifest_version": 3,
-  "name": "ESPN Scraper",
+  "name": "ffgg Extention",
   "version": "1.0",
-  "action": {
-    "default_popup": "popup.html"
-  },
-  "permissions": ["tabs", "activeTab"],
+  "permissions": [
+    "identity",
+    "tabs"
+  ],
   "host_permissions": [
     "http://localhost:10000/"
   ],
+  "oauth2": {
+    "client_id": "544974179551-q41jeh8hruma778kp7v3qhv43vlppqq3.apps.googleusercontent.com",
+    "scopes": [
+      "https://www.googleapis.com/auth/userinfo.email",
+      "https://www.googleapis.com/auth/userinfo.profile"
+    ]
+  },
   "background": {
     "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
   },
   "content_scripts": [
     {

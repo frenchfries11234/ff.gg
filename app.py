@@ -29,11 +29,16 @@ users_collection = db["users"]
 # Flask-Login setup
 login_manager = LoginManager()
 login_manager.init_app(app)
-login_manager.login_view = "google.login"
+login_manager.login_view = "index"
 
-# Data directories
+# Data
 batters_dir = "data/batters"
+espn_batters_stats = ["batter_runs_scored", "batter_total_bases", "batter_rbis", "batter_walks", "batter_stolen_bases", "pitcher_strikeouts"]
+espn_batters_stats_scores = [1, 1, 1, 1, 1, -1]
+
 pitchers_dir = "data/pitchers"
+espn_pitchers_stats = ["pitcher_strikeouts", "pitcher_hits_allowed", "pitcher_walks", "pitcher_earned_runs"]
+espn_pitchers_stats_scores = [1, -1, -1, -2]
 
 # User class
 class User(UserMixin):
@@ -138,22 +143,40 @@ def mlb():
     return render_template("mlb.html", players=players, email=session.get("email"))
 
 @app.route("/teams")
+@login_required
 def teams():
-    return render_template('teams.html')
+    user = users_collection.find_one({"email": current_user.email})
+    teams = user.get("teams", [])
+    return render_template("teams.html", teams=teams)
 
 @app.route("/api/team", methods=["POST"])
 def save_team():
     data = request.json
+    email = data.get("email")
     team_name = data.get("teamName")
-
+    league_id = data.get("leagueId")
+    team_id = data.get("teamId")
+    season_id = data.get("seasonId")
+    
     if not team_name:
         return jsonify({"error": "Missing teamName"}), 400
+    
+    
 
+    team_entry = {
+        "teamName": team_name,
+        "leagueId": league_id,
+        "teamId": team_id,
+        "seasonId": season_id
+    }
+    print(team_entry)
     # Target user by email and update
     result = users_collection.update_one(
-        {"email": "frenchfries11234@gmail.com"},
-        {"$push": {"teams": team_name}}  # adds to array `teams`
+        {"email": email},
+        {"$addToSet": {"teams": team_entry}},
+        upsert=True
     )
+
 
     if result.modified_count == 0:
         return jsonify({"error": "User not found or team not added"}), 404

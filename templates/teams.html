@@ -1,6 +1,43 @@
 {% extends "base.html" %}
 
 {% block content %}
-<h2>My Teams</h2>
+<h2 class="mb-4">My Teams</h2>
 
+{% if teams and teams|length > 0 %}
+<!-- Nav tabs -->
+<ul class="nav nav-tabs mb-3" id="teamTabs" role="tablist">
+    {% for team in teams %}
+    <li class="nav-item" role="presentation">
+        <a class="nav-link {% if loop.first %}active{% endif %}" id="tab-{{ loop.index }}" data-bs-toggle="tab"
+            href="#team-{{ loop.index }}" role="tab">
+            {{ team.teamName }}
+        </a>
+    </li>
+    {% endfor %}
+</ul>
+
+<!-- Tab content -->
+<div class="tab-content">
+    {% for team in teams %}
+    <div class="tab-pane fade {% if loop.first %}show active{% endif %}" id="team-{{ loop.index }}" role="tabpanel">
+        <div class="card p-3 bg-dark border text-light mb-3">
+            <strong>League ID:</strong> {{ team.leagueId }}<br>
+            <strong>Team ID:</strong> {{ team.teamId }}<br>
+            <strong>Season ID:</strong> {{ team.seasonId }}
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
+{% else %}
+<div class="alert alert-dark border text-light d-flex flex-column">
+  <p class="mb-1">You haven’t imported any teams yet.</p>
+  <p class="mb-1">
+    Install the browser extension, visit your fantasy team on
+    <a href="https://fantasy.espn.com" target="_blank">fantasy.espn.com</a>.
+  </p>
+  <p class="mb-0">Then click the button to import your team.</p>
+</div>
+
+{% endif %}
 {% endblock %}
