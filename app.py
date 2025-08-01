@@ -33,12 +33,12 @@ login_manager.login_view = "index"
 
 # Data
 batters_dir = "data/batters"
-espn_batters_stats = ["batter_runs_scored", "batter_total_bases", "batter_rbis", "batter_walks", "batter_stolen_bases", "pitcher_strikeouts"]
-espn_batters_stats_scores = [1, 1, 1, 1, 1, -1]
+espn_batters_props = ["batter_runs_scored", "batter_total_bases", "batter_rbis", "batter_walks", "batter_stolen_bases"]
+espn_batters_scores = [1, 1, 1, 1, 1]
 
 pitchers_dir = "data/pitchers"
-espn_pitchers_stats = ["pitcher_strikeouts", "pitcher_hits_allowed", "pitcher_walks", "pitcher_earned_runs"]
-espn_pitchers_stats_scores = [1, -1, -1, -2]
+espn_pitchers_props = ["pitcher_strikeouts", "pitcher_hits_allowed", "pitcher_walks", "pitcher_earned_runs"]
+espn_pitchers_scores = [1, -1, -1, -2]
 
 # User class
 class User(UserMixin):
@@ -122,23 +122,23 @@ def mlb():
     batter_rows = []
     for filename in os.listdir(batters_dir):   
         filepath = os.path.join(batters_dir, filename)
-        batter_rows += the_odds.parse_json(filepath)
-        
+        batter_rows += the_odds.parse_json(filepath, espn_batters_props, espn_batters_scores)
+
     pitcher_rows = []
     for filename in os.listdir(pitchers_dir):   
         filepath = os.path.join(pitchers_dir, filename)
-        pitcher_rows += the_odds.parse_json(filepath)
+        pitcher_rows += the_odds.parse_json(filepath, espn_pitchers_props, espn_pitchers_scores)  # Replace if pitcher logic differs
     
     players = {
-        "batters": {
-            "columns": ["Game", "batter_hits_runs_rbis", "Line", "Over", "Under"],
-            "rows": batter_rows
-        },
-        "pitchers": {
-            "columns": ["Game", "pitcher_strikeouts", "Line", "Over", "Under"],
-            "rows": pitcher_rows
-        }
-    }    
+    "batters": {
+        "columns": ["Name", "Game", "Expected Score"] + espn_batters_props,
+        "rows": batter_rows
+    },
+    "pitchers": {
+        "columns": ["Name", "Game", "Expected Score"] + espn_pitchers_props,
+        "rows": pitcher_rows
+    }
+    }
 
     return render_template("mlb.html", players=players, email=session.get("email"))
 

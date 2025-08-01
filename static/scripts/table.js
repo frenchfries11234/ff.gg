@@ -4,21 +4,38 @@ $(function () {
     $tables.each(function () {
         const $table = $(this);
 
-        // Initialize tablesorter with default sort on column index 2 (3rd column), descending
+        // Mark first column as unsortable
+        $table.find("thead th").eq(0).addClass("sorter-false");
+
+        // Initialize tablesorter
         $table.tablesorter({
-            sortList: [[2, 1]]  // [columnIndex, sortDirection] => 1 = descending
+            sortList: [[3, 1]], // Default sort
+            headers: {
+                0: { sorter: false } // Disable sorting for first column
+            }
         });
 
-        // Highlight sorted column(s) after sorting
-        $table.bind("sortEnd", function (e, table) {
+        function updateRowIndices() {
+            $table.find("tbody tr").each(function (i) {
+                $(this).find("td").eq(0).text(i + 1);
+            });
+        }
+
+        // Initial index set
+        updateRowIndices();
+
+        // Update indices after sort
+        $table.on("sortEnd", function () {
             $(".sortable-table td").removeClass("sorted-column");
 
-            const sortList = table.config.sortList;
+            const sortList = this.config.sortList;
             sortList.forEach(([colIndex]) => {
                 $table.find("tbody tr").each(function () {
                     $(this).find("td").eq(colIndex).addClass("sorted-column");
                 });
             });
+
+            updateRowIndices();
         });
     });
 });

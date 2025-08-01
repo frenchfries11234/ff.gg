@@ -1,0 +1,730 @@
+{
+  "id": "726d918c2a71654fe73ed0610cfa0aaf",
+  "sport_key": "baseball_mlb",
+  "sport_title": "MLB",
+  "commence_time": "2025-08-01T23:12:00Z",
+  "home_team": "New York Mets",
+  "away_team": "San Francisco Giants",
+  "bookmakers": [
+    {
+      "key": "fanduel",
+      "title": "FanDuel",
+      "markets": [
+        {
+          "key": "pitcher_strikeouts",
+          "last_update": "2025-08-01T21:14:51Z",
+          "outcomes": [
+            {
+              "name": "Over",
+              "description": "David Peterson",
+              "price": 1.63,
+              "point": 4.5
+            },
+            {
+              "name": "Under",
+              "description": "David Peterson",
+              "price": 2.24,
+              "point": 4.5
+            },
+            {
+              "name": "Over",
+              "description": "Robbie Ray",
+              "price": 1.68,
+              "point": 5.5
+            },
+            {
+              "name": "Under",
+              "description": "Robbie Ray",
+              "price": 2.14,
+              "point": 5.5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "mybookieag",
+      "title": "MyBookie.ag",
+      "markets": [
+        {
+          "key": "pitcher_strikeouts",
+          "last_update": "2025-08-01T21:14:11Z",
+          "outcomes": [
+            {
+              "name": "Over",
+              "description": "David Peterson",
+              "price": 1.69,
+              "point": 4.5
+            },
+            {
+              "name": "Under",
+              "description": "David Peterson",
+              "price": 2.05,
+              "point": 4.5
+            },
+            {
+              "name": "Over",
+              "description": "Robbie Ray",
+              "price": 1.65,
+              "point": 5.5
+            },
+            {
+              "name": "Under",
+              "description": "Robbie Ray",
+              "price": 2.11,
+              "point": 5.5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "betonlineag",
+      "title": "BetOnline.ag",
+      "markets": [
+        {
+          "key": "pitcher_earned_runs",
+          "last_update": "2025-08-01T21:15:07Z",
+          "outcomes": [
+            {
+              "name": "Over",
+              "description": "David Peterson",
+              "price": 6.25,
+              "point": 4.5
+            },
+            {
+              "name": "Over",
+              "description": "David Peterson",
+              "price": 13.0,
+              "point": 5.5
+            },
+            {
+              "name": "Over",
+              "description": "David Peterson",
+              "price": 1.38,
+              "point": 1.5
+            },
+            {
+              "name": "Over",
+              "description": "David Peterson",
+              "price": 3.5,
+              "point": 3.5
+            },
+            {
+              "name": "Over",
+              "description": "David Peterson",
+              "price": 2.22,
+              "point": 2.5
+            },
+            {
+              "name": "Over",
+              "description": "Robbie Ray",
+              "price": 12.0,
+              "point": 5.5
+            },
+            {
+              "name": "Over",
+              "description": "Robbie Ray",
+              "price": 3.4,
+              "point": 3.5
+            },
+            {
+              "name": "Over",
+              "description": "Robbie Ray",
+              "price": 1.36,
+              "point": 1.5
+            },
+            {
+              "name": "Over",
+              "description": "Robbie Ray",
+              "price": 6.0,
+              "point": 4.5
+            },
+            {
+              "name": "Over",
+              "description": "Robbie Ray",
+              "price": 2.22,
+              "point": 2.5
+            }
+          ]
+        },
+        {
+          "key": "pitcher_hits_allowed",
+          "last_update": "2025-08-01T21:15:07Z",
+          "outcomes": [
+            {
+              "name": "Over",
+              "description": "David Peterson",
+              "price": 22.0,
+              "point": 9.5
+            },
+            {
+              "name": "Over",
+              "description": "David Peterson",
+              "price": 3.3,
+              "point": 6.5
+            },
+            {
+              "name": "Over",
+              "description": "David Peterson",
+              "price": 5.5,
+              "point": 7.5
+            },
+            {
+              "name": "Over",
+              "description": "David Peterson",
+              "price": 1.43,
+              "point": 4.5
+            },
+            {
+              "name": "Over",
+              "description": "David Peterson",
+              "price": 2.2,
+              "point": 5.5
+            },
+            {
+              "name": "Over",
+              "description": "David Peterson",
+              "price": 10.5,
+              "point": 8.5
+            },
+            {
+              "name": "Over",
+              "description": "David Peterson",
+              "price": 47.0,
+              "point": 10.5
+            },
+            {
+              "name": "Over",
+              "description": "Robbie Ray",
+              "price": 1.36,
+              "point": 3.5
+            },
+            {
+              "name": "Over",
+              "description": "Robbie Ray",
+              "price": 2.8,
+              "point": 5.5
+            },
+            {
+              "name": "Over",
+              "description": "Robbie Ray",
+              "price": 7.25,
+              "point": 7.5
+            },
+            {
+              "name": "Over",
+              "description": "Robbie Ray",
+              "price": 13.0,
+              "point": 8.5
+            },
+            {
+              "name": "Over",
+              "description": "Robbie Ray",
+              "price": 25.0,
+              "point": 9.5
+            },
+            {
+              "name": "Over",
+              "description": "Robbie Ray",
+              "price": 2.0,
+              "point": 4.5
+            },
+            {
+              "name": "Over",
+              "description": "Robbie Ray",
+              "price": 4.3,
+              "point": 6.5
+            }
+          ]
+        },
+        {
+          "key": "pitcher_strikeouts",
+          "last_update": "2025-08-01T21:15:07Z",
+          "outcomes": [
+            {
+              "name": "Over",
+              "description": "David Peterson",
+              "price": 1.7,
+              "point": 4.5
+            },
+            {
+              "name": "Under",
+              "description": "David Peterson",
+              "price": 2.1,
+              "point": 4.5
+            },
+            {
+              "name": "Over",
+              "description": "Robbie Ray",
+              "price": 1.66,
+              "point": 5.5
+            },
+            {
+              "name": "Under",
+              "description": "Robbie Ray",
+              "price": 2.16,
+              "point": 5.5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "draftkings",
+      "title": "DraftKings",
+      "markets": [
+        {
+          "key": "pitcher_earned_runs",
+          "last_update": "2025-08-01T21:14:29Z",
+          "outcomes": [
+            {
+              "name": "Over",
+              "description": "David Peterson",
+              "price": 2.2,
+              "point": 2.5
+            },
+            {
+              "name": "Under",
+              "description": "David Peterson",
+              "price": 1.65,
+              "point": 2.5
+            },
+            {
+              "name": "Over",
+              "description": "Robbie Ray",
+              "price": 2.2,
+              "point": 2.5
+            },
+            {
+              "name": "Under",
+              "description": "Robbie Ray",
+              "price": 1.65,
+              "point": 2.5
+            }
+          ]
+        },
+        {
+          "key": "pitcher_hits_allowed",
+          "last_update": "2025-08-01T21:14:29Z",
+          "outcomes": [
+            {
+              "name": "Over",
+              "description": "Robbie Ray",
+              "price": 1.77,
+              "point": 4.5
+            },
+            {
+              "name": "Under",
+              "description": "Robbie Ray",
+              "price": 1.91,
+              "point": 4.5
+            },
+            {
+              "name": "Over",
+              "description": "David Peterson",
+              "price": 2.15,
+              "point": 5.5
+            },
+            {
+              "name": "Under",
+              "description": "David Peterson",
+              "price": 1.61,
+              "point": 5.5
+            }
+          ]
+        },
+        {
+          "key": "pitcher_strikeouts",
+          "last_update": "2025-08-01T21:14:29Z",
+          "outcomes": [
+            {
+              "name": "Over",
+              "description": "Robbie Ray",
+              "price": 1.65,
+              "point": 5.5
+            },
+            {
+              "name": "Under",
+              "description": "Robbie Ray",
+              "price": 2.2,
+              "point": 5.5
+            },
+            {
+              "name": "Over",
+              "description": "David Peterson",
+              "price": 1.71,
+              "point": 4.5
+            },
+            {
+              "name": "Under",
+              "description": "David Peterson",
+              "price": 2.05,
+              "point": 4.5
+            }
+          ]
+        },
+        {
+          "key": "pitcher_walks",
+          "last_update": "2025-08-01T21:14:29Z",
+          "outcomes": [
+            {
+              "name": "Over",
+              "description": "David Peterson",
+              "price": 1.62,
+              "point": 1.5
+            },
+            {
+              "name": "Under",
+              "description": "David Peterson",
+              "price": 2.15,
+              "point": 1.5
+            },
+            {
+              "name": "Over",
+              "description": "Robbie Ray",
+              "price": 1.5,
+              "point": 1.5
+            },
+            {
+              "name": "Under",
+              "description": "Robbie Ray",
+              "price": 2.4,
+              "point": 1.5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "betmgm",
+      "title": "BetMGM",
+      "markets": [
+        {
+          "key": "pitcher_earned_runs",
+          "last_update": "2025-08-01T21:13:45Z",
+          "outcomes": [
+            {
+              "name": "Over",
+              "description": "Robbie Ray",
+              "price": 2.15,
+              "point": 2.5
+            },
+            {
+              "name": "Under",
+              "description": "Robbie Ray",
+              "price": 1.62,
+              "point": 2.5
+            },
+            {
+              "name": "Over",
+              "description": "David Peterson",
+              "price": 2.15,
+              "point": 2.5
+            },
+            {
+              "name": "Under",
+              "description": "David Peterson",
+              "price": 1.62,
+              "point": 2.5
+            }
+          ]
+        },
+        {
+          "key": "pitcher_hits_allowed",
+          "last_update": "2025-08-01T21:13:45Z",
+          "outcomes": [
+            {
+              "name": "Over",
+              "description": "Robbie Ray",
+              "price": 1.91,
+              "point": 4.5
+            },
+            {
+              "name": "Under",
+              "description": "Robbie Ray",
+              "price": 1.77,
+              "point": 4.5
+            },
+            {
+              "name": "Over",
+              "description": "David Peterson",
+              "price": 2.1,
+              "point": 5.5
+            },
+            {
+              "name": "Under",
+              "description": "David Peterson",
+              "price": 1.65,
+              "point": 5.5
+            }
+          ]
+        },
+        {
+          "key": "pitcher_strikeouts",
+          "last_update": "2025-08-01T21:13:45Z",
+          "outcomes": [
+            {
+              "name": "Over",
+              "description": "David Peterson",
+              "price": 1.67,
+              "point": 4.5
+            },
+            {
+              "name": "Under",
+              "description": "David Peterson",
+              "price": 2.1,
+              "point": 4.5
+            },
+            {
+              "name": "Over",
+              "description": "Robbie Ray",
+              "price": 2.2,
+              "point": 6.5
+            },
+            {
+              "name": "Under",
+              "description": "Robbie Ray",
+              "price": 1.62,
+              "point": 6.5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "bovada",
+      "title": "Bovada",
+      "markets": [
+        {
+          "key": "pitcher_earned_runs",
+          "last_update": "2025-08-01T21:14:22Z",
+          "outcomes": [
+            {
+              "name": "Over",
+              "description": "David Peterson",
+              "price": 2.25,
+              "point": 2.5
+            },
+            {
+              "name": "Under",
+              "description": "David Peterson",
+              "price": 1.61,
+              "point": 2.5
+            },
+            {
+              "name": "Over",
+              "description": "Robbie Ray",
+              "price": 2.25,
+              "point": 2.5
+            },
+            {
+              "name": "Under",
+              "description": "Robbie Ray",
+              "price": 1.61,
+              "point": 2.5
+            }
+          ]
+        },
+        {
+          "key": "pitcher_hits_allowed",
+          "last_update": "2025-08-01T21:14:22Z",
+          "outcomes": [
+            {
+              "name": "Over",
+              "description": "David Peterson",
+              "price": 2.15,
+              "point": 5.5
+            },
+            {
+              "name": "Under",
+              "description": "David Peterson",
+              "price": 1.65,
+              "point": 5.5
+            },
+            {
+              "name": "Over",
+              "description": "Robbie Ray",
+              "price": 1.91,
+              "point": 4.5
+            },
+            {
+              "name": "Under",
+              "description": "Robbie Ray",
+              "price": 1.77,
+              "point": 4.5
+            }
+          ]
+        },
+        {
+          "key": "pitcher_strikeouts",
+          "last_update": "2025-08-01T21:14:22Z",
+          "outcomes": [
+            {
+              "name": "Over",
+              "description": "David Peterson",
+              "price": 1.69,
+              "point": 4.5
+            },
+            {
+              "name": "Under",
+              "description": "David Peterson",
+              "price": 2.1,
+              "point": 4.5
+            },
+            {
+              "name": "Over",
+              "description": "Robbie Ray",
+              "price": 2.25,
+              "point": 6.5
+            },
+            {
+              "name": "Under",
+              "description": "Robbie Ray",
+              "price": 1.61,
+              "point": 6.5
+            }
+          ]
+        },
+        {
+          "key": "pitcher_walks",
+          "last_update": "2025-08-01T21:14:22Z",
+          "outcomes": [
+            {
+              "name": "Over",
+              "description": "David Peterson",
+              "price": 1.53,
+              "point": 1.5
+            },
+            {
+              "name": "Under",
+              "description": "David Peterson",
+              "price": 2.45,
+              "point": 1.5
+            },
+            {
+              "name": "Over",
+              "description": "Robbie Ray",
+              "price": 1.56,
+              "point": 1.5
+            },
+            {
+              "name": "Under",
+              "description": "Robbie Ray",
+              "price": 2.4,
+              "point": 1.5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "betrivers",
+      "title": "BetRivers",
+      "markets": [
+        {
+          "key": "pitcher_strikeouts",
+          "last_update": "2025-08-01T21:14:10Z",
+          "outcomes": [
+            {
+              "name": "Over",
+              "description": "Robbie Ray",
+              "price": 2.07,
+              "point": 6.5
+            },
+            {
+              "name": "Under",
+              "description": "Robbie Ray",
+              "price": 1.68,
+              "point": 6.5
+            },
+            {
+              "name": "Over",
+              "description": "Robbie Ray",
+              "price": 3.1,
+              "point": 7.5
+            },
+            {
+              "name": "Under",
+              "description": "Robbie Ray",
+              "price": 1.32,
+              "point": 7.5
+            },
+            {
+              "name": "Over",
+              "description": "David Peterson",
+              "price": 2.65,
+              "point": 5.5
+            },
+            {
+              "name": "Under",
+              "description": "David Peterson",
+              "price": 1.43,
+              "point": 5.5
+            },
+            {
+              "name": "Over",
+              "description": "David Peterson",
+              "price": 4.4,
+              "point": 6.5
+            },
+            {
+              "name": "Under",
+              "description": "David Peterson",
+              "price": 1.16,
+              "point": 6.5
+            },
+            {
+              "name": "Over",
+              "description": "David Peterson",
+              "price": 1.32,
+              "point": 3.5
+            },
+            {
+              "name": "Under",
+              "description": "David Peterson",
+              "price": 3.1,
+              "point": 3.5
+            },
+            {
+              "name": "Over",
+              "description": "Robbie Ray",
+              "price": 1.24,
+              "point": 4.5
+            },
+            {
+              "name": "Under",
+              "description": "Robbie Ray",
+              "price": 3.7,
+              "point": 4.5
+            },
+            {
+              "name": "Over",
+              "description": "David Peterson",
+              "price": 1.76,
+              "point": 4.5
+            },
+            {
+              "name": "Under",
+              "description": "David Peterson",
+              "price": 1.96,
+              "point": 4.5
+            },
+            {
+              "name": "Over",
+              "description": "Robbie Ray",
+              "price": 1.53,
+              "point": 5.5
+            },
+            {
+              "name": "Under",
+              "description": "Robbie Ray",
+              "price": 2.35,
+              "point": 5.5
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

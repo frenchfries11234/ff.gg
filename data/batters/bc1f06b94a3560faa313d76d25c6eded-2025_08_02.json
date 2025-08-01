@@ -1,0 +1,178 @@
+{
+  "id": "bc1f06b94a3560faa313d76d25c6eded",
+  "sport_key": "baseball_mlb",
+  "sport_title": "MLB",
+  "commence_time": "2025-08-02T23:16:00Z",
+  "home_team": "Cincinnati Reds",
+  "away_team": "Atlanta Braves",
+  "bookmakers": [
+    {
+      "key": "draftkings",
+      "title": "DraftKings",
+      "markets": [
+        {
+          "key": "batter_stolen_bases",
+          "last_update": "2025-08-01T21:14:55Z",
+          "outcomes": [
+            {
+              "name": "Over",
+              "description": "Elly De La Cruz",
+              "price": 3.15,
+              "point": 0.5
+            },
+            {
+              "name": "Under",
+              "description": "Elly De La Cruz",
+              "price": 1.32,
+              "point": 0.5
+            },
+            {
+              "name": "Over",
+              "description": "Matt McLain",
+              "price": 3.7,
+              "point": 0.5
+            },
+            {
+              "name": "Under",
+              "description": "Matt McLain",
+              "price": 1.25,
+              "point": 0.5
+            },
+            {
+              "name": "Over",
+              "description": "Eli White",
+              "price": 5.5,
+              "point": 0.5
+            },
+            {
+              "name": "Under",
+              "description": "Eli White",
+              "price": 1.13,
+              "point": 0.5
+            },
+            {
+              "name": "Over",
+              "description": "Michael Harris II",
+              "price": 6.0,
+              "point": 0.5
+            },
+            {
+              "name": "Under",
+              "description": "Michael Harris II",
+              "price": 1.11,
+              "point": 0.5
+            },
+            {
+              "name": "Over",
+              "description": "TJ Friedl",
+              "price": 6.0,
+              "point": 0.5
+            },
+            {
+              "name": "Under",
+              "description": "TJ Friedl",
+              "price": 1.11,
+              "point": 0.5
+            },
+            {
+              "name": "Over",
+              "description": "Jake Fraley",
+              "price": 6.5,
+              "point": 0.5
+            },
+            {
+              "name": "Under",
+              "description": "Jake Fraley",
+              "price": 1.11,
+              "point": 0.5
+            },
+            {
+              "name": "Over",
+              "description": "Spencer Steer",
+              "price": 7.5,
+              "point": 0.5
+            },
+            {
+              "name": "Under",
+              "description": "Spencer Steer",
+              "price": 1.08,
+              "point": 0.5
+            },
+            {
+              "name": "Over",
+              "description": "Ozzie Albies",
+              "price": 8.0,
+              "point": 0.5
+            },
+            {
+              "name": "Under",
+              "description": "Ozzie Albies",
+              "price": 1.07,
+              "point": 0.5
+            },
+            {
+              "name": "Over",
+              "description": "Ke'Bryan Hayes",
+              "price": 8.5,
+              "point": 0.5
+            },
+            {
+              "name": "Under",
+              "description": "Ke'Bryan Hayes",
+              "price": 1.07,
+              "point": 0.5
+            },
+            {
+              "name": "Over",
+              "description": "Austin Hays",
+              "price": 11.0,
+              "point": 0.5
+            },
+            {
+              "name": "Under",
+              "description": "Austin Hays",
+              "price": 1.05,
+              "point": 0.5
+            },
+            {
+              "name": "Over",
+              "description": "Nick Allen",
+              "price": 11.0,
+              "point": 0.5
+            },
+            {
+              "name": "Under",
+              "description": "Nick Allen",
+              "price": 1.04,
+              "point": 0.5
+            },
+            {
+              "name": "Over",
+              "description": "Gavin Lux",
+              "price": 14.0,
+              "point": 0.5
+            },
+            {
+              "name": "Under",
+              "description": "Gavin Lux",
+              "price": 1.03,
+              "point": 0.5
+            },
+            {
+              "name": "Over",
+              "description": "Jurickson Profar",
+              "price": 14.0,
+              "point": 0.5
+            },
+            {
+              "name": "Under",
+              "description": "Jurickson Profar",
+              "price": 1.03,
+              "point": 0.5
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
