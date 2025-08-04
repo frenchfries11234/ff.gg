@@ -2,24 +2,35 @@ th {
     cursor: pointer;
 }
 
+.nav-tabs .nav-link {
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+  font-size: 0.9rem; /* Optional: slightly smaller text */
+}
+
 th.tablesorter-headerAsc,
 th.tablesorter-headerDesc {
-    background-color: #343a40 !important; /* dark gray */
-    color: #ffc107 !important; /* highlight color */
+  background-color: #2c3138 !important; /* slightly lighter than base */
+  color: #a8d8f0 !important;            /* soft light blue */
 }
 
-/* Highlight the entire column (data cells) */
+/* Highlight the entire sorted column's data cells */
 td.sorted-column {
-    background-color: rgba(255, 193, 7, 0.2); /* light yellow */
-    transition: background-color 0.3s ease;
+  background-color: rgba(120, 170, 200, 0.12); /* faint blue highlight */
+  transition: background-color 0.3s ease;
 }
 
+tr.clickable-row:hover td {
+  background-color: rgba(102, 217, 239, 0.07); /* soft blue */
+  transition: background-color 0.2s ease;
+  cursor: pointer;
+}
 
 .nav-link {
     position: relative;
     padding-bottom: 4px;
     transition: color 0.2s;
-    padding-top: 12px;
+    padding-top: 10px;
 }
 
 .topbar {
@@ -40,3 +51,4 @@ td.sorted-column {
     width: 100%;
     background-color: #0d6efd; /* Match your theme color */
 }
+

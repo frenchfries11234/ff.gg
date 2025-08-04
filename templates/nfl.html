@@ -2,41 +2,46 @@
 
 {% block content %}
 <h2>NFL Stats</h2>
-<ul class="nav nav-tabs" id="roleTabs">
-                    {% for role in players %}
-                    <li class="nav-item">
-                        <a class="nav-link {% if loop.first %}active{% endif %}" data-bs-toggle="tab"
-                            href="#{{ role }}">
-                            {{ role|capitalize }}
-                        </a>
-                    </li>
-                    {% endfor %}
-                </ul>
 
-                <div class="tab-content mt-3">
-                    {% for role, data in players.items() %}
-                    <div class="tab-pane fade {% if loop.first %}show active{% endif %}" id="{{ role }}">
-                        <table class="table table-vcenter card-table tablesorter table-dark sortable-table">
-                            <thead>
-                                <tr>
-                                    <th>Name</th>
-                                    {% for col in data.columns %}
-                                    <th>{{ col }}</th>
-                                    {% endfor %}
-                                </tr>
-                            </thead>
-                            <tbody>
-                                {% for row in data.rows %}
-                                <tr>
-                                    <td>{{ row.name }}</td>
-                                    {% for stat in row.stats %}
-                                    <td>{{ stat }}</td>
-                                    {% endfor %}
-                                </tr>
-                                {% endfor %}
-                            </tbody>
-                        </table>
-                    </div>
+<ul class="nav nav-tabs" id="roleTabs">
+    {% for role in players %}
+    <li class="nav-item">
+        <a class="nav-link {% if loop.first %}active{% endif %}" data-bs-toggle="tab"
+            href="#{{ role|lower|replace(' ', '-') }}">
+            {{ role }}
+        </a>
+    </li>
+    {% endfor %}
+</ul>
+
+<div class="tab-content mt-3">
+    {% for role, data in players.items() %}
+    <div class="tab-pane fade {% if loop.first %}show active{% endif %}" id="{{ role|lower|replace(' ', '-') }}">
+        <table class="table table-vcenter card-table tablesorter table-dark sortable-table">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Name</th>
+                    {% for col in data.columns %}
+                    <th>{{ col }}</th>
                     {% endfor %}
-                </div>
+                </tr>
+            </thead>
+            <tbody>
+                {% for row in data.rows %}
+                <tr class="clickable-row" data-href="/nfl/players/{{ row.espn_id }}">
+                    <td>{{ loop.index }}</td>
+                    <td>
+                        {{ row.name }}
+                    </td>
+                    {% for stat in row.stats %}
+                    <td>{{ stat }}</td>
+                    {% endfor %}
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+    {% endfor %}
+</div>
 {% endblock %}

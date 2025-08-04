@@ -20,8 +20,8 @@
 
             <!-- Center: Navigation links -->
             <div class="d-none d-md-flex me-auto">
-                <a class="nav-link ms-5 {% if request.path == '/nfl' %}active{% endif %}" href="/nfl">NFL</a>
-                <a class="nav-link ms-3 {% if request.path == '/mlb' or request.path == '/' %}active{% endif %}"
+                <a class="nav-link ms-5 {% if request.path == '/nfl' or request.path == '/' %}active{% endif %}" href="/nfl">NFL</a>
+                <a class="nav-link ms-3 {% if request.path == '/mlb' %}active{% endif %}"
                     href="/mlb">MLB</a>
             </div>
 

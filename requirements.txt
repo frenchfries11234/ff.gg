@@ -10,3 +10,5 @@ flask-dance
 flask-login
 flask_cors
 numpy
+pandas
+nfl_data_py

@@ -32,7 +32,7 @@
           <td>{{ row.stats[0] }}</td>
           <td>{{ row.expected_score }}</td>
           {% for stat in row.stats[1:] %}
-          <td>{{ "%.2f"|format(stat) if stat is not none else "—" }}</td>
+          <td>{{stat}}</td>
           {% endfor %}
         </tr>
         {% endfor %}

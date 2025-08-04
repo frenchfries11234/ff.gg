@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container text-center my-5">
+  <h1 class="display-4 text-danger">404 - Player Not Found</h1>
+  <p class="lead text-muted">We couldn’t find a player with id <strong>{{ espn_id }}</strong>.</p>
+  <p class="text-muted">Make sure the id correct, or <a href="{{ url_for('nfl') }}" class="text-primary">go back to the NFL page</a>.</p>
+  <img src="https://tabler-icons.io/static/tabler-icons/icons/error-404.svg" alt="Not Found" width="100" class="mt-4 opacity-50">
+</div>
+{% endblock %}

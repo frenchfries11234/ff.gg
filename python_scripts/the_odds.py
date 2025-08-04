@@ -5,6 +5,7 @@ import os
 import json
 import statsapi
 import numpy as np
+import pandas as pd
 
 load_dotenv()
 SPORT = "baseball_mlb" #"americanfootball_nfl"
@@ -58,8 +59,9 @@ def parse_json(file, props, scores):
         odds_data = json.load(f)
 
     game = f"{odds_data['home_team']} vs {odds_data['away_team']}"
-    player_data = {}
+    player_data = defaultdict(lambda: defaultdict(lambda: defaultdict(dict)))
 
+    # Collect raw data
     for bookmaker in odds_data.get("bookmakers", []):
         for market in bookmaker.get("markets", []):
             prop_key = market.get("key")
@@ -74,18 +76,17 @@ def parse_json(file, props, scores):
                 if line is None or price is None:
                     continue
 
-                player_data.setdefault(name, {}).setdefault(prop_key, {}).setdefault(line, {})[
-                    "over" if "over" in outcome["name"].lower() else "under"
-                ] = price
+                direction = "over" if "over" in outcome["name"].lower() else "under"
+                player_data[name][prop_key][line][direction] = price
 
-    results = []
-    for name, prop_lines in player_data.items():
-        stats = []
-        expected_score = 0.0
-
-        for i, prop in enumerate(props):
+    # Compute expected values
+    raw_stats = []
+    for name, prop_dict in player_data.items():
+        row = []
+        for prop in props:
+            line_group = prop_dict.get(prop, {})
             evs = []
-            line_group = prop_lines.get(prop, {})
+
             for ln, prices in line_group.items():
                 if "over" in prices and "under" in prices:
                     p_over = 1 / prices["over"]
@@ -96,20 +97,65 @@ def parse_json(file, props, scores):
                     ev = p_over * (ln + 0.5) + p_under * (ln - 0.5)
                     evs.append(ev)
 
-            stat = round(sum(evs) / len(evs), 3) if evs else None
-            stats.append(stat)
-            expected_score += (stat if stat is not None else 0) * scores[i]
+            row.append(round(sum(evs) / len(evs), 3) if evs else None)
+        raw_stats.append((name, row))
 
-        results.append({
+    # Build DataFrame
+    names = [name for name, _ in raw_stats]
+    data = [row for _, row in raw_stats]
+    df = pd.DataFrame(data, index=names, columns=props)
+
+    # Filter out players with 2+ missing stats
+    df = df[df.isnull().sum(axis=1) < 2]
+
+    # Compute mean and std
+    col_means = df.mean()
+    col_stds = df.std()
+
+    # Compute fill values: mean - std if both available,
+    # fallback to mean if only mean available,
+    # fallback to 0.0 otherwise
+    col_fill = pd.Series(index=df.columns, dtype=float)
+    for col in df.columns:
+        mean = col_means[col]
+        std = col_stds[col]
+        if pd.notna(mean) and pd.notna(std):
+            col_fill[col] = max(0.0, mean - std)
+        elif pd.notna(mean):
+            col_fill[col] = max(0.0, mean)
+        else:
+            col_fill[col] = 0.0
+
+    # Track which values were originally missing
+    na_mask = df.isna()
+
+    # Fill missing values
+    df_filled = df.fillna(col_fill)
+    
+    print(df_filled)
+
+    # Build final output
+    final_results = []
+    for name in df_filled.index:
+        display_stats = []
+        filled_row = []
+        for i, col in enumerate(df.columns):
+            if na_mask.loc[name, col]:
+                val = col_fill[col]
+                display_stats.append(f"{round(val, 3)}*")
+            else:
+                val = df.loc[name, col]
+                display_stats.append(str(round(val, 3)))
+            filled_row.append(val)
+
+        expected_score = round(sum(filled_row[i] * scores[i] for i in range(len(scores))), 2)
+        final_results.append({
             "name": name,
-            "stats": [game] + stats,
-            "expected_score": round(expected_score, 2)
+            "stats": [game] + display_stats,
+            "expected_score": expected_score
         })
 
-    return results
-
-
-
+    return final_results
 
 def get_today_data():
     espn_batters_props = ["batter_runs_scored", "batter_total_bases", "batter_rbis", "batter_walks", "batter_stolen_bases", "batter_strikeouts"]

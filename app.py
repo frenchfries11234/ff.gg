@@ -10,7 +10,7 @@ from flask_login import (
 from flask_cors import CORS
 from pymongo import MongoClient
 from bson.objectid import ObjectId
-
+from collections import defaultdict
 import python_scripts.the_odds as the_odds
 
 # Load env
@@ -100,23 +100,51 @@ def logout():
     # Clear session variables if needed
     session.clear()
 
-    return redirect(url_for("mlb"))
-
-@app.route("/nfl")
-def nfl():
-    players = {
-        "batters": {
-            "columns": ["batter_hits_runs_rbis", "Line", "Over", "Under"],
-            "rows": []
-        },
-        "pitchers": {
-            "columns": ["ERA", "SO", "W"],
-            "rows": []
-        }
-    }
-    return render_template('nfl.html', players=players)
+    return redirect(url_for("nfl"))
 
 @app.route("/")
+@app.route("/nfl")
+def nfl():
+    db = client["nfl_data"]
+    players_collection = db["nfl_players"]
+    players = list(players_collection.find())
+    
+    grouped_players = defaultdict(list)
+    for p in players:
+        role = p.get("position", "Other")
+        grouped_players[role].append(p)
+
+    players_by_role = {}
+    for role, group in grouped_players.items():
+        rows = []
+        for p in group:
+            rows.append({
+                "name": p.get("player_name", "Unknown"),
+                "espn_id": p.get("espn_id", None),  # Add ESPN ID here
+                "stats": [
+                    p.get("team", "—"),
+                    "1234 YDS",   # Filler stat
+                    "10 TDs"      # Filler stat
+                ]
+            })
+
+        players_by_role[role] = {
+            "columns": ["Team", "Pass Yards", "Touchdowns"],
+            "rows": rows
+        }
+
+    return render_template("nfl.html", players=players_by_role)
+
+@app.route("/nfl/players/<espn_id>")
+def player_page(espn_id):
+    db = client["nfl_data"]
+    players_collection = db["nfl_players"]
+
+    player = players_collection.find_one({"espn_id": espn_id})
+    if not player:
+        return render_template("player_not_found.html", espn_id=espn_id), 404
+    return render_template("player.html", player=player)
+
 @app.route("/mlb")
 def mlb():
     batter_rows = []
