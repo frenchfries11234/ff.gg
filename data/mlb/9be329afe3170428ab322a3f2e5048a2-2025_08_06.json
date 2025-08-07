@@ -1,0 +1,526 @@
+{
+  "id": "9be329afe3170428ab322a3f2e5048a2",
+  "sport_key": "baseball_mlb",
+  "sport_title": "MLB",
+  "commence_time": "2025-08-06T23:10:00Z",
+  "home_team": "Boston Red Sox",
+  "away_team": "Kansas City Royals",
+  "bookmakers": [
+    {
+      "key": "fanduel",
+      "title": "FanDuel",
+      "markets": [
+        {
+          "key": "pitcher_strikeouts",
+          "last_update": "2025-08-06T19:09:12Z",
+          "outcomes": [
+            {
+              "name": "Over",
+              "description": "Dustin May",
+              "price": 2.3,
+              "point": 4.5
+            },
+            {
+              "name": "Under",
+              "description": "Dustin May",
+              "price": 1.6,
+              "point": 4.5
+            },
+            {
+              "name": "Over",
+              "description": "Michael Wacha",
+              "price": 2.06,
+              "point": 4.5
+            },
+            {
+              "name": "Under",
+              "description": "Michael Wacha",
+              "price": 1.74,
+              "point": 4.5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "mybookieag",
+      "title": "MyBookie.ag",
+      "markets": [
+        {
+          "key": "pitcher_strikeouts",
+          "last_update": "2025-08-06T19:09:07Z",
+          "outcomes": [
+            {
+              "name": "Over",
+              "description": "Michael Wacha",
+              "price": 1.98,
+              "point": 4.5
+            },
+            {
+              "name": "Under",
+              "description": "Michael Wacha",
+              "price": 1.74,
+              "point": 4.5
+            },
+            {
+              "name": "Over",
+              "description": "Dustin May",
+              "price": 2.17,
+              "point": 4.5
+            },
+            {
+              "name": "Under",
+              "description": "Dustin May",
+              "price": 1.61,
+              "point": 4.5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "draftkings",
+      "title": "DraftKings",
+      "markets": [
+        {
+          "key": "pitcher_earned_runs",
+          "last_update": "2025-08-06T19:08:22Z",
+          "outcomes": [
+            {
+              "name": "Over",
+              "description": "Dustin May",
+              "price": 2.25,
+              "point": 2.5
+            },
+            {
+              "name": "Under",
+              "description": "Dustin May",
+              "price": 1.62,
+              "point": 2.5
+            },
+            {
+              "name": "Over",
+              "description": "Michael Wacha",
+              "price": 1.77,
+              "point": 2.5
+            },
+            {
+              "name": "Under",
+              "description": "Michael Wacha",
+              "price": 2.0,
+              "point": 2.5
+            }
+          ]
+        },
+        {
+          "key": "pitcher_hits_allowed",
+          "last_update": "2025-08-06T19:08:22Z",
+          "outcomes": [
+            {
+              "name": "Over",
+              "description": "Dustin May",
+              "price": 1.62,
+              "point": 4.5
+            },
+            {
+              "name": "Under",
+              "description": "Dustin May",
+              "price": 2.15,
+              "point": 4.5
+            },
+            {
+              "name": "Over",
+              "description": "Michael Wacha",
+              "price": 1.83,
+              "point": 5.5
+            },
+            {
+              "name": "Under",
+              "description": "Michael Wacha",
+              "price": 1.83,
+              "point": 5.5
+            }
+          ]
+        },
+        {
+          "key": "pitcher_strikeouts",
+          "last_update": "2025-08-06T19:08:22Z",
+          "outcomes": [
+            {
+              "name": "Over",
+              "description": "Michael Wacha",
+              "price": 1.95,
+              "point": 4.5
+            },
+            {
+              "name": "Under",
+              "description": "Michael Wacha",
+              "price": 1.8,
+              "point": 4.5
+            },
+            {
+              "name": "Over",
+              "description": "Dustin May",
+              "price": 2.3,
+              "point": 4.5
+            },
+            {
+              "name": "Under",
+              "description": "Dustin May",
+              "price": 1.59,
+              "point": 4.5
+            }
+          ]
+        },
+        {
+          "key": "pitcher_walks",
+          "last_update": "2025-08-06T19:08:22Z",
+          "outcomes": [
+            {
+              "name": "Over",
+              "description": "Michael Wacha",
+              "price": 2.1,
+              "point": 1.5
+            },
+            {
+              "name": "Under",
+              "description": "Michael Wacha",
+              "price": 1.62,
+              "point": 1.5
+            },
+            {
+              "name": "Over",
+              "description": "Dustin May",
+              "price": 1.83,
+              "point": 1.5
+            },
+            {
+              "name": "Under",
+              "description": "Dustin May",
+              "price": 1.83,
+              "point": 1.5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "bovada",
+      "title": "Bovada",
+      "markets": [
+        {
+          "key": "pitcher_earned_runs",
+          "last_update": "2025-08-06T19:08:59Z",
+          "outcomes": [
+            {
+              "name": "Over",
+              "description": "Dustin May",
+              "price": 2.2,
+              "point": 2.5
+            },
+            {
+              "name": "Under",
+              "description": "Dustin May",
+              "price": 1.62,
+              "point": 2.5
+            },
+            {
+              "name": "Over",
+              "description": "Michael Wacha",
+              "price": 1.71,
+              "point": 2.5
+            },
+            {
+              "name": "Under",
+              "description": "Michael Wacha",
+              "price": 2.0,
+              "point": 2.5
+            }
+          ]
+        },
+        {
+          "key": "pitcher_hits_allowed",
+          "last_update": "2025-08-06T19:08:59Z",
+          "outcomes": [
+            {
+              "name": "Over",
+              "description": "Dustin May",
+              "price": 1.59,
+              "point": 4.5
+            },
+            {
+              "name": "Under",
+              "description": "Dustin May",
+              "price": 2.3,
+              "point": 4.5
+            },
+            {
+              "name": "Over",
+              "description": "Michael Wacha",
+              "price": 1.83,
+              "point": 5.5
+            },
+            {
+              "name": "Under",
+              "description": "Michael Wacha",
+              "price": 1.83,
+              "point": 5.5
+            }
+          ]
+        },
+        {
+          "key": "pitcher_strikeouts",
+          "last_update": "2025-08-06T19:08:59Z",
+          "outcomes": [
+            {
+              "name": "Over",
+              "description": "Dustin May",
+              "price": 2.15,
+              "point": 4.5
+            },
+            {
+              "name": "Under",
+              "description": "Dustin May",
+              "price": 1.67,
+              "point": 4.5
+            },
+            {
+              "name": "Over",
+              "description": "Michael Wacha",
+              "price": 2.05,
+              "point": 4.5
+            },
+            {
+              "name": "Under",
+              "description": "Michael Wacha",
+              "price": 1.74,
+              "point": 4.5
+            }
+          ]
+        },
+        {
+          "key": "pitcher_walks",
+          "last_update": "2025-08-06T19:08:59Z",
+          "outcomes": [
+            {
+              "name": "Over",
+              "description": "Dustin May",
+              "price": 1.83,
+              "point": 1.5
+            },
+            {
+              "name": "Under",
+              "description": "Dustin May",
+              "price": 1.83,
+              "point": 1.5
+            },
+            {
+              "name": "Over",
+              "description": "Michael Wacha",
+              "price": 2.15,
+              "point": 1.5
+            },
+            {
+              "name": "Under",
+              "description": "Michael Wacha",
+              "price": 1.65,
+              "point": 1.5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "betrivers",
+      "title": "BetRivers",
+      "markets": [
+        {
+          "key": "pitcher_strikeouts",
+          "last_update": "2025-08-06T19:09:07Z",
+          "outcomes": [
+            {
+              "name": "Over",
+              "description": "Dustin May",
+              "price": 3.65,
+              "point": 5.5
+            },
+            {
+              "name": "Under",
+              "description": "Dustin May",
+              "price": 1.23,
+              "point": 5.5
+            },
+            {
+              "name": "Over",
+              "description": "Michael Wacha",
+              "price": 1.43,
+              "point": 3.5
+            },
+            {
+              "name": "Under",
+              "description": "Michael Wacha",
+              "price": 2.6,
+              "point": 3.5
+            },
+            {
+              "name": "Over",
+              "description": "Michael Wacha",
+              "price": 3.15,
+              "point": 5.5
+            },
+            {
+              "name": "Under",
+              "description": "Michael Wacha",
+              "price": 1.32,
+              "point": 5.5
+            },
+            {
+              "name": "Over",
+              "description": "Dustin May",
+              "price": 2.3,
+              "point": 4.5
+            },
+            {
+              "name": "Under",
+              "description": "Dustin May",
+              "price": 1.56,
+              "point": 4.5
+            },
+            {
+              "name": "Over",
+              "description": "Dustin May",
+              "price": 1.24,
+              "point": 2.5
+            },
+            {
+              "name": "Under",
+              "description": "Dustin May",
+              "price": 3.65,
+              "point": 2.5
+            },
+            {
+              "name": "Over",
+              "description": "Dustin May",
+              "price": 1.6,
+              "point": 3.5
+            },
+            {
+              "name": "Under",
+              "description": "Dustin May",
+              "price": 2.23,
+              "point": 3.5
+            },
+            {
+              "name": "Over",
+              "description": "Michael Wacha",
+              "price": 2.0,
+              "point": 4.5
+            },
+            {
+              "name": "Under",
+              "description": "Michael Wacha",
+              "price": 1.73,
+              "point": 4.5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "betmgm",
+      "title": "BetMGM",
+      "markets": [
+        {
+          "key": "pitcher_earned_runs",
+          "last_update": "2025-08-06T19:09:07Z",
+          "outcomes": [
+            {
+              "name": "Over",
+              "description": "Dustin May",
+              "price": 2.15,
+              "point": 2.5
+            },
+            {
+              "name": "Under",
+              "description": "Dustin May",
+              "price": 1.62,
+              "point": 2.5
+            },
+            {
+              "name": "Over",
+              "description": "Michael Wacha",
+              "price": 1.67,
+              "point": 2.5
+            },
+            {
+              "name": "Under",
+              "description": "Michael Wacha",
+              "price": 2.05,
+              "point": 2.5
+            }
+          ]
+        },
+        {
+          "key": "pitcher_hits_allowed",
+          "last_update": "2025-08-06T19:09:07Z",
+          "outcomes": [
+            {
+              "name": "Over",
+              "description": "Dustin May",
+              "price": 1.61,
+              "point": 4.5
+            },
+            {
+              "name": "Under",
+              "description": "Dustin May",
+              "price": 2.2,
+              "point": 4.5
+            },
+            {
+              "name": "Over",
+              "description": "Michael Wacha",
+              "price": 1.77,
+              "point": 5.5
+            },
+            {
+              "name": "Under",
+              "description": "Michael Wacha",
+              "price": 1.91,
+              "point": 5.5
+            }
+          ]
+        },
+        {
+          "key": "pitcher_strikeouts",
+          "last_update": "2025-08-06T19:09:07Z",
+          "outcomes": [
+            {
+              "name": "Over",
+              "description": "Michael Wacha",
+              "price": 2.0,
+              "point": 4.5
+            },
+            {
+              "name": "Under",
+              "description": "Michael Wacha",
+              "price": 1.74,
+              "point": 4.5
+            },
+            {
+              "name": "Over",
+              "description": "Dustin May",
+              "price": 2.2,
+              "point": 4.5
+            },
+            {
+              "name": "Under",
+              "description": "Dustin May",
+              "price": 1.65,
+              "point": 4.5
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

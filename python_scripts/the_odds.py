@@ -173,12 +173,12 @@ def get_today_data():
         teams.add(event["home_team"])
         teams.add(event["away_team"])
          
-        file = f"data/batters/{id}-{date.replace("-","_")}.json"
+        file = f"data/mlb/{id}-{date.replace("-","_")}.json"
         
         with open(file, "w") as f:
             json.dump(get_odds(id, ",".join(espn_batters_props)), f, indent=2)
             
-        file = f"data/pitchers/{id}-{date.replace("-","_")}.json"
+        file = f"data/mlb/{id}-{date.replace("-","_")}.json"
             
         with open(file, "w") as f:
             json.dump(get_odds(id, ",".join(espn_pitchers_props)), f, indent=2)

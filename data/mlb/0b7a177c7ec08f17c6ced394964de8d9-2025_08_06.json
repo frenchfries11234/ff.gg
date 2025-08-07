@@ -1,0 +1,538 @@
+{
+  "id": "0b7a177c7ec08f17c6ced394964de8d9",
+  "sport_key": "baseball_mlb",
+  "sport_title": "MLB",
+  "commence_time": "2025-08-06T23:15:00Z",
+  "home_team": "Atlanta Braves",
+  "away_team": "Milwaukee Brewers",
+  "bookmakers": [
+    {
+      "key": "fanduel",
+      "title": "FanDuel",
+      "markets": [
+        {
+          "key": "pitcher_strikeouts",
+          "last_update": "2025-08-06T19:09:18Z",
+          "outcomes": [
+            {
+              "name": "Over",
+              "description": "Spencer Strider",
+              "price": 1.66,
+              "point": 6.5
+            },
+            {
+              "name": "Under",
+              "description": "Spencer Strider",
+              "price": 2.2,
+              "point": 6.5
+            },
+            {
+              "name": "Over",
+              "description": "Jose Quintana",
+              "price": 1.68,
+              "point": 3.5
+            },
+            {
+              "name": "Under",
+              "description": "Jose Quintana",
+              "price": 2.16,
+              "point": 3.5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "mybookieag",
+      "title": "MyBookie.ag",
+      "markets": [
+        {
+          "key": "pitcher_strikeouts",
+          "last_update": "2025-08-06T19:09:15Z",
+          "outcomes": [
+            {
+              "name": "Over",
+              "description": "Spencer Strider",
+              "price": 1.69,
+              "point": 6.5
+            },
+            {
+              "name": "Under",
+              "description": "Spencer Strider",
+              "price": 2.05,
+              "point": 6.5
+            },
+            {
+              "name": "Over",
+              "description": "Jose Quintana",
+              "price": 1.67,
+              "point": 3.5
+            },
+            {
+              "name": "Under",
+              "description": "Jose Quintana",
+              "price": 2.08,
+              "point": 3.5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "draftkings",
+      "title": "DraftKings",
+      "markets": [
+        {
+          "key": "pitcher_earned_runs",
+          "last_update": "2025-08-06T19:08:44Z",
+          "outcomes": [
+            {
+              "name": "Over",
+              "description": "Spencer Strider",
+              "price": 1.67,
+              "point": 1.5
+            },
+            {
+              "name": "Under",
+              "description": "Spencer Strider",
+              "price": 2.2,
+              "point": 1.5
+            },
+            {
+              "name": "Over",
+              "description": "Jose Quintana",
+              "price": 1.95,
+              "point": 2.5
+            },
+            {
+              "name": "Under",
+              "description": "Jose Quintana",
+              "price": 1.83,
+              "point": 2.5
+            }
+          ]
+        },
+        {
+          "key": "pitcher_hits_allowed",
+          "last_update": "2025-08-06T19:08:44Z",
+          "outcomes": [
+            {
+              "name": "Over",
+              "description": "Spencer Strider",
+              "price": 1.71,
+              "point": 4.5
+            },
+            {
+              "name": "Under",
+              "description": "Spencer Strider",
+              "price": 2.0,
+              "point": 4.5
+            },
+            {
+              "name": "Over",
+              "description": "Jose Quintana",
+              "price": 1.87,
+              "point": 5.5
+            },
+            {
+              "name": "Under",
+              "description": "Jose Quintana",
+              "price": 1.8,
+              "point": 5.5
+            }
+          ]
+        },
+        {
+          "key": "pitcher_strikeouts",
+          "last_update": "2025-08-06T19:08:44Z",
+          "outcomes": [
+            {
+              "name": "Over",
+              "description": "Spencer Strider",
+              "price": 1.65,
+              "point": 6.5
+            },
+            {
+              "name": "Under",
+              "description": "Spencer Strider",
+              "price": 2.2,
+              "point": 6.5
+            },
+            {
+              "name": "Over",
+              "description": "Jose Quintana",
+              "price": 1.65,
+              "point": 3.5
+            },
+            {
+              "name": "Under",
+              "description": "Jose Quintana",
+              "price": 2.2,
+              "point": 3.5
+            }
+          ]
+        },
+        {
+          "key": "pitcher_walks",
+          "last_update": "2025-08-06T19:08:44Z",
+          "outcomes": [
+            {
+              "name": "Over",
+              "description": "Spencer Strider",
+              "price": 1.57,
+              "point": 1.5
+            },
+            {
+              "name": "Under",
+              "description": "Spencer Strider",
+              "price": 2.2,
+              "point": 1.5
+            },
+            {
+              "name": "Over",
+              "description": "Jose Quintana",
+              "price": 1.54,
+              "point": 1.5
+            },
+            {
+              "name": "Under",
+              "description": "Jose Quintana",
+              "price": 2.3,
+              "point": 1.5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "bovada",
+      "title": "Bovada",
+      "markets": [
+        {
+          "key": "pitcher_earned_runs",
+          "last_update": "2025-08-06T19:08:26Z",
+          "outcomes": [
+            {
+              "name": "Over",
+              "description": "Jose Quintana",
+              "price": 1.95,
+              "point": 2.5
+            },
+            {
+              "name": "Under",
+              "description": "Jose Quintana",
+              "price": 1.74,
+              "point": 2.5
+            },
+            {
+              "name": "Over",
+              "description": "Spencer Strider",
+              "price": 1.69,
+              "point": 1.5
+            },
+            {
+              "name": "Under",
+              "description": "Spencer Strider",
+              "price": 2.05,
+              "point": 1.5
+            }
+          ]
+        },
+        {
+          "key": "pitcher_hits_allowed",
+          "last_update": "2025-08-06T19:08:26Z",
+          "outcomes": [
+            {
+              "name": "Over",
+              "description": "Jose Quintana",
+              "price": 1.87,
+              "point": 5.5
+            },
+            {
+              "name": "Under",
+              "description": "Jose Quintana",
+              "price": 1.8,
+              "point": 5.5
+            },
+            {
+              "name": "Over",
+              "description": "Spencer Strider",
+              "price": 1.69,
+              "point": 4.5
+            },
+            {
+              "name": "Under",
+              "description": "Spencer Strider",
+              "price": 2.05,
+              "point": 4.5
+            }
+          ]
+        },
+        {
+          "key": "pitcher_strikeouts",
+          "last_update": "2025-08-06T19:08:26Z",
+          "outcomes": [
+            {
+              "name": "Over",
+              "description": "Jose Quintana",
+              "price": 1.67,
+              "point": 3.5
+            },
+            {
+              "name": "Under",
+              "description": "Jose Quintana",
+              "price": 2.15,
+              "point": 3.5
+            },
+            {
+              "name": "Over",
+              "description": "Spencer Strider",
+              "price": 1.62,
+              "point": 6.5
+            },
+            {
+              "name": "Under",
+              "description": "Spencer Strider",
+              "price": 2.2,
+              "point": 6.5
+            }
+          ]
+        },
+        {
+          "key": "pitcher_walks",
+          "last_update": "2025-08-06T19:08:26Z",
+          "outcomes": [
+            {
+              "name": "Over",
+              "description": "Jose Quintana",
+              "price": 1.59,
+              "point": 1.5
+            },
+            {
+              "name": "Under",
+              "description": "Jose Quintana",
+              "price": 2.3,
+              "point": 1.5
+            },
+            {
+              "name": "Over",
+              "description": "Spencer Strider",
+              "price": 1.53,
+              "point": 1.5
+            },
+            {
+              "name": "Under",
+              "description": "Spencer Strider",
+              "price": 2.45,
+              "point": 1.5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "betrivers",
+      "title": "BetRivers",
+      "markets": [
+        {
+          "key": "pitcher_strikeouts",
+          "last_update": "2025-08-06T19:09:03Z",
+          "outcomes": [
+            {
+              "name": "Over",
+              "description": "Spencer Strider",
+              "price": 1.3,
+              "point": 5.5
+            },
+            {
+              "name": "Under",
+              "description": "Spencer Strider",
+              "price": 3.2,
+              "point": 5.5
+            },
+            {
+              "name": "Over",
+              "description": "Spencer Strider",
+              "price": 2.25,
+              "point": 7.5
+            },
+            {
+              "name": "Under",
+              "description": "Spencer Strider",
+              "price": 1.57,
+              "point": 7.5
+            },
+            {
+              "name": "Over",
+              "description": "Jose Quintana",
+              "price": 1.24,
+              "point": 2.5
+            },
+            {
+              "name": "Under",
+              "description": "Jose Quintana",
+              "price": 3.65,
+              "point": 2.5
+            },
+            {
+              "name": "Over",
+              "description": "Jose Quintana",
+              "price": 1.63,
+              "point": 3.5
+            },
+            {
+              "name": "Under",
+              "description": "Jose Quintana",
+              "price": 2.16,
+              "point": 3.5
+            },
+            {
+              "name": "Over",
+              "description": "Spencer Strider",
+              "price": 3.4,
+              "point": 8.5
+            },
+            {
+              "name": "Under",
+              "description": "Spencer Strider",
+              "price": 1.27,
+              "point": 8.5
+            },
+            {
+              "name": "Over",
+              "description": "Jose Quintana",
+              "price": 4.1,
+              "point": 5.5
+            },
+            {
+              "name": "Under",
+              "description": "Jose Quintana",
+              "price": 1.2,
+              "point": 5.5
+            },
+            {
+              "name": "Over",
+              "description": "Spencer Strider",
+              "price": 1.64,
+              "point": 6.5
+            },
+            {
+              "name": "Under",
+              "description": "Spencer Strider",
+              "price": 2.14,
+              "point": 6.5
+            },
+            {
+              "name": "Over",
+              "description": "Jose Quintana",
+              "price": 2.43,
+              "point": 4.5
+            },
+            {
+              "name": "Under",
+              "description": "Jose Quintana",
+              "price": 1.5,
+              "point": 4.5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "betmgm",
+      "title": "BetMGM",
+      "markets": [
+        {
+          "key": "pitcher_earned_runs",
+          "last_update": "2025-08-06T19:08:41Z",
+          "outcomes": [
+            {
+              "name": "Over",
+              "description": "Spencer Strider",
+              "price": 1.69,
+              "point": 1.5
+            },
+            {
+              "name": "Under",
+              "description": "Spencer Strider",
+              "price": 2.0,
+              "point": 1.5
+            },
+            {
+              "name": "Over",
+              "description": "Jose Quintana",
+              "price": 1.95,
+              "point": 2.5
+            },
+            {
+              "name": "Under",
+              "description": "Jose Quintana",
+              "price": 1.74,
+              "point": 2.5
+            }
+          ]
+        },
+        {
+          "key": "pitcher_hits_allowed",
+          "last_update": "2025-08-06T19:08:41Z",
+          "outcomes": [
+            {
+              "name": "Over",
+              "description": "Spencer Strider",
+              "price": 1.71,
+              "point": 4.5
+            },
+            {
+              "name": "Under",
+              "description": "Spencer Strider",
+              "price": 1.95,
+              "point": 4.5
+            },
+            {
+              "name": "Over",
+              "description": "Jose Quintana",
+              "price": 1.87,
+              "point": 5.5
+            },
+            {
+              "name": "Under",
+              "description": "Jose Quintana",
+              "price": 1.83,
+              "point": 5.5
+            }
+          ]
+        },
+        {
+          "key": "pitcher_strikeouts",
+          "last_update": "2025-08-06T19:08:41Z",
+          "outcomes": [
+            {
+              "name": "Over",
+              "description": "Spencer Strider",
+              "price": 1.67,
+              "point": 6.5
+            },
+            {
+              "name": "Under",
+              "description": "Spencer Strider",
+              "price": 2.15,
+              "point": 6.5
+            },
+            {
+              "name": "Over",
+              "description": "Jose Quintana",
+              "price": 1.69,
+              "point": 3.5
+            },
+            {
+              "name": "Under",
+              "description": "Jose Quintana",
+              "price": 2.1,
+              "point": 3.5
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

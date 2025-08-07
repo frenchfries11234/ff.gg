@@ -1,0 +1,490 @@
+{
+  "id": "5fa33423726f931a281454c36744e11d",
+  "sport_key": "baseball_mlb",
+  "sport_title": "MLB",
+  "commence_time": "2025-08-06T19:11:00Z",
+  "home_team": "Colorado Rockies",
+  "away_team": "Toronto Blue Jays",
+  "bookmakers": [
+    {
+      "key": "fanduel",
+      "title": "FanDuel",
+      "markets": [
+        {
+          "key": "pitcher_strikeouts",
+          "last_update": "2025-08-06T19:08:41Z",
+          "outcomes": [
+            {
+              "name": "Over",
+              "description": "Kevin Gausman",
+              "price": 2.08,
+              "point": 5.5
+            },
+            {
+              "name": "Under",
+              "description": "Kevin Gausman",
+              "price": 1.72,
+              "point": 5.5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "mybookieag",
+      "title": "MyBookie.ag",
+      "markets": [
+        {
+          "key": "pitcher_strikeouts",
+          "last_update": "2025-08-06T19:09:07Z",
+          "outcomes": [
+            {
+              "name": "Over",
+              "description": "Kyle Freeland",
+              "price": 1.75,
+              "point": 2.5
+            },
+            {
+              "name": "Under",
+              "description": "Kyle Freeland",
+              "price": 1.96,
+              "point": 2.5
+            },
+            {
+              "name": "Over",
+              "description": "Kevin Gausman",
+              "price": 1.97,
+              "point": 5.5
+            },
+            {
+              "name": "Under",
+              "description": "Kevin Gausman",
+              "price": 1.75,
+              "point": 5.5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "draftkings",
+      "title": "DraftKings",
+      "markets": [
+        {
+          "key": "pitcher_earned_runs",
+          "last_update": "2025-08-06T19:08:21Z",
+          "outcomes": [
+            {
+              "name": "Over",
+              "description": "Kevin Gausman",
+              "price": 1.74,
+              "point": 2.5
+            },
+            {
+              "name": "Under",
+              "description": "Kevin Gausman",
+              "price": 2.05,
+              "point": 2.5
+            },
+            {
+              "name": "Over",
+              "description": "Kyle Freeland",
+              "price": 1.83,
+              "point": 3.5
+            },
+            {
+              "name": "Under",
+              "description": "Kyle Freeland",
+              "price": 1.91,
+              "point": 3.5
+            }
+          ]
+        },
+        {
+          "key": "pitcher_hits_allowed",
+          "last_update": "2025-08-06T19:08:21Z",
+          "outcomes": [
+            {
+              "name": "Over",
+              "description": "Kevin Gausman",
+              "price": 1.74,
+              "point": 5.5
+            },
+            {
+              "name": "Under",
+              "description": "Kevin Gausman",
+              "price": 1.95,
+              "point": 5.5
+            },
+            {
+              "name": "Over",
+              "description": "Kyle Freeland",
+              "price": 2.1,
+              "point": 7.5
+            },
+            {
+              "name": "Under",
+              "description": "Kyle Freeland",
+              "price": 1.65,
+              "point": 7.5
+            }
+          ]
+        },
+        {
+          "key": "pitcher_strikeouts",
+          "last_update": "2025-08-06T19:08:21Z",
+          "outcomes": [
+            {
+              "name": "Over",
+              "description": "Kevin Gausman",
+              "price": 2.05,
+              "point": 5.5
+            },
+            {
+              "name": "Under",
+              "description": "Kevin Gausman",
+              "price": 1.74,
+              "point": 5.5
+            },
+            {
+              "name": "Over",
+              "description": "Kyle Freeland",
+              "price": 1.71,
+              "point": 2.5
+            },
+            {
+              "name": "Under",
+              "description": "Kyle Freeland",
+              "price": 2.05,
+              "point": 2.5
+            }
+          ]
+        },
+        {
+          "key": "pitcher_walks",
+          "last_update": "2025-08-06T19:08:21Z",
+          "outcomes": [
+            {
+              "name": "Over",
+              "description": "Kyle Freeland",
+              "price": 2.75,
+              "point": 1.5
+            },
+            {
+              "name": "Under",
+              "description": "Kyle Freeland",
+              "price": 1.4,
+              "point": 1.5
+            },
+            {
+              "name": "Over",
+              "description": "Kevin Gausman",
+              "price": 2.1,
+              "point": 1.5
+            },
+            {
+              "name": "Under",
+              "description": "Kevin Gausman",
+              "price": 1.65,
+              "point": 1.5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "bovada",
+      "title": "Bovada",
+      "markets": [
+        {
+          "key": "pitcher_earned_runs",
+          "last_update": "2025-08-06T19:07:26Z",
+          "outcomes": [
+            {
+              "name": "Over",
+              "description": "Kevin Gausman",
+              "price": 1.71,
+              "point": 2.5
+            },
+            {
+              "name": "Under",
+              "description": "Kevin Gausman",
+              "price": 2.0,
+              "point": 2.5
+            },
+            {
+              "name": "Over",
+              "description": "Kyle Freeland",
+              "price": 1.87,
+              "point": 3.5
+            },
+            {
+              "name": "Under",
+              "description": "Kyle Freeland",
+              "price": 1.8,
+              "point": 3.5
+            }
+          ]
+        },
+        {
+          "key": "pitcher_hits_allowed",
+          "last_update": "2025-08-06T19:07:26Z",
+          "outcomes": [
+            {
+              "name": "Over",
+              "description": "Kevin Gausman",
+              "price": 1.69,
+              "point": 5.5
+            },
+            {
+              "name": "Under",
+              "description": "Kevin Gausman",
+              "price": 2.05,
+              "point": 5.5
+            },
+            {
+              "name": "Over",
+              "description": "Kyle Freeland",
+              "price": 2.2,
+              "point": 7.5
+            },
+            {
+              "name": "Under",
+              "description": "Kyle Freeland",
+              "price": 1.62,
+              "point": 7.5
+            }
+          ]
+        },
+        {
+          "key": "pitcher_strikeouts",
+          "last_update": "2025-08-06T19:07:26Z",
+          "outcomes": [
+            {
+              "name": "Over",
+              "description": "Kevin Gausman",
+              "price": 1.95,
+              "point": 5.5
+            },
+            {
+              "name": "Under",
+              "description": "Kevin Gausman",
+              "price": 1.8,
+              "point": 5.5
+            }
+          ]
+        },
+        {
+          "key": "pitcher_walks",
+          "last_update": "2025-08-06T19:07:26Z",
+          "outcomes": [
+            {
+              "name": "Over",
+              "description": "Kevin Gausman",
+              "price": 2.3,
+              "point": 1.5
+            },
+            {
+              "name": "Under",
+              "description": "Kevin Gausman",
+              "price": 1.59,
+              "point": 1.5
+            },
+            {
+              "name": "Over",
+              "description": "Kyle Freeland",
+              "price": 2.75,
+              "point": 1.5
+            },
+            {
+              "name": "Under",
+              "description": "Kyle Freeland",
+              "price": 1.39,
+              "point": 1.5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "betmgm",
+      "title": "BetMGM",
+      "markets": [
+        {
+          "key": "pitcher_earned_runs",
+          "last_update": "2025-08-06T19:08:41Z",
+          "outcomes": [
+            {
+              "name": "Over",
+              "description": "Kevin Gausman",
+              "price": 1.71,
+              "point": 2.5
+            },
+            {
+              "name": "Under",
+              "description": "Kevin Gausman",
+              "price": 1.95,
+              "point": 2.5
+            },
+            {
+              "name": "Over",
+              "description": "Kyle Freeland",
+              "price": 1.85,
+              "point": 3.5
+            },
+            {
+              "name": "Under",
+              "description": "Kyle Freeland",
+              "price": 1.83,
+              "point": 3.5
+            }
+          ]
+        },
+        {
+          "key": "pitcher_hits_allowed",
+          "last_update": "2025-08-06T19:08:41Z",
+          "outcomes": [
+            {
+              "name": "Over",
+              "description": "Kevin Gausman",
+              "price": 1.65,
+              "point": 5.5
+            },
+            {
+              "name": "Under",
+              "description": "Kevin Gausman",
+              "price": 2.1,
+              "point": 5.5
+            },
+            {
+              "name": "Over",
+              "description": "Kyle Freeland",
+              "price": 2.15,
+              "point": 7.5
+            },
+            {
+              "name": "Under",
+              "description": "Kyle Freeland",
+              "price": 1.62,
+              "point": 7.5
+            }
+          ]
+        },
+        {
+          "key": "pitcher_strikeouts",
+          "last_update": "2025-08-06T19:08:41Z",
+          "outcomes": [
+            {
+              "name": "Over",
+              "description": "Kevin Gausman",
+              "price": 1.85,
+              "point": 5.5
+            },
+            {
+              "name": "Under",
+              "description": "Kevin Gausman",
+              "price": 1.91,
+              "point": 5.5
+            },
+            {
+              "name": "Over",
+              "description": "Kyle Freeland",
+              "price": 1.69,
+              "point": 2.5
+            },
+            {
+              "name": "Under",
+              "description": "Kyle Freeland",
+              "price": 2.1,
+              "point": 2.5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "betrivers",
+      "title": "BetRivers",
+      "markets": [
+        {
+          "key": "pitcher_strikeouts",
+          "last_update": "2025-08-06T19:09:15Z",
+          "outcomes": [
+            {
+              "name": "Over",
+              "description": "Kevin Gausman",
+              "price": 3.1,
+              "point": 6.5
+            },
+            {
+              "name": "Under",
+              "description": "Kevin Gausman",
+              "price": 1.3,
+              "point": 6.5
+            },
+            {
+              "name": "Over",
+              "description": "Kevin Gausman",
+              "price": 2.08,
+              "point": 5.5
+            },
+            {
+              "name": "Under",
+              "description": "Kevin Gausman",
+              "price": 1.68,
+              "point": 5.5
+            },
+            {
+              "name": "Over",
+              "description": "Kyle Freeland",
+              "price": 1.66,
+              "point": 2.5
+            },
+            {
+              "name": "Under",
+              "description": "Kyle Freeland",
+              "price": 2.12,
+              "point": 2.5
+            },
+            {
+              "name": "Over",
+              "description": "Kyle Freeland",
+              "price": 2.63,
+              "point": 3.5
+            },
+            {
+              "name": "Under",
+              "description": "Kyle Freeland",
+              "price": 1.43,
+              "point": 3.5
+            },
+            {
+              "name": "Over",
+              "description": "Kevin Gausman",
+              "price": 1.5,
+              "point": 4.5
+            },
+            {
+              "name": "Under",
+              "description": "Kevin Gausman",
+              "price": 2.4,
+              "point": 4.5
+            },
+            {
+              "name": "Over",
+              "description": "Kevin Gausman",
+              "price": 1.21,
+              "point": 3.5
+            },
+            {
+              "name": "Under",
+              "description": "Kevin Gausman",
+              "price": 3.95,
+              "point": 3.5
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

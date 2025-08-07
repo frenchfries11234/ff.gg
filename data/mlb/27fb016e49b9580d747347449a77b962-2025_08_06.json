@@ -1,0 +1,46 @@
+{
+  "id": "27fb016e49b9580d747347449a77b962",
+  "sport_key": "baseball_mlb",
+  "sport_title": "MLB",
+  "commence_time": "2025-08-06T18:20:10Z",
+  "home_team": "Chicago Cubs",
+  "away_team": "Cincinnati Reds",
+  "bookmakers": [
+    {
+      "key": "draftkings",
+      "title": "DraftKings",
+      "markets": [
+        {
+          "key": "pitcher_strikeouts",
+          "last_update": "2025-08-06T19:07:40Z",
+          "outcomes": [
+            {
+              "name": "Over",
+              "description": "Cade Horton",
+              "price": 1.51,
+              "point": 4.5
+            },
+            {
+              "name": "Under",
+              "description": "Cade Horton",
+              "price": 2.5,
+              "point": 4.5
+            },
+            {
+              "name": "Over",
+              "description": "Andrew Abbott",
+              "price": 2.26,
+              "point": 3.5
+            },
+            {
+              "name": "Under",
+              "description": "Andrew Abbott",
+              "price": 1.62,
+              "point": 3.5
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

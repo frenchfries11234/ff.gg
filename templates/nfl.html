@@ -31,11 +31,21 @@
                 {% for row in data.rows %}
                 <tr class="clickable-row" data-href="/nfl/players/{{ row.espn_id }}">
                     <td>{{ loop.index }}</td>
-                    <td>
-                        {{ row.name }}
-                    </td>
+                    <td>{{ row.name }}</td>
+
                     {% for stat in row.stats %}
-                    <td>{{ stat }}</td>
+                    <td>
+                        {% if loop.index0 == 0 %}
+                        {# team cell #}
+                        {% if stat.logo %}
+                        <img src="{{ stat.logo }}" alt="{{ stat.abbrev }} logo"
+                            style="height:20px;vertical-align:middle;margin-right:4px;">
+                        {% endif %}
+                        {{ stat.abbrev }}
+                        {% else %}
+                        {{ stat }}
+                        {% endif %}
+                    </td>
                     {% endfor %}
                 </tr>
                 {% endfor %}

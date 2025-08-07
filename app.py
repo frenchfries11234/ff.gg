@@ -12,6 +12,7 @@ from pymongo import MongoClient
 from bson.objectid import ObjectId
 from collections import defaultdict
 import python_scripts.the_odds as the_odds
+from datetime import datetime
 
 # Load env
 load_dotenv()
@@ -39,6 +40,17 @@ espn_batters_scores = [1, 1, 1, 1, 1]
 pitchers_dir = "data/pitchers"
 espn_pitchers_props = ["pitcher_strikeouts", "pitcher_hits_allowed", "pitcher_walks", "pitcher_earned_runs"]
 espn_pitchers_scores = [1, -1, -1, -2]
+
+positions_by_prop = {
+    "player_pass_yds":      ["QB"],
+    "player_pass_tds":      ["QB"],
+    "player_rush_yds":      ["QB", "RB"],
+    "player_rush_tds":      ["QB", "RB"],
+    "player_receptions":    ["RB", "WR", "TE"],
+    "player_reception_yds": ["RB", "WR", "TE"],
+    "player_reception_tds": ["RB", "WR", "TE"],
+}
+POSITIONS_ORDER = ["QB", "RB", "WR", "TE"]
 
 # User class
 class User(UserMixin):
@@ -85,7 +97,7 @@ def index():
     user = User(user_doc)
     login_user(user)  # Flask-Login
 
-    return redirect(url_for("mlb"))
+    return redirect(url_for("nfl"))
 
 @app.route("/logout")
 def logout():
@@ -105,44 +117,89 @@ def logout():
 @app.route("/")
 @app.route("/nfl")
 def nfl():
-    db = client["nfl_data"]
-    players_collection = db["nfl_players"]
-    players = list(players_collection.find())
-    
-    grouped_players = defaultdict(list)
-    for p in players:
-        role = p.get("position", "Other")
-        grouped_players[role].append(p)
+    db  = client["fantasy_football"]
+    col = db["players"]
 
+    # Fetch players including their games and team info
+    players = list(col.find(
+        {"position": {"$in": POSITIONS_ORDER}},
+        {"name": 1, "espn_id": 1, "team": 1, "team_logo": 1, "position": 1, "games": 1}
+    ))
+
+    # Group by position
+    grouped = defaultdict(list)
+    for p in players:
+        grouped[p["position"]].append(p)
+
+    # Build players_by_role in the specified order
     players_by_role = {}
-    for role, group in grouped_players.items():
+    for role in POSITIONS_ORDER:
+        group = grouped.get(role, [])
+        if not group:
+            continue
+
+        # Determine relevant props and human-readable column names
+        props   = [prop for prop, roles in positions_by_prop.items() if role in roles]
+        columns = ["Team"] + [prop.replace("player_", "").replace("_", " ").title() for prop in props]
+
         rows = []
         for p in group:
+            # Find most recent game by commence_time
+            games = p.get("games", [])
+            recent_proj = {}
+            if games:
+                try:
+                    games_sorted = sorted(
+                        games,
+                        key=lambda g: datetime.fromisoformat(g["commence_time"].replace("Z", "+00:00"))
+                    )
+                    recent_proj = games_sorted[-1].get("projections", {})
+                except Exception:
+                    recent_proj = {}
+
+            # Build stats: team cell plus one stat per prop
+            stats = [{
+                "abbrev": p.get("team", "—"),
+                "logo":   p.get("team_logo")
+            }]
+            stats += [round(recent_proj.get(prop, 0), 2) for prop in props]
+
             rows.append({
-                "name": p.get("player_name", "Unknown"),
-                "espn_id": p.get("espn_id", None),  # Add ESPN ID here
-                "stats": [
-                    p.get("team", "—"),
-                    "1234 YDS",   # Filler stat
-                    "10 TDs"      # Filler stat
-                ]
+                "name":    p["name"],
+                "espn_id": p["espn_id"],
+                "stats":   stats
             })
 
         players_by_role[role] = {
-            "columns": ["Team", "Pass Yards", "Touchdowns"],
-            "rows": rows
+            "columns": columns,
+            "rows":    rows
         }
 
     return render_template("nfl.html", players=players_by_role)
 
-@app.route("/nfl/players/<espn_id>")
+@app.route("/nfl/players/<int:espn_id>")
 def player_page(espn_id):
-    db = client["nfl_data"]
-    players_collection = db["nfl_players"]
+    db  = client["fantasy_football"]
+    col = db["players"]
 
-    player = players_collection.find_one({"espn_id": espn_id})
+    # 1) Look up player by numeric espn_id
+    player = col.find_one({"espn_id": espn_id})
     if not player:
         return render_template("player_not_found.html", espn_id=espn_id), 404
+
+    # 2) Sort their games most‐recent first
+    games = player.get("games", [])
+    try:
+        games = sorted(
+            games,
+            key=lambda g: datetime.fromisoformat(g["commence_time"].replace("Z", "+00:00")),
+            reverse=True
+        )
+    except Exception:
+        pass
+    player["games"] = games
+
+    # 3) Render, passing headshot, team_logo, and sorted games
     return render_template("player.html", player=player)
 
 @app.route("/mlb")

@@ -1,0 +1,526 @@
+{
+  "id": "72d2494636a14ff25026f327f1b103ec",
+  "sport_key": "baseball_mlb",
+  "sport_title": "MLB",
+  "commence_time": "2025-08-06T20:40:00Z",
+  "home_team": "Miami Marlins",
+  "away_team": "Houston Astros",
+  "bookmakers": [
+    {
+      "key": "fanduel",
+      "title": "FanDuel",
+      "markets": [
+        {
+          "key": "pitcher_strikeouts",
+          "last_update": "2025-08-06T19:09:03Z",
+          "outcomes": [
+            {
+              "name": "Over",
+              "description": "Janson Junk",
+              "price": 1.71,
+              "point": 3.5
+            },
+            {
+              "name": "Under",
+              "description": "Janson Junk",
+              "price": 2.1,
+              "point": 3.5
+            },
+            {
+              "name": "Over",
+              "description": "Spencer Arrighetti",
+              "price": 1.77,
+              "point": 4.5
+            },
+            {
+              "name": "Under",
+              "description": "Spencer Arrighetti",
+              "price": 2.02,
+              "point": 4.5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "mybookieag",
+      "title": "MyBookie.ag",
+      "markets": [
+        {
+          "key": "pitcher_strikeouts",
+          "last_update": "2025-08-06T19:08:51Z",
+          "outcomes": [
+            {
+              "name": "Over",
+              "description": "Janson Junk",
+              "price": 1.74,
+              "point": 3.5
+            },
+            {
+              "name": "Under",
+              "description": "Janson Junk",
+              "price": 1.99,
+              "point": 3.5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "draftkings",
+      "title": "DraftKings",
+      "markets": [
+        {
+          "key": "pitcher_earned_runs",
+          "last_update": "2025-08-06T19:06:38Z",
+          "outcomes": [
+            {
+              "name": "Over",
+              "description": "Janson Junk",
+              "price": 2.1,
+              "point": 2.5
+            },
+            {
+              "name": "Under",
+              "description": "Janson Junk",
+              "price": 1.71,
+              "point": 2.5
+            },
+            {
+              "name": "Over",
+              "description": "Spencer Arrighetti",
+              "price": 2.05,
+              "point": 2.5
+            },
+            {
+              "name": "Under",
+              "description": "Spencer Arrighetti",
+              "price": 1.74,
+              "point": 2.5
+            }
+          ]
+        },
+        {
+          "key": "pitcher_hits_allowed",
+          "last_update": "2025-08-06T19:06:38Z",
+          "outcomes": [
+            {
+              "name": "Over",
+              "description": "Spencer Arrighetti",
+              "price": 1.95,
+              "point": 4.5
+            },
+            {
+              "name": "Under",
+              "description": "Spencer Arrighetti",
+              "price": 1.74,
+              "point": 4.5
+            },
+            {
+              "name": "Over",
+              "description": "Janson Junk",
+              "price": 2.0,
+              "point": 5.5
+            },
+            {
+              "name": "Under",
+              "description": "Janson Junk",
+              "price": 1.71,
+              "point": 5.5
+            }
+          ]
+        },
+        {
+          "key": "pitcher_strikeouts",
+          "last_update": "2025-08-06T19:06:38Z",
+          "outcomes": [
+            {
+              "name": "Over",
+              "description": "Spencer Arrighetti",
+              "price": 1.69,
+              "point": 4.5
+            },
+            {
+              "name": "Under",
+              "description": "Spencer Arrighetti",
+              "price": 2.1,
+              "point": 4.5
+            },
+            {
+              "name": "Over",
+              "description": "Janson Junk",
+              "price": 1.65,
+              "point": 3.5
+            },
+            {
+              "name": "Under",
+              "description": "Janson Junk",
+              "price": 2.2,
+              "point": 3.5
+            }
+          ]
+        },
+        {
+          "key": "pitcher_walks",
+          "last_update": "2025-08-06T19:06:38Z",
+          "outcomes": [
+            {
+              "name": "Over",
+              "description": "Janson Junk",
+              "price": 2.8,
+              "point": 1.5
+            },
+            {
+              "name": "Under",
+              "description": "Janson Junk",
+              "price": 1.38,
+              "point": 1.5
+            },
+            {
+              "name": "Over",
+              "description": "Spencer Arrighetti",
+              "price": 1.53,
+              "point": 1.5
+            },
+            {
+              "name": "Under",
+              "description": "Spencer Arrighetti",
+              "price": 2.35,
+              "point": 1.5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "bovada",
+      "title": "Bovada",
+      "markets": [
+        {
+          "key": "pitcher_earned_runs",
+          "last_update": "2025-08-06T19:08:52Z",
+          "outcomes": [
+            {
+              "name": "Over",
+              "description": "Janson Junk",
+              "price": 2.3,
+              "point": 2.5
+            },
+            {
+              "name": "Under",
+              "description": "Janson Junk",
+              "price": 1.59,
+              "point": 2.5
+            },
+            {
+              "name": "Over",
+              "description": "Spencer Arrighetti",
+              "price": 2.15,
+              "point": 2.5
+            },
+            {
+              "name": "Under",
+              "description": "Spencer Arrighetti",
+              "price": 1.65,
+              "point": 2.5
+            }
+          ]
+        },
+        {
+          "key": "pitcher_hits_allowed",
+          "last_update": "2025-08-06T19:08:52Z",
+          "outcomes": [
+            {
+              "name": "Over",
+              "description": "Janson Junk",
+              "price": 2.15,
+              "point": 5.5
+            },
+            {
+              "name": "Under",
+              "description": "Janson Junk",
+              "price": 1.65,
+              "point": 5.5
+            },
+            {
+              "name": "Over",
+              "description": "Spencer Arrighetti",
+              "price": 1.95,
+              "point": 4.5
+            },
+            {
+              "name": "Under",
+              "description": "Spencer Arrighetti",
+              "price": 1.74,
+              "point": 4.5
+            }
+          ]
+        },
+        {
+          "key": "pitcher_strikeouts",
+          "last_update": "2025-08-06T19:08:52Z",
+          "outcomes": [
+            {
+              "name": "Over",
+              "description": "Janson Junk",
+              "price": 1.69,
+              "point": 3.5
+            },
+            {
+              "name": "Under",
+              "description": "Janson Junk",
+              "price": 2.1,
+              "point": 3.5
+            },
+            {
+              "name": "Over",
+              "description": "Spencer Arrighetti",
+              "price": 1.77,
+              "point": 4.5
+            },
+            {
+              "name": "Under",
+              "description": "Spencer Arrighetti",
+              "price": 2.0,
+              "point": 4.5
+            }
+          ]
+        },
+        {
+          "key": "pitcher_walks",
+          "last_update": "2025-08-06T19:08:52Z",
+          "outcomes": [
+            {
+              "name": "Over",
+              "description": "Janson Junk",
+              "price": 2.5,
+              "point": 1.5
+            },
+            {
+              "name": "Under",
+              "description": "Janson Junk",
+              "price": 1.5,
+              "point": 1.5
+            },
+            {
+              "name": "Over",
+              "description": "Spencer Arrighetti",
+              "price": 2.55,
+              "point": 2.5
+            },
+            {
+              "name": "Under",
+              "description": "Spencer Arrighetti",
+              "price": 1.46,
+              "point": 2.5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "betmgm",
+      "title": "BetMGM",
+      "markets": [
+        {
+          "key": "pitcher_earned_runs",
+          "last_update": "2025-08-06T19:09:02Z",
+          "outcomes": [
+            {
+              "name": "Over",
+              "description": "Janson Junk",
+              "price": 2.2,
+              "point": 2.5
+            },
+            {
+              "name": "Under",
+              "description": "Janson Junk",
+              "price": 1.61,
+              "point": 2.5
+            },
+            {
+              "name": "Over",
+              "description": "Spencer Arrighetti",
+              "price": 2.1,
+              "point": 2.5
+            },
+            {
+              "name": "Under",
+              "description": "Spencer Arrighetti",
+              "price": 1.65,
+              "point": 2.5
+            }
+          ]
+        },
+        {
+          "key": "pitcher_hits_allowed",
+          "last_update": "2025-08-06T19:09:02Z",
+          "outcomes": [
+            {
+              "name": "Over",
+              "description": "Janson Junk",
+              "price": 2.1,
+              "point": 5.5
+            },
+            {
+              "name": "Under",
+              "description": "Janson Junk",
+              "price": 1.62,
+              "point": 5.5
+            },
+            {
+              "name": "Over",
+              "description": "Spencer Arrighetti",
+              "price": 2.1,
+              "point": 4.5
+            },
+            {
+              "name": "Under",
+              "description": "Spencer Arrighetti",
+              "price": 1.65,
+              "point": 4.5
+            }
+          ]
+        },
+        {
+          "key": "pitcher_strikeouts",
+          "last_update": "2025-08-06T19:09:02Z",
+          "outcomes": [
+            {
+              "name": "Over",
+              "description": "Janson Junk",
+              "price": 1.62,
+              "point": 3.5
+            },
+            {
+              "name": "Under",
+              "description": "Janson Junk",
+              "price": 2.2,
+              "point": 3.5
+            },
+            {
+              "name": "Over",
+              "description": "Spencer Arrighetti",
+              "price": 1.74,
+              "point": 4.5
+            },
+            {
+              "name": "Under",
+              "description": "Spencer Arrighetti",
+              "price": 2.05,
+              "point": 4.5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "betrivers",
+      "title": "BetRivers",
+      "markets": [
+        {
+          "key": "pitcher_strikeouts",
+          "last_update": "2025-08-06T19:08:54Z",
+          "outcomes": [
+            {
+              "name": "Over",
+              "description": "Spencer Arrighetti",
+              "price": 1.33,
+              "point": 3.5
+            },
+            {
+              "name": "Under",
+              "description": "Spencer Arrighetti",
+              "price": 3.05,
+              "point": 3.5
+            },
+            {
+              "name": "Over",
+              "description": "Spencer Arrighetti",
+              "price": 1.77,
+              "point": 4.5
+            },
+            {
+              "name": "Under",
+              "description": "Spencer Arrighetti",
+              "price": 1.95,
+              "point": 4.5
+            },
+            {
+              "name": "Over",
+              "description": "Janson Junk",
+              "price": 2.45,
+              "point": 4.5
+            },
+            {
+              "name": "Under",
+              "description": "Janson Junk",
+              "price": 1.49,
+              "point": 4.5
+            },
+            {
+              "name": "Over",
+              "description": "Spencer Arrighetti",
+              "price": 2.6,
+              "point": 5.5
+            },
+            {
+              "name": "Under",
+              "description": "Spencer Arrighetti",
+              "price": 1.43,
+              "point": 5.5
+            },
+            {
+              "name": "Over",
+              "description": "Janson Junk",
+              "price": 1.26,
+              "point": 2.5
+            },
+            {
+              "name": "Under",
+              "description": "Janson Junk",
+              "price": 3.5,
+              "point": 2.5
+            },
+            {
+              "name": "Over",
+              "description": "Janson Junk",
+              "price": 1.67,
+              "point": 3.5
+            },
+            {
+              "name": "Under",
+              "description": "Janson Junk",
+              "price": 2.12,
+              "point": 3.5
+            },
+            {
+              "name": "Over",
+              "description": "Janson Junk",
+              "price": 4.1,
+              "point": 5.5
+            },
+            {
+              "name": "Under",
+              "description": "Janson Junk",
+              "price": 1.19,
+              "point": 5.5
+            },
+            {
+              "name": "Over",
+              "description": "Spencer Arrighetti",
+              "price": 4.35,
+              "point": 6.5
+            },
+            {
+              "name": "Under",
+              "description": "Spencer Arrighetti",
+              "price": 1.18,
+              "point": 6.5
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
