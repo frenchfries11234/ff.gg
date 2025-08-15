@@ -41,7 +41,7 @@ def generate_fake_nfl_slate(num_games=16):
         "ARI","ATL","BAL","BUF","CAR","CHI","CIN","CLE",
         "DAL","DEN","DET","GB","HOU","IND","JAX","KC",
         "LV","LAC","LAR","MIA","MIN","NE","NO","NYG",
-        "NYJ","PHI","PIT","SEA","SF","TB","TEN","WAS"
+        "NYJ","PHI","PIT","SEA","SF","TB","TEN","WSH"
     ]
     random.shuffle(teams)
     slate = []

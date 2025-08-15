@@ -17,6 +17,7 @@ ESPN_TEAM_URL     = (
 MONGO_URI         = os.getenv("MONGO_URI", "mongodb://localhost:27017")
 DB_NAME           = "fantasy_football"
 COLLECTION_NAME   = "players"
+TEAMS_COLL_NAME = "teams"
 
 # ESPN position ID → fantasy position
 POSITION_MAP = {
@@ -62,6 +63,19 @@ def fetch_team_info(season: int, team_ids: set):
             info[tid] = {"abbrev": abbrev, "logo": logo}
         else:
             info[tid] = {"abbrev": "UNK", "logo": None}
+            
+        client = MongoClient(MONGO_URI)    
+        teams_coll = client[DB_NAME][TEAMS_COLL_NAME]
+        teams_coll.create_index([("season", 1), ("team_id", 1)], unique=True)
+        ops: list[UpdateOne] = []
+        ops.append(UpdateOne(
+                {"season": season, "team_id": tid},
+                {"$set": info[tid]},
+                upsert=True
+            ))
+        if ops:
+            teams_coll.bulk_write(ops)
+            
     return info
 
 def sync_players_to_mongo(season: int = SEASON):
@@ -99,7 +113,6 @@ def sync_players_to_mongo(season: int = SEASON):
             "name":      name,
             "position":  pos,
             "team":      tinfo["abbrev"],
-            "team_logo": tinfo["logo"],
             "espn_link": f"https://www.espn.com/nfl/player/_/id/{espn_id}"
         }
         set_on_insert = {"eligible": True}

@@ -52,6 +52,12 @@ positions_by_prop = {
 }
 POSITIONS_ORDER = ["QB", "RB", "WR", "TE"]
 
+def iso_to_dt(s):
+    try:
+        return datetime.fromisoformat(s.replace("Z", "+00:00"))
+    except Exception:
+        return None
+
 # User class
 class User(UserMixin):
     def __init__(self, user_doc):
@@ -114,55 +120,96 @@ def logout():
 
     return redirect(url_for("nfl"))
 
+from flask import request
+
 @app.route("/")
 @app.route("/nfl")
 def nfl():
-    db  = client["fantasy_football"]
-    col = db["players"]
+    db   = client["fantasy_football"]
+    pcol = db["players"]
+    tcol = db["teams"]
 
-    # Fetch players including their games and team info
-    players = list(col.find(
+    # Build abbrev -> logo map from teams collection
+    logo_by_abbrev = {}
+    for t in tcol.find({}, {"_id": 0, "abbrev": 1, "logo": 1}):
+        ab = (t.get("abbrev") or "").upper()
+        if ab and ab not in logo_by_abbrev:
+            logo_by_abbrev[ab] = t.get("logo")
+
+    players = list(pcol.find(
         {"position": {"$in": POSITIONS_ORDER}},
-        {"name": 1, "espn_id": 1, "team": 1, "team_logo": 1, "position": 1, "games": 1}
+        {"name": 1, "espn_id": 1, "team": 1, "position": 1, "games": 1}
     ))
 
-    # Group by position
     grouped = defaultdict(list)
     for p in players:
         grouped[p["position"]].append(p)
 
-    # Build players_by_role in the specified order
+    # optional: let a query param set the initial label (defaults to PPR)
+    scoring = request.args.get("scoring", "espn_ppr")
+    scoring_labels = {"espn_ppr": "Fantasy (PPR)", "espn_half": "Fantasy (Half)", "espn_std": "Fantasy (Standard)"}
+    fantasy_header = scoring_labels.get(scoring, "Fantasy")
+
     players_by_role = {}
     for role in POSITIONS_ORDER:
         group = grouped.get(role, [])
         if not group:
             continue
 
-        # Determine relevant props and human-readable column names
         props   = [prop for prop, roles in positions_by_prop.items() if role in roles]
-        columns = ["Team"] + [prop.replace("player_", "").replace("_", " ").title() for prop in props]
+        # Team, Opponent, Fantasy, then the per-prop EVs
+        columns = ["Team", "Opponent", fantasy_header] + [
+            prop.replace("player_", "").replace("_", " ").title() for prop in props
+        ]
 
         rows = []
         for p in group:
-            # Find most recent game by commence_time
-            games = p.get("games", [])
-            recent_proj = {}
+            # latest game (if any)
+            recent = None
+            games = p.get("games", []) or []
             if games:
-                try:
-                    games_sorted = sorted(
-                        games,
-                        key=lambda g: datetime.fromisoformat(g["commence_time"].replace("Z", "+00:00"))
-                    )
-                    recent_proj = games_sorted[-1].get("projections", {})
-                except Exception:
-                    recent_proj = {}
+                games_sorted = sorted(
+                    [g for g in games if g.get("commence_time")],
+                    key=lambda g: iso_to_dt(g["commence_time"]) or datetime.min
+                )
+                recent = games_sorted[-1] if games_sorted else None
 
-            # Build stats: team cell plus one stat per prop
-            stats = [{
-                "abbrev": p.get("team", "—"),
-                "logo":   p.get("team_logo")
-            }]
-            stats += [round(recent_proj.get(prop, 0), 2) for prop in props]
+            team_abbrev = (p.get("team") or "—").upper()
+            team_logo   = logo_by_abbrev.get(team_abbrev)
+
+            opp_abbrev = None
+            opp_logo   = None
+            if recent:
+                home = (recent.get("home_team") or "").upper()
+                away = (recent.get("away_team") or "").upper()
+                if team_abbrev == home:
+                    opp_abbrev = away
+                elif team_abbrev == away:
+                    opp_abbrev = home
+                if opp_abbrev:
+                    opp_logo = logo_by_abbrev.get(opp_abbrev)
+
+            projections = recent.get("projections", {}) if recent else {}
+
+            # Fantasy values (all three stored so the client can toggle)
+            f = (recent or {}).get("fantasy", {}) or {}
+            fantasy_cell = {
+                "type": "fantasy",
+                "values": {
+                    "espn_ppr":  round(float(f.get("espn_ppr", 0) or 0), 2),
+                    "espn_half": round(float(f.get("espn_half", 0) or 0), 2),
+                    "espn_std":  round(float(f.get("espn_std", 0) or 0), 2),
+                }
+            }
+
+            team_cell = {"abbrev": team_abbrev, "logo": team_logo}
+            opp_cell  = {"abbrev": opp_abbrev,  "logo": opp_logo}
+
+            stats = [
+                team_cell,
+                opp_cell,
+                fantasy_cell,  # single column the UI can swap (PPR/Half/Std)
+            ] + [round(float(projections.get(prop, 0) or 0), 2) for prop in props]
 
             rows.append({
                 "name":    p["name"],
@@ -170,12 +217,10 @@ def nfl():
                 "stats":   stats
             })
 
-        players_by_role[role] = {
-            "columns": columns,
-            "rows":    rows
-        }
+        players_by_role[role] = {"columns": columns, "rows": rows}
 
     return render_template("nfl.html", players=players_by_role)
+
 
 @app.route("/nfl/players/<int:espn_id>")
 def player_page(espn_id):
