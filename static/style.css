@@ -1,55 +1,199 @@
-th {
-    cursor: pointer;
+/* ============================== */
+/* Theme tokens (muted steel blue)*/
+/* ============================== */
+:root {
+  --accent: #4a83b7;                    /* desaturated steel blue */
+  --accent-weak: rgba(74,131,183,.14);
+  --accent-weak-hover: rgba(74,131,183,.10);
+
+  --sorted-header-bg: #2c3138;          /* slightly lighter than base */
+  --sorted-header-fg: #b9cfe0;          /* soft light blue/gray */
 }
 
-.nav-tabs .nav-link {
-  padding-top: 0.4rem;
-  padding-bottom: 0.4rem;
-  font-size: 0.9rem; /* Optional: slightly smaller text */
+/* ================= */
+/* Tables & sorting  */
+/* ================= */
+
+th { cursor: pointer; }
+
+/* tablesorter header (remove sprite, leave room for arrow) */
+table.sortable-table thead th.tablesorter-header {
+  position: relative;
+  padding-right: 1.5rem;                 /* room for arrow */
+  background-image: none !important;     /* kill any bg sprite */
 }
 
+/* default (unsorted) icon */
+table.sortable-table thead th.tablesorter-header::after {
+  content: "↕";
+  position: absolute;
+  right: .5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: .45;
+  font-size: .75rem;
+  line-height: 1;
+  color: var(--tblr-body-color, rgba(255,255,255,.7));
+}
+
+/* ascending / descending icons use muted accent */
+table.sortable-table thead th.tablesorter-headerAsc::after { content: "▲"; opacity: 1; color: var(--accent); }
+table.sortable-table thead th.tablesorter-headerDesc::after { content: "▼"; opacity: 1; color: var(--accent); }
+
+/* sorted header background (also used by first-load .sorted-header) */
 th.tablesorter-headerAsc,
-th.tablesorter-headerDesc {
-  margin-top: 0px;
-  background-color: #2c3138 !important; /* slightly lighter than base */
-  color: #a8d8f0 !important;            /* soft light blue */
+th.tablesorter-headerDesc,
+th.sorted-header {
+  margin-top: 0;
+  background-color: var(--sorted-header-bg) !important;
+  color: var(--sorted-header-fg) !important;
 }
 
-/* Highlight the entire sorted column's data cells */
+/* highlight the entire sorted column's data cells */
 td.sorted-column {
-  background-color: rgba(120, 170, 200, 0.12); /* faint blue highlight */
-  transition: background-color 0.3s ease;
+  background-color: var(--accent-weak);
+  transition: background-color .2s ease;
 }
 
+/* row hover for clickable rows */
 tr.clickable-row:hover td {
-  background-color: rgba(102, 217, 239, 0.07); /* soft blue */
-  transition: background-color 0.2s ease;
+  background-color: var(--accent-weak-hover);
+  transition: background-color .2s ease;
   cursor: pointer;
 }
 
-.nav-link {
-    position: relative;
-    padding-bottom: 4px;
-    transition: color 0.2s;
-    padding-top: 10px;
+/* Fantasy column sizing & numerics */
+th.fantasy-col-header,
+td.fantasy-col {
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
 }
 
-.topbar {
-    padding-top: 8px;
+th.fantasy-col-header {
+  width: 10rem;      /* reserve enough space for the header + arrow */
+  min-width: 10rem;
 }
 
-.nav-link:hover {
-    color: #0d6efd; /* Bootstrap primary or change to your color */
+td.fantasy-col {
+  min-width: 6.5ch;  /* fits "999.99" */
+  text-align: right;
 }
 
-.nav-link.active::after,
-.nav-link:hover::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    height: 2px;
-    width: 100%;
-    background-color: #0d6efd; /* Match your theme color */
+/* in-header scoring toggle spacing */
+th.fantasy-col-header.has-scoring-toggle { padding-right: 7.5rem; }
+table.sortable-table thead th.fantasy-col-header.has-scoring-toggle.tablesorter-header::after { right: 6.25rem; }
+
+/* pack logo + abbrev so Team/Opponent columns hug content */
+.cell-pack { display: inline-flex; align-items: center; gap: 6px; white-space: nowrap; }
+.cell-pack__abbr { line-height: 20px; }
+
+/* ============== */
+/* Nav / headers  */
+/* ============== */
+
+/* page tabs (e.g., role tabs) */
+.nav-tabs .nav-link {
+  padding: .4rem .75rem;
+  font-size: .9rem;
 }
 
+/* app header row */
+.header-bar { min-height: 48px; }
+
+/* brand + header links share the same height & baseline */
+.navbar-brand,
+.main-links .nav-link {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  line-height: 1;
+  padding: 0;                      /* no vertical padding to avoid misalignment */
+}
+
+/* header links next to brand with even spacing */
+.main-links { display: flex; gap: 1rem; margin-left: .75rem; }
+
+.main-links .nav-link {
+  position: relative;
+  padding: 0 .6rem;                /* horizontal only */
+  color: rgba(255,255,255,.8);
+  transition: color .15s ease;
+}
+
+/* disable any global ::after underline on header links */
+.main-links .nav-link::after { content: none !important; }
+
+/* underline via inset shadow so baseline never shifts */
+.main-links .nav-link:hover,
+.main-links .nav-link.active {
+  color: var(--accent);
+  box-shadow: inset 0 -2px var(--accent);
+}
+
+/* right cluster baseline match */
+.topbar { padding-top: 0; }
+
+/* ======================= */
+/* Live search dropdown    */
+/* ======================= */
+
+#player-suggestions {
+  background-color: #1f2430;               /* Tabler-dark friendly */
+  border: 1px solid var(--accent);
+  box-shadow: 0 6px 24px rgba(0,0,0,.4);
+}
+
+#player-suggestions .item {
+  padding: .5rem .75rem;
+  color: rgba(255,255,255,.9);
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  cursor: pointer;
+}
+
+#player-suggestions .meta { font-size: .8rem; opacity: .7; }
+
+#player-suggestions .item:hover,
+#player-suggestions .item.active {
+  background-color: var(--accent-weak);
+}
+
+/* ======================= */
+/* Buttons & utilities     */
+/* ======================= */
+
+.btn-group-xs > .btn {
+  padding: .15rem .45rem;
+  font-size: .75rem;
+  line-height: 1.2;
+}
+
+/* Teams toolbar */
+.team-toolbar { row-gap: .5rem; }
+.team-espn-btn { white-space: nowrap; }
+
+/* full width on mobile, auto on md+ */
+.w-md-auto { width: 100% !important; }
+@media (min-width: 768px) {
+  .w-md-auto { width: auto !important; }
+}
+
+/* compact avatar chip for account menu */
+.user-avatar{
+  width: 28px; height: 28px;
+  border-radius: 50%;
+  background: #2c3138;            /* matches dark header */
+  color: #b9cfe0;                  /* soft light blue/gray */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: .8rem;
+}
+
+/* Team header card */
+.team-card:hover { border-color: rgba(255,255,255,.25); }
+.team-logo { width: 44px; height: 44px; object-fit: cover; }
+.team-meta .h6 { font-weight: 600; }
+.stretched-link { position: absolute; inset: 0; } /* full-card click */

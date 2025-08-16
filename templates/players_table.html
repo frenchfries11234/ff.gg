@@ -1,0 +1,51 @@
+{# templates/players_table.html #}
+<div class="table-responsive">
+  <table class="table table-vcenter card-table tablesorter table-dark sortable-table">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Name</th>
+        {% for col in table.columns %}
+          {% if 'Fantasy' in col %}
+            <th class="fantasy-col-header">Fantasy (PPR)</th>
+          {% else %}
+            <th>{{ col }}</th>
+          {% endif %}
+        {% endfor %}
+      </tr>
+    </thead>
+    <tbody>
+      {% for row in table.rows %}
+        <tr class="clickable-row" data-href="/nfl/players/{{ row.espn_id }}">
+          <td>{{ loop.index }}</td>
+          <td>{{ row.name }}</td>
+
+          {% for stat in row.stats %}
+            {% if loop.index0 == 0 or loop.index0 == 1 %}
+              {# Team / Opponent cells (logo + abbrev) #}
+              <td>
+                {% if stat.logo %}
+                  <img src="{{ stat.logo }}" alt="{{ stat.abbrev or '—' }} logo"
+                       style="height:20px;vertical-align:middle;margin-right:6px;">
+                {% endif %}
+                {{ stat.abbrev or '—' }}
+              </td>
+
+            {% elif stat is mapping and stat['type'] == 'fantasy' %}
+              {# Fantasy cell with all three values baked in for JS toggle #}
+              {% set ppr  = '%.2f'|format(stat['values'].get('espn_ppr', 0)) %}
+              {% set half = '%.2f'|format(stat['values'].get('espn_half', 0)) %}
+              {% set std  = '%.2f'|format(stat['values'].get('espn_std', 0)) %}
+              <td class="fantasy-col" data-ppr="{{ ppr }}" data-half="{{ half }}" data-std="{{ std }}">
+                {{ ppr }}
+              </td>
+
+            {% else %}
+              <td>{{ stat }}</td>
+            {% endif %}
+          {% endfor %}
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>

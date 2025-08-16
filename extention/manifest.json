@@ -4,10 +4,12 @@
   "version": "1.0",
   "permissions": [
     "identity",
-    "tabs"
+    "tabs",
+    "scripting"
   ],
   "host_permissions": [
-    "http://localhost:10000/"
+    "http://localhost:10000/",
+    "*://fantasy.espn.com/*"
   ],
   "oauth2": {
     "client_id": "544974179551-q41jeh8hruma778kp7v3qhv43vlppqq3.apps.googleusercontent.com",

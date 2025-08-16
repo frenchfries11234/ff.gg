@@ -14,27 +14,28 @@
 
 <body data-bs-theme="dark">
     <header class="navbar navbar-expand-md navbar-light d-print-none">
-        <div class="container-xl d-flex justify-content-between align-items-center w-100">
-            <!-- Left: Brand -->
-            <a href="/" class="navbar-brand">ff.gg</a>
+        <div class="container-xl header-bar d-flex align-items-center justify-content-between w-100">
+            <!-- Left: brand + tabs live together so they align -->
+            <div class="left-cluster d-flex align-items-center">
+                <a href="/" class="navbar-brand m-0">ff.gg</a>
 
-            <!-- Center: Navigation links -->
-            <div class="d-none d-md-flex me-auto">
-                <a class="nav-link ms-5 {% if request.path == '/nfl' or request.path == '/' %}active{% endif %}" href="/nfl">NFL</a>
-                <a class="nav-link ms-3 {% if request.path == '/mlb' %}active{% endif %}"
-                    href="/mlb">MLB</a>
+                <nav class="main-links d-none d-md-flex ms-3">
+                    <a class="nav-link {% if request.path in ('/nfl','/') %}active{% endif %}" href="/nfl">NFL</a>
+                    <a class="nav-link {% if request.path == '/mlb' %}active{% endif %}" href="/mlb">MLB</a>
+                </nav>
             </div>
 
-            <!-- Right: Login/Logout -->
-            <div class="d-flex align-items-center topbar">
+            <!-- Right: auth -->
+            <div class="topbar d-flex align-items-center gap-2">
                 {% if current_user.is_authenticated %}
-                <a class="me-2 teams" href="/teams">{{ current_user.email }}</a>
+                <a class="btn btn-primary btn-sm d-none d-sm-inline-flex" href="/teams">My Teams</a>
                 <a class="btn btn-outline-danger btn-sm" href="/logout">Logout</a>
                 {% else %}
                 <a class="btn btn-outline-primary btn-sm" href="{{ url_for('google.login') }}">Login with Google</a>
                 {% endif %}
             </div>
         </div>
+
     </header>
 
     <div class="page-wrapper">
@@ -42,7 +43,7 @@
             <div class="container-xl mt-3">
                 {% block content %}{% endblock %}
 
-                
+
             </div>
         </div>
     </div>
@@ -54,7 +55,8 @@
     <script src="https://unpkg.com/@tabler/core@latest/dist/js/tabler.min.js"></script>
     <script src="{{ url_for('static', filename='scripts/table.js') }}"></script>
 
-
 </body>
+
+
 
 </html>

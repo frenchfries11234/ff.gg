@@ -1,2083 +1,2011 @@
 {
-  "id": "f3f5c692-c4d4-41d4-bff9-66c9cfd96f3e",
+  "id": "94622623-f400-4987-9b81-4b15d8c0958d",
   "sport_key": "americanfootball_nfl",
   "sport_nice": "NFL",
-  "commence_time": "2025-08-15T03:55:19Z",
-  "home_team": "NE",
-  "away_team": "CIN",
+  "commence_time": "2025-08-18T19:40:54Z",
+  "home_team": "NYJ",
+  "away_team": "DEN",
   "bookmakers": [
     {
       "key": "draftkings",
       "title": "DraftKings",
-      "last_update": "2025-08-13T23:40:19Z",
+      "last_update": "2025-08-15T19:10:54Z",
       "markets": [
         {
           "key": "player_pass_yds",
-          "last_update": "2025-08-13T23:40:19Z",
+          "last_update": "2025-08-15T19:10:54Z",
           "outcomes": [
             {
               "name": "Over",
-              "description": "Joe Burrow",
-              "point": 202.6,
-              "price": 2.49
+              "description": "Bo Nix",
+              "point": 306.1,
+              "price": 2.17
             },
             {
               "name": "Under",
-              "description": "Joe Burrow",
-              "point": 202.6,
-              "price": 2.33
+              "description": "Bo Nix",
+              "point": 306.1,
+              "price": 2.4
             },
             {
               "name": "Over",
-              "description": "AJ McCarron",
-              "point": 326.2,
-              "price": 1.64
+              "description": "Justin Fields",
+              "point": 288.0,
+              "price": 1.52
             },
             {
               "name": "Under",
-              "description": "AJ McCarron",
-              "point": 326.2,
-              "price": 1.8
+              "description": "Justin Fields",
+              "point": 288.0,
+              "price": 2.88
             },
             {
               "name": "Over",
-              "description": "Jake Browning",
-              "point": 247.3,
-              "price": 2.65
+              "description": "Jarrett Stidham",
+              "point": 253.1,
+              "price": 2.54
             },
             {
               "name": "Under",
-              "description": "Jake Browning",
-              "point": 247.3,
-              "price": 1.81
+              "description": "Jarrett Stidham",
+              "point": 253.1,
+              "price": 2.94
             },
             {
               "name": "Over",
-              "description": "Drake Maye",
-              "point": 283.7,
-              "price": 2.41
+              "description": "Tyrod Taylor",
+              "point": 257.6,
+              "price": 2.27
             },
             {
               "name": "Under",
-              "description": "Drake Maye",
-              "point": 283.7,
-              "price": 2.15
+              "description": "Tyrod Taylor",
+              "point": 257.6,
+              "price": 2.6
             },
             {
               "name": "Over",
-              "description": "Desmond Ridder",
-              "point": 293.1,
-              "price": 2.9
+              "description": "Sam Ehlinger",
+              "point": 207.8,
+              "price": 2.01
             },
             {
               "name": "Under",
-              "description": "Desmond Ridder",
-              "point": 293.1,
-              "price": 1.65
-            },
-            {
-              "name": "Over",
-              "description": "Joshua Dobbs",
-              "point": 215.4,
-              "price": 1.5
-            },
-            {
-              "name": "Under",
-              "description": "Joshua Dobbs",
-              "point": 215.4,
-              "price": 2.05
+              "description": "Sam Ehlinger",
+              "point": 207.8,
+              "price": 2.79
             }
           ]
         },
         {
           "key": "player_pass_tds",
-          "last_update": "2025-08-13T23:40:19Z",
+          "last_update": "2025-08-15T19:10:54Z",
           "outcomes": [
             {
               "name": "Over",
-              "description": "Joe Burrow",
+              "description": "Bo Nix",
               "point": 3.1,
-              "price": 2.88
+              "price": 1.96
             },
             {
               "name": "Under",
-              "description": "Joe Burrow",
+              "description": "Bo Nix",
               "point": 3.1,
-              "price": 1.52
+              "price": 1.78
             },
             {
               "name": "Over",
-              "description": "AJ McCarron",
-              "point": 2.8,
-              "price": 2.29
+              "description": "Justin Fields",
+              "point": 1.1,
+              "price": 2.05
             },
             {
               "name": "Under",
-              "description": "AJ McCarron",
-              "point": 2.8,
-              "price": 1.63
+              "description": "Justin Fields",
+              "point": 1.1,
+              "price": 3.0
             },
             {
               "name": "Over",
-              "description": "Jake Browning",
-              "point": 3.4,
-              "price": 1.58
-            },
-            {
-              "name": "Under",
-              "description": "Jake Browning",
-              "point": 3.4,
-              "price": 2.58
-            },
-            {
-              "name": "Over",
-              "description": "Drake Maye",
-              "point": 1.7,
-              "price": 2.01
-            },
-            {
-              "name": "Under",
-              "description": "Drake Maye",
-              "point": 1.7,
+              "description": "Jarrett Stidham",
+              "point": 3.3,
               "price": 2.82
             },
             {
-              "name": "Over",
-              "description": "Desmond Ridder",
-              "point": 3.1,
-              "price": 2.14
-            },
-            {
               "name": "Under",
-              "description": "Desmond Ridder",
-              "point": 3.1,
-              "price": 1.88
+              "description": "Jarrett Stidham",
+              "point": 3.3,
+              "price": 2.05
             },
             {
               "name": "Over",
-              "description": "Joshua Dobbs",
-              "point": 2.1,
-              "price": 2.76
+              "description": "Tyrod Taylor",
+              "point": 1.2,
+              "price": 2.1
             },
             {
               "name": "Under",
-              "description": "Joshua Dobbs",
-              "point": 2.1,
-              "price": 2.82
+              "description": "Tyrod Taylor",
+              "point": 1.2,
+              "price": 2.09
+            },
+            {
+              "name": "Over",
+              "description": "Sam Ehlinger",
+              "point": 1.8,
+              "price": 2.4
+            },
+            {
+              "name": "Under",
+              "description": "Sam Ehlinger",
+              "point": 1.8,
+              "price": 1.65
             }
           ]
         },
         {
           "key": "player_rush_yds",
-          "last_update": "2025-08-13T23:40:19Z",
+          "last_update": "2025-08-15T19:10:54Z",
           "outcomes": [
             {
               "name": "Over",
-              "description": "Joe Burrow",
-              "point": 216.0,
-              "price": 2.93
+              "description": "Bo Nix",
+              "point": 236.7,
+              "price": 1.73
             },
             {
               "name": "Under",
-              "description": "Joe Burrow",
-              "point": 216.0,
-              "price": 2.28
+              "description": "Bo Nix",
+              "point": 236.7,
+              "price": 1.97
             },
             {
               "name": "Over",
-              "description": "AJ McCarron",
-              "point": 323.4,
-              "price": 1.75
+              "description": "Justin Fields",
+              "point": 228.4,
+              "price": 2.89
             },
             {
               "name": "Under",
-              "description": "AJ McCarron",
-              "point": 323.4,
-              "price": 2.12
+              "description": "Justin Fields",
+              "point": 228.4,
+              "price": 1.81
             },
             {
               "name": "Over",
-              "description": "Jake Browning",
-              "point": 297.2,
-              "price": 2.5
+              "description": "Jarrett Stidham",
+              "point": 311.8,
+              "price": 2.06
             },
             {
               "name": "Under",
-              "description": "Jake Browning",
-              "point": 297.2,
-              "price": 2.77
+              "description": "Jarrett Stidham",
+              "point": 311.8,
+              "price": 2.43
             },
             {
               "name": "Over",
-              "description": "Drake Maye",
-              "point": 215.6,
+              "description": "Tyrod Taylor",
+              "point": 313.0,
+              "price": 2.88
+            },
+            {
+              "name": "Under",
+              "description": "Tyrod Taylor",
+              "point": 313.0,
               "price": 2.19
             },
             {
+              "name": "Over",
+              "description": "Sam Ehlinger",
+              "point": 277.1,
+              "price": 2.25
+            },
+            {
               "name": "Under",
-              "description": "Drake Maye",
-              "point": 215.6,
-              "price": 2.99
+              "description": "Sam Ehlinger",
+              "point": 277.1,
+              "price": 2.32
             },
             {
               "name": "Over",
-              "description": "Desmond Ridder",
-              "point": 214.7,
+              "description": "Braelon Allen",
+              "point": 241.9,
+              "price": 1.59
+            },
+            {
+              "name": "Under",
+              "description": "Braelon Allen",
+              "point": 241.9,
+              "price": 1.55
+            },
+            {
+              "name": "Over",
+              "description": "Blake Watson",
+              "point": 221.0,
+              "price": 2.3
+            },
+            {
+              "name": "Under",
+              "description": "Blake Watson",
+              "point": 221.0,
+              "price": 2.26
+            },
+            {
+              "name": "Over",
+              "description": "Breece Hall",
+              "point": 211.4,
+              "price": 2.62
+            },
+            {
+              "name": "Under",
+              "description": "Breece Hall",
+              "point": 211.4,
+              "price": 2.27
+            },
+            {
+              "name": "Over",
+              "description": "Jaleel McLaughlin",
+              "point": 282.9,
+              "price": 2.29
+            },
+            {
+              "name": "Under",
+              "description": "Jaleel McLaughlin",
+              "point": 282.9,
+              "price": 2.47
+            },
+            {
+              "name": "Over",
+              "description": "Tyler Badie",
+              "point": 284.3,
+              "price": 1.82
+            },
+            {
+              "name": "Under",
+              "description": "Tyler Badie",
+              "point": 284.3,
+              "price": 2.9
+            },
+            {
+              "name": "Over",
+              "description": "Kene Nwangwu",
+              "point": 303.1,
+              "price": 2.39
+            },
+            {
+              "name": "Under",
+              "description": "Kene Nwangwu",
+              "point": 303.1,
+              "price": 2.88
+            },
+            {
+              "name": "Over",
+              "description": "Donovan Edwards",
+              "point": 269.3,
+              "price": 2.25
+            },
+            {
+              "name": "Under",
+              "description": "Donovan Edwards",
+              "point": 269.3,
+              "price": 2.68
+            },
+            {
+              "name": "Over",
+              "description": "Michael Burton",
+              "point": 327.0,
+              "price": 2.77
+            },
+            {
+              "name": "Under",
+              "description": "Michael Burton",
+              "point": 327.0,
+              "price": 2.25
+            },
+            {
+              "name": "Over",
+              "description": "Isaiah Davis",
+              "point": 299.2,
+              "price": 1.55
+            },
+            {
+              "name": "Under",
+              "description": "Isaiah Davis",
+              "point": 299.2,
+              "price": 1.52
+            },
+            {
+              "name": "Over",
+              "description": "Andrew Beck",
+              "point": 253.3,
               "price": 1.81
             },
             {
               "name": "Under",
-              "description": "Desmond Ridder",
-              "point": 214.7,
-              "price": 2.45
+              "description": "Andrew Beck",
+              "point": 253.3,
+              "price": 2.37
             },
             {
               "name": "Over",
-              "description": "Joshua Dobbs",
-              "point": 325.6,
-              "price": 2.01
+              "description": "RJ Harvey",
+              "point": 288.2,
+              "price": 1.92
             },
             {
               "name": "Under",
-              "description": "Joshua Dobbs",
-              "point": 325.6,
-              "price": 2.06
+              "description": "RJ Harvey",
+              "point": 288.2,
+              "price": 2.51
             },
             {
               "name": "Over",
-              "description": "Antonio Gibson",
-              "point": 337.6,
-              "price": 2.01
+              "description": "Audric Estime",
+              "point": 255.3,
+              "price": 1.52
             },
             {
               "name": "Under",
-              "description": "Antonio Gibson",
-              "point": 337.6,
-              "price": 2.97
+              "description": "Audric Estime",
+              "point": 255.3,
+              "price": 2.42
             },
             {
               "name": "Over",
-              "description": "Gary Brightwell",
-              "point": 338.8,
-              "price": 2.21
+              "description": "J.K. Dobbins",
+              "point": 330.3,
+              "price": 2.12
             },
             {
               "name": "Under",
-              "description": "Gary Brightwell",
-              "point": 338.8,
-              "price": 1.65
-            },
-            {
-              "name": "Over",
-              "description": "Samaje Perine",
-              "point": 247.0,
-              "price": 2.68
-            },
-            {
-              "name": "Under",
-              "description": "Samaje Perine",
-              "point": 247.0,
-              "price": 2.74
-            },
-            {
-              "name": "Over",
-              "description": "Terrell Jennings",
-              "point": 278.5,
-              "price": 2.14
-            },
-            {
-              "name": "Under",
-              "description": "Terrell Jennings",
-              "point": 278.5,
-              "price": 2.82
-            },
-            {
-              "name": "Over",
-              "description": "Chase Brown",
-              "point": 244.2,
-              "price": 2.54
-            },
-            {
-              "name": "Under",
-              "description": "Chase Brown",
-              "point": 244.2,
-              "price": 2.36
-            },
-            {
-              "name": "Over",
-              "description": "Kendall Milton",
-              "point": 231.8,
-              "price": 1.51
-            },
-            {
-              "name": "Under",
-              "description": "Kendall Milton",
-              "point": 231.8,
-              "price": 2.46
-            },
-            {
-              "name": "Over",
-              "description": "Tahj Brooks",
-              "point": 348.8,
-              "price": 2.35
-            },
-            {
-              "name": "Under",
-              "description": "Tahj Brooks",
-              "point": 348.8,
-              "price": 2.89
-            },
-            {
-              "name": "Over",
-              "description": "TreVeyon Henderson",
-              "point": 215.1,
-              "price": 2.68
-            },
-            {
-              "name": "Under",
-              "description": "TreVeyon Henderson",
-              "point": 215.1,
-              "price": 2.74
-            },
-            {
-              "name": "Over",
-              "description": "Lan Larison",
-              "point": 236.5,
-              "price": 2.02
-            },
-            {
-              "name": "Under",
-              "description": "Lan Larison",
-              "point": 236.5,
-              "price": 2.34
-            },
-            {
-              "name": "Over",
-              "description": "JaMycal Hasty",
-              "point": 212.2,
-              "price": 1.68
-            },
-            {
-              "name": "Under",
-              "description": "JaMycal Hasty",
-              "point": 212.2,
-              "price": 2.46
-            },
-            {
-              "name": "Over",
-              "description": "Rhamondre Stevenson",
-              "point": 273.2,
-              "price": 1.69
-            },
-            {
-              "name": "Under",
-              "description": "Rhamondre Stevenson",
-              "point": 273.2,
-              "price": 2.83
+              "description": "J.K. Dobbins",
+              "point": 330.3,
+              "price": 1.59
             }
           ]
         },
         {
           "key": "player_rush_tds",
-          "last_update": "2025-08-13T23:40:19Z",
+          "last_update": "2025-08-15T19:10:54Z",
           "outcomes": [
             {
               "name": "Over",
-              "description": "Joe Burrow",
+              "description": "Bo Nix",
               "point": 0.8,
-              "price": 2.47
+              "price": 2.94
             },
             {
               "name": "Under",
-              "description": "Joe Burrow",
+              "description": "Bo Nix",
               "point": 0.8,
-              "price": 2.14
+              "price": 2.32
             },
             {
               "name": "Over",
-              "description": "AJ McCarron",
-              "point": 1.3,
-              "price": 2.29
+              "description": "Justin Fields",
+              "point": 3.3,
+              "price": 2.85
             },
             {
               "name": "Under",
-              "description": "AJ McCarron",
-              "point": 1.3,
-              "price": 2.6
+              "description": "Justin Fields",
+              "point": 3.3,
+              "price": 2.06
             },
             {
               "name": "Over",
-              "description": "Jake Browning",
-              "point": 2.8,
-              "price": 2.78
+              "description": "Jarrett Stidham",
+              "point": 0.9,
+              "price": 2.81
             },
             {
               "name": "Under",
-              "description": "Jake Browning",
-              "point": 2.8,
-              "price": 2.34
-            },
-            {
-              "name": "Over",
-              "description": "Drake Maye",
-              "point": 3.4,
-              "price": 2.69
-            },
-            {
-              "name": "Under",
-              "description": "Drake Maye",
-              "point": 3.4,
-              "price": 2.9
-            },
-            {
-              "name": "Over",
-              "description": "Desmond Ridder",
-              "point": 2.7,
-              "price": 1.63
-            },
-            {
-              "name": "Under",
-              "description": "Desmond Ridder",
-              "point": 2.7,
-              "price": 1.64
-            },
-            {
-              "name": "Over",
-              "description": "Joshua Dobbs",
-              "point": 3.2,
-              "price": 2.59
-            },
-            {
-              "name": "Under",
-              "description": "Joshua Dobbs",
-              "point": 3.2,
-              "price": 2.66
-            },
-            {
-              "name": "Over",
-              "description": "Antonio Gibson",
-              "point": 3.2,
-              "price": 2.86
-            },
-            {
-              "name": "Under",
-              "description": "Antonio Gibson",
-              "point": 3.2,
-              "price": 2.75
-            },
-            {
-              "name": "Over",
-              "description": "Gary Brightwell",
-              "point": 1.9,
-              "price": 1.6
-            },
-            {
-              "name": "Under",
-              "description": "Gary Brightwell",
-              "point": 1.9,
+              "description": "Jarrett Stidham",
+              "point": 0.9,
               "price": 2.72
             },
             {
               "name": "Over",
-              "description": "Samaje Perine",
-              "point": 2.3,
-              "price": 2.95
+              "description": "Tyrod Taylor",
+              "point": 1.1,
+              "price": 2.63
             },
             {
               "name": "Under",
-              "description": "Samaje Perine",
-              "point": 2.3,
-              "price": 2.11
+              "description": "Tyrod Taylor",
+              "point": 1.1,
+              "price": 2.78
             },
             {
               "name": "Over",
-              "description": "Terrell Jennings",
+              "description": "Sam Ehlinger",
               "point": 2.6,
-              "price": 2.62
+              "price": 1.79
             },
             {
               "name": "Under",
-              "description": "Terrell Jennings",
+              "description": "Sam Ehlinger",
               "point": 2.6,
-              "price": 1.96
+              "price": 2.39
             },
             {
               "name": "Over",
-              "description": "Chase Brown",
-              "point": 1.3,
-              "price": 2.97
+              "description": "Braelon Allen",
+              "point": 1.8,
+              "price": 1.95
             },
             {
               "name": "Under",
-              "description": "Chase Brown",
-              "point": 1.3,
+              "description": "Braelon Allen",
+              "point": 1.8,
               "price": 2.48
             },
             {
               "name": "Over",
-              "description": "Kendall Milton",
+              "description": "Blake Watson",
               "point": 2.2,
-              "price": 2.6
+              "price": 2.91
             },
             {
               "name": "Under",
-              "description": "Kendall Milton",
+              "description": "Blake Watson",
               "point": 2.2,
-              "price": 2.49
+              "price": 2.71
             },
             {
               "name": "Over",
-              "description": "Tahj Brooks",
-              "point": 1.7,
-              "price": 2.62
+              "description": "Breece Hall",
+              "point": 2.4,
+              "price": 2.78
             },
             {
               "name": "Under",
-              "description": "Tahj Brooks",
-              "point": 1.7,
-              "price": 2.48
+              "description": "Breece Hall",
+              "point": 2.4,
+              "price": 2.03
             },
             {
               "name": "Over",
-              "description": "TreVeyon Henderson",
-              "point": 2.1,
-              "price": 1.88
+              "description": "Jaleel McLaughlin",
+              "point": 2.4,
+              "price": 2.87
             },
             {
               "name": "Under",
-              "description": "TreVeyon Henderson",
-              "point": 2.1,
-              "price": 2.66
+              "description": "Jaleel McLaughlin",
+              "point": 2.4,
+              "price": 2.98
             },
             {
               "name": "Over",
-              "description": "Lan Larison",
+              "description": "Tyler Badie",
+              "point": 3.3,
+              "price": 2.18
+            },
+            {
+              "name": "Under",
+              "description": "Tyler Badie",
+              "point": 3.3,
+              "price": 2.92
+            },
+            {
+              "name": "Over",
+              "description": "Kene Nwangwu",
+              "point": 1.4,
+              "price": 2.0
+            },
+            {
+              "name": "Under",
+              "description": "Kene Nwangwu",
+              "point": 1.4,
+              "price": 2.77
+            },
+            {
+              "name": "Over",
+              "description": "Donovan Edwards",
+              "point": 2.8,
+              "price": 2.74
+            },
+            {
+              "name": "Under",
+              "description": "Donovan Edwards",
+              "point": 2.8,
+              "price": 2.75
+            },
+            {
+              "name": "Over",
+              "description": "Michael Burton",
+              "point": 2.0,
+              "price": 2.98
+            },
+            {
+              "name": "Under",
+              "description": "Michael Burton",
+              "point": 2.0,
+              "price": 2.82
+            },
+            {
+              "name": "Over",
+              "description": "Isaiah Davis",
               "point": 2.2,
-              "price": 2.99
+              "price": 2.07
             },
             {
               "name": "Under",
-              "description": "Lan Larison",
+              "description": "Isaiah Davis",
               "point": 2.2,
-              "price": 2.6
+              "price": 2.29
             },
             {
               "name": "Over",
-              "description": "JaMycal Hasty",
-              "point": 1.0,
-              "price": 1.96
+              "description": "Andrew Beck",
+              "point": 2.4,
+              "price": 2.2
             },
             {
               "name": "Under",
-              "description": "JaMycal Hasty",
-              "point": 1.0,
-              "price": 1.68
+              "description": "Andrew Beck",
+              "point": 2.4,
+              "price": 2.35
             },
             {
               "name": "Over",
-              "description": "Rhamondre Stevenson",
-              "point": 3.4,
-              "price": 2.33
+              "description": "RJ Harvey",
+              "point": 2.0,
+              "price": 2.79
             },
             {
               "name": "Under",
-              "description": "Rhamondre Stevenson",
-              "point": 3.4,
-              "price": 2.81
+              "description": "RJ Harvey",
+              "point": 2.0,
+              "price": 2.69
+            },
+            {
+              "name": "Over",
+              "description": "Audric Estime",
+              "point": 2.0,
+              "price": 1.72
+            },
+            {
+              "name": "Under",
+              "description": "Audric Estime",
+              "point": 2.0,
+              "price": 2.88
+            },
+            {
+              "name": "Over",
+              "description": "J.K. Dobbins",
+              "point": 1.5,
+              "price": 1.75
+            },
+            {
+              "name": "Under",
+              "description": "J.K. Dobbins",
+              "point": 1.5,
+              "price": 2.57
             }
           ]
         },
         {
           "key": "player_receptions",
-          "last_update": "2025-08-13T23:40:19Z",
+          "last_update": "2025-08-15T19:10:54Z",
           "outcomes": [
             {
               "name": "Over",
-              "description": "Antonio Gibson",
-              "point": 1.6,
-              "price": 1.73
-            },
-            {
-              "name": "Under",
-              "description": "Antonio Gibson",
-              "point": 1.6,
-              "price": 2.77
-            },
-            {
-              "name": "Over",
-              "description": "Gary Brightwell",
-              "point": 2.0,
-              "price": 2.34
-            },
-            {
-              "name": "Under",
-              "description": "Gary Brightwell",
-              "point": 2.0,
-              "price": 2.92
-            },
-            {
-              "name": "Over",
-              "description": "Samaje Perine",
-              "point": 1.6,
+              "description": "Braelon Allen",
+              "point": 1.4,
               "price": 2.81
             },
             {
               "name": "Under",
-              "description": "Samaje Perine",
-              "point": 1.6,
-              "price": 2.87
+              "description": "Braelon Allen",
+              "point": 1.4,
+              "price": 2.33
             },
             {
               "name": "Over",
-              "description": "Terrell Jennings",
-              "point": 3.4,
-              "price": 2.39
+              "description": "Blake Watson",
+              "point": 2.4,
+              "price": 2.94
             },
             {
               "name": "Under",
-              "description": "Terrell Jennings",
-              "point": 3.4,
-              "price": 1.96
+              "description": "Blake Watson",
+              "point": 2.4,
+              "price": 1.65
             },
             {
               "name": "Over",
-              "description": "Chase Brown",
-              "point": 3.2,
-              "price": 2.08
-            },
-            {
-              "name": "Under",
-              "description": "Chase Brown",
-              "point": 3.2,
-              "price": 2.83
-            },
-            {
-              "name": "Over",
-              "description": "Kendall Milton",
-              "point": 1.0,
-              "price": 1.58
-            },
-            {
-              "name": "Under",
-              "description": "Kendall Milton",
-              "point": 1.0,
-              "price": 1.69
-            },
-            {
-              "name": "Over",
-              "description": "Tahj Brooks",
-              "point": 2.9,
-              "price": 2.99
-            },
-            {
-              "name": "Under",
-              "description": "Tahj Brooks",
-              "point": 2.9,
-              "price": 1.64
-            },
-            {
-              "name": "Over",
-              "description": "TreVeyon Henderson",
-              "point": 2.3,
-              "price": 2.28
-            },
-            {
-              "name": "Under",
-              "description": "TreVeyon Henderson",
-              "point": 2.3,
-              "price": 2.08
-            },
-            {
-              "name": "Over",
-              "description": "Lan Larison",
-              "point": 2.3,
-              "price": 1.96
-            },
-            {
-              "name": "Under",
-              "description": "Lan Larison",
-              "point": 2.3,
-              "price": 1.55
-            },
-            {
-              "name": "Over",
-              "description": "JaMycal Hasty",
-              "point": 2.1,
-              "price": 1.7
-            },
-            {
-              "name": "Under",
-              "description": "JaMycal Hasty",
-              "point": 2.1,
-              "price": 2.48
-            },
-            {
-              "name": "Over",
-              "description": "Rhamondre Stevenson",
-              "point": 2.1,
-              "price": 2.52
-            },
-            {
-              "name": "Under",
-              "description": "Rhamondre Stevenson",
-              "point": 2.1,
-              "price": 2.49
-            },
-            {
-              "name": "Over",
-              "description": "DeMario Douglas",
-              "point": 1.7,
-              "price": 2.67
-            },
-            {
-              "name": "Under",
-              "description": "DeMario Douglas",
-              "point": 1.7,
-              "price": 1.89
-            },
-            {
-              "name": "Over",
-              "description": "Mitchell Tinsley",
+              "description": "Breece Hall",
               "point": 1.2,
-              "price": 2.0
+              "price": 2.9
             },
             {
               "name": "Under",
-              "description": "Mitchell Tinsley",
+              "description": "Breece Hall",
               "point": 1.2,
               "price": 1.65
             },
             {
               "name": "Over",
-              "description": "Ja'Marr Chase",
-              "point": 1.5,
-              "price": 1.57
-            },
-            {
-              "name": "Under",
-              "description": "Ja'Marr Chase",
-              "point": 1.5,
-              "price": 2.18
-            },
-            {
-              "name": "Over",
-              "description": "Kendric Pryor",
-              "point": 1.0,
-              "price": 1.85
-            },
-            {
-              "name": "Under",
-              "description": "Kendric Pryor",
-              "point": 1.0,
-              "price": 1.61
-            },
-            {
-              "name": "Over",
-              "description": "Kayshon Boutte",
-              "point": 1.5,
-              "price": 1.78
-            },
-            {
-              "name": "Under",
-              "description": "Kayshon Boutte",
-              "point": 1.5,
-              "price": 1.9
-            },
-            {
-              "name": "Over",
-              "description": "Jermaine Burton",
-              "point": 1.2,
-              "price": 2.96
-            },
-            {
-              "name": "Under",
-              "description": "Jermaine Burton",
-              "point": 1.2,
-              "price": 2.05
-            },
-            {
-              "name": "Over",
-              "description": "Javon Baker",
+              "description": "Jaleel McLaughlin",
               "point": 2.8,
-              "price": 2.45
-            },
-            {
-              "name": "Under",
-              "description": "Javon Baker",
-              "point": 2.8,
-              "price": 2.4
-            },
-            {
-              "name": "Over",
-              "description": "Ja'Lynn Polk",
-              "point": 2.9,
-              "price": 1.74
-            },
-            {
-              "name": "Under",
-              "description": "Ja'Lynn Polk",
-              "point": 2.9,
-              "price": 2.69
-            },
-            {
-              "name": "Over",
-              "description": "Kyle Williams",
-              "point": 0.6,
-              "price": 2.24
-            },
-            {
-              "name": "Under",
-              "description": "Kyle Williams",
-              "point": 0.6,
-              "price": 2.42
-            },
-            {
-              "name": "Over",
-              "description": "Efton Chism III",
-              "point": 3.5,
-              "price": 1.77
-            },
-            {
-              "name": "Under",
-              "description": "Efton Chism III",
-              "point": 3.5,
-              "price": 2.26
-            },
-            {
-              "name": "Over",
-              "description": "Mack Hollins",
-              "point": 0.9,
-              "price": 2.65
-            },
-            {
-              "name": "Under",
-              "description": "Mack Hollins",
-              "point": 0.9,
-              "price": 1.94
-            },
-            {
-              "name": "Over",
-              "description": "Andrei Iosivas",
-              "point": 0.7,
-              "price": 1.89
-            },
-            {
-              "name": "Under",
-              "description": "Andrei Iosivas",
-              "point": 0.7,
-              "price": 2.9
-            },
-            {
-              "name": "Over",
-              "description": "Stefon Diggs",
-              "point": 1.4,
-              "price": 2.17
-            },
-            {
-              "name": "Under",
-              "description": "Stefon Diggs",
-              "point": 1.4,
-              "price": 2.08
-            },
-            {
-              "name": "Over",
-              "description": "Matthew Slater",
-              "point": 3.1,
-              "price": 1.7
-            },
-            {
-              "name": "Under",
-              "description": "Matthew Slater",
-              "point": 3.1,
-              "price": 2.51
-            },
-            {
-              "name": "Over",
-              "description": "Tee Higgins",
-              "point": 2.1,
-              "price": 1.68
-            },
-            {
-              "name": "Under",
-              "description": "Tee Higgins",
-              "point": 2.1,
-              "price": 2.52
-            },
-            {
-              "name": "Over",
-              "description": "Charlie Jones",
-              "point": 1.3,
-              "price": 2.28
-            },
-            {
-              "name": "Under",
-              "description": "Charlie Jones",
-              "point": 1.3,
-              "price": 1.92
-            },
-            {
-              "name": "Over",
-              "description": "Kendrick Bourne",
-              "point": 1.9,
-              "price": 2.46
-            },
-            {
-              "name": "Under",
-              "description": "Kendrick Bourne",
-              "point": 1.9,
-              "price": 2.68
-            },
-            {
-              "name": "Over",
-              "description": "Isaiah Williams",
-              "point": 3.0,
-              "price": 2.97
-            },
-            {
-              "name": "Under",
-              "description": "Isaiah Williams",
-              "point": 3.0,
-              "price": 2.85
-            },
-            {
-              "name": "Over",
-              "description": "Cole Fotheringham",
-              "point": 2.9,
-              "price": 1.61
-            },
-            {
-              "name": "Under",
-              "description": "Cole Fotheringham",
-              "point": 2.9,
-              "price": 2.88
-            },
-            {
-              "name": "Over",
-              "description": "Jack Westover",
-              "point": 3.1,
-              "price": 1.52
-            },
-            {
-              "name": "Under",
-              "description": "Jack Westover",
-              "point": 3.1,
-              "price": 2.54
-            },
-            {
-              "name": "Over",
-              "description": "Tanner Hudson",
-              "point": 1.8,
-              "price": 2.69
-            },
-            {
-              "name": "Under",
-              "description": "Tanner Hudson",
-              "point": 1.8,
-              "price": 2.0
-            },
-            {
-              "name": "Over",
-              "description": "Mike Gesicki",
-              "point": 3.0,
-              "price": 2.42
-            },
-            {
-              "name": "Under",
-              "description": "Mike Gesicki",
-              "point": 3.0,
-              "price": 2.45
-            },
-            {
-              "name": "Over",
-              "description": "Erick All Jr.",
-              "point": 2.0,
-              "price": 2.71
-            },
-            {
-              "name": "Under",
-              "description": "Erick All Jr.",
-              "point": 2.0,
-              "price": 1.68
-            },
-            {
-              "name": "Over",
-              "description": "Jaheim Bell",
-              "point": 3.1,
-              "price": 1.97
-            },
-            {
-              "name": "Under",
-              "description": "Jaheim Bell",
-              "point": 3.1,
-              "price": 2.4
-            },
-            {
-              "name": "Over",
-              "description": "Noah Fant",
-              "point": 1.5,
               "price": 2.78
             },
             {
               "name": "Under",
-              "description": "Noah Fant",
-              "point": 1.5,
-              "price": 1.69
+              "description": "Jaleel McLaughlin",
+              "point": 2.8,
+              "price": 2.0
             },
             {
               "name": "Over",
-              "description": "Tanner McLachlan",
-              "point": 2.1,
+              "description": "Tyler Badie",
+              "point": 1.0,
+              "price": 2.59
+            },
+            {
+              "name": "Under",
+              "description": "Tyler Badie",
+              "point": 1.0,
+              "price": 2.61
+            },
+            {
+              "name": "Over",
+              "description": "Kene Nwangwu",
+              "point": 1.9,
+              "price": 2.65
+            },
+            {
+              "name": "Under",
+              "description": "Kene Nwangwu",
+              "point": 1.9,
+              "price": 1.51
+            },
+            {
+              "name": "Over",
+              "description": "Donovan Edwards",
+              "point": 1.5,
+              "price": 2.0
+            },
+            {
+              "name": "Under",
+              "description": "Donovan Edwards",
+              "point": 1.5,
+              "price": 2.21
+            },
+            {
+              "name": "Over",
+              "description": "Michael Burton",
+              "point": 1.8,
+              "price": 1.75
+            },
+            {
+              "name": "Under",
+              "description": "Michael Burton",
+              "point": 1.8,
+              "price": 2.24
+            },
+            {
+              "name": "Over",
+              "description": "Isaiah Davis",
+              "point": 0.6,
+              "price": 2.05
+            },
+            {
+              "name": "Under",
+              "description": "Isaiah Davis",
+              "point": 0.6,
+              "price": 1.89
+            },
+            {
+              "name": "Over",
+              "description": "Andrew Beck",
+              "point": 2.3,
+              "price": 1.73
+            },
+            {
+              "name": "Under",
+              "description": "Andrew Beck",
+              "point": 2.3,
+              "price": 1.81
+            },
+            {
+              "name": "Over",
+              "description": "RJ Harvey",
+              "point": 0.7,
               "price": 1.71
             },
             {
               "name": "Under",
-              "description": "Tanner McLachlan",
-              "point": 2.1,
-              "price": 2.15
+              "description": "RJ Harvey",
+              "point": 0.7,
+              "price": 2.63
             },
             {
               "name": "Over",
-              "description": "Austin Hooper",
-              "point": 1.5,
+              "description": "Audric Estime",
+              "point": 1.7,
+              "price": 2.76
+            },
+            {
+              "name": "Under",
+              "description": "Audric Estime",
+              "point": 1.7,
+              "price": 2.91
+            },
+            {
+              "name": "Over",
+              "description": "J.K. Dobbins",
+              "point": 1.3,
+              "price": 2.57
+            },
+            {
+              "name": "Under",
+              "description": "J.K. Dobbins",
+              "point": 1.3,
+              "price": 2.87
+            },
+            {
+              "name": "Over",
+              "description": "Tyler Johnson",
+              "point": 2.7,
+              "price": 2.02
+            },
+            {
+              "name": "Under",
+              "description": "Tyler Johnson",
+              "point": 2.7,
+              "price": 3.0
+            },
+            {
+              "name": "Over",
+              "description": "Marvin Mims Jr.",
+              "point": 2.8,
+              "price": 1.51
+            },
+            {
+              "name": "Under",
+              "description": "Marvin Mims Jr.",
+              "point": 2.8,
+              "price": 2.51
+            },
+            {
+              "name": "Over",
+              "description": "Josh Reynolds",
+              "point": 0.5,
+              "price": 1.74
+            },
+            {
+              "name": "Under",
+              "description": "Josh Reynolds",
+              "point": 0.5,
+              "price": 2.07
+            },
+            {
+              "name": "Over",
+              "description": "Xavier Gipson",
+              "point": 1.6,
+              "price": 2.83
+            },
+            {
+              "name": "Under",
+              "description": "Xavier Gipson",
+              "point": 1.6,
+              "price": 1.58
+            },
+            {
+              "name": "Over",
+              "description": "A.T. Perry",
+              "point": 1.1,
+              "price": 2.35
+            },
+            {
+              "name": "Under",
+              "description": "A.T. Perry",
+              "point": 1.1,
+              "price": 1.6
+            },
+            {
+              "name": "Over",
+              "description": "Michael Bandy",
+              "point": 1.9,
+              "price": 2.06
+            },
+            {
+              "name": "Under",
+              "description": "Michael Bandy",
+              "point": 1.9,
+              "price": 2.97
+            },
+            {
+              "name": "Over",
+              "description": "Arian Smith",
+              "point": 3.4,
+              "price": 2.95
+            },
+            {
+              "name": "Under",
+              "description": "Arian Smith",
+              "point": 3.4,
+              "price": 2.69
+            },
+            {
+              "name": "Over",
+              "description": "Troy Franklin",
+              "point": 2.9,
+              "price": 2.96
+            },
+            {
+              "name": "Under",
+              "description": "Troy Franklin",
+              "point": 2.9,
+              "price": 2.87
+            },
+            {
+              "name": "Over",
+              "description": "Malachi Corley",
+              "point": 2.6,
+              "price": 2.09
+            },
+            {
+              "name": "Under",
+              "description": "Malachi Corley",
+              "point": 2.6,
               "price": 1.83
             },
             {
+              "name": "Over",
+              "description": "Trent Sherfield Sr.",
+              "point": 2.8,
+              "price": 1.77
+            },
+            {
               "name": "Under",
-              "description": "Austin Hooper",
+              "description": "Trent Sherfield Sr.",
+              "point": 2.8,
+              "price": 2.63
+            },
+            {
+              "name": "Over",
+              "description": "Pat Bryant",
+              "point": 1.8,
+              "price": 2.1
+            },
+            {
+              "name": "Under",
+              "description": "Pat Bryant",
+              "point": 1.8,
+              "price": 2.42
+            },
+            {
+              "name": "Over",
+              "description": "Brandon Smith",
+              "point": 2.5,
+              "price": 1.85
+            },
+            {
+              "name": "Under",
+              "description": "Brandon Smith",
+              "point": 2.5,
+              "price": 2.79
+            },
+            {
+              "name": "Over",
+              "description": "Irvin Charles",
+              "point": 0.8,
+              "price": 2.38
+            },
+            {
+              "name": "Under",
+              "description": "Irvin Charles",
+              "point": 0.8,
+              "price": 2.93
+            },
+            {
+              "name": "Over",
+              "description": "Devaughn Vele",
+              "point": 1.0,
+              "price": 1.65
+            },
+            {
+              "name": "Under",
+              "description": "Devaughn Vele",
+              "point": 1.0,
+              "price": 2.47
+            },
+            {
+              "name": "Over",
+              "description": "Garrett Wilson",
+              "point": 0.6,
+              "price": 1.85
+            },
+            {
+              "name": "Under",
+              "description": "Garrett Wilson",
+              "point": 0.6,
+              "price": 1.79
+            },
+            {
+              "name": "Over",
+              "description": "Allen Lazard",
+              "point": 0.7,
+              "price": 2.9
+            },
+            {
+              "name": "Under",
+              "description": "Allen Lazard",
+              "point": 0.7,
+              "price": 1.9
+            },
+            {
+              "name": "Over",
+              "description": "Courtland Sutton",
+              "point": 0.9,
+              "price": 1.58
+            },
+            {
+              "name": "Under",
+              "description": "Courtland Sutton",
+              "point": 0.9,
+              "price": 2.19
+            },
+            {
+              "name": "Over",
+              "description": "Lucas Krull",
+              "point": 1.2,
+              "price": 2.24
+            },
+            {
+              "name": "Under",
+              "description": "Lucas Krull",
+              "point": 1.2,
+              "price": 2.36
+            },
+            {
+              "name": "Over",
+              "description": "Jeremy Ruckert",
+              "point": 3.0,
+              "price": 2.39
+            },
+            {
+              "name": "Under",
+              "description": "Jeremy Ruckert",
+              "point": 3.0,
+              "price": 2.32
+            },
+            {
+              "name": "Over",
+              "description": "Zack Kuntz",
+              "point": 0.7,
+              "price": 2.63
+            },
+            {
+              "name": "Under",
+              "description": "Zack Kuntz",
+              "point": 0.7,
+              "price": 1.62
+            },
+            {
+              "name": "Over",
+              "description": "Evan Engram",
+              "point": 1.6,
+              "price": 1.91
+            },
+            {
+              "name": "Under",
+              "description": "Evan Engram",
+              "point": 1.6,
+              "price": 1.74
+            },
+            {
+              "name": "Over",
+              "description": "Stone Smartt",
               "point": 1.5,
-              "price": 1.69
-            },
-            {
-              "name": "Over",
-              "description": "Drew Sample",
-              "point": 1.0,
-              "price": 2.01
+              "price": 2.13
             },
             {
               "name": "Under",
-              "description": "Drew Sample",
-              "point": 1.0,
-              "price": 2.85
+              "description": "Stone Smartt",
+              "point": 1.5,
+              "price": 2.05
             },
             {
               "name": "Over",
-              "description": "Cam Grandy",
-              "point": 3.4,
-              "price": 2.3
+              "description": "Mason Taylor",
+              "point": 1.8,
+              "price": 2.99
             },
             {
               "name": "Under",
-              "description": "Cam Grandy",
-              "point": 3.4,
-              "price": 2.27
+              "description": "Mason Taylor",
+              "point": 1.8,
+              "price": 2.1
             },
             {
               "name": "Over",
-              "description": "Hunter Henry",
-              "point": 1.2,
-              "price": 1.76
+              "description": "Caleb Lohner",
+              "point": 0.5,
+              "price": 2.98
             },
             {
               "name": "Under",
-              "description": "Hunter Henry",
-              "point": 1.2,
-              "price": 1.99
+              "description": "Caleb Lohner",
+              "point": 0.5,
+              "price": 2.04
+            },
+            {
+              "name": "Over",
+              "description": "Nate Adkins",
+              "point": 0.6,
+              "price": 2.65
+            },
+            {
+              "name": "Under",
+              "description": "Nate Adkins",
+              "point": 0.6,
+              "price": 2.07
+            },
+            {
+              "name": "Over",
+              "description": "Adam Trautman",
+              "point": 2.2,
+              "price": 2.11
+            },
+            {
+              "name": "Under",
+              "description": "Adam Trautman",
+              "point": 2.2,
+              "price": 1.73
             }
           ]
         },
         {
           "key": "player_reception_yds",
-          "last_update": "2025-08-13T23:40:19Z",
+          "last_update": "2025-08-15T19:10:54Z",
           "outcomes": [
             {
               "name": "Over",
-              "description": "Antonio Gibson",
-              "point": 303.5,
-              "price": 2.83
-            },
-            {
-              "name": "Under",
-              "description": "Antonio Gibson",
-              "point": 303.5,
-              "price": 1.94
-            },
-            {
-              "name": "Over",
-              "description": "Gary Brightwell",
-              "point": 251.5,
-              "price": 2.95
-            },
-            {
-              "name": "Under",
-              "description": "Gary Brightwell",
-              "point": 251.5,
-              "price": 2.18
-            },
-            {
-              "name": "Over",
-              "description": "Samaje Perine",
-              "point": 265.4,
-              "price": 1.71
-            },
-            {
-              "name": "Under",
-              "description": "Samaje Perine",
-              "point": 265.4,
-              "price": 1.58
-            },
-            {
-              "name": "Over",
-              "description": "Terrell Jennings",
-              "point": 204.2,
-              "price": 1.72
-            },
-            {
-              "name": "Under",
-              "description": "Terrell Jennings",
-              "point": 204.2,
-              "price": 1.61
-            },
-            {
-              "name": "Over",
-              "description": "Chase Brown",
-              "point": 249.8,
-              "price": 1.8
-            },
-            {
-              "name": "Under",
-              "description": "Chase Brown",
-              "point": 249.8,
-              "price": 2.47
-            },
-            {
-              "name": "Over",
-              "description": "Kendall Milton",
-              "point": 291.2,
-              "price": 2.11
-            },
-            {
-              "name": "Under",
-              "description": "Kendall Milton",
-              "point": 291.2,
-              "price": 2.31
-            },
-            {
-              "name": "Over",
-              "description": "Tahj Brooks",
-              "point": 320.6,
-              "price": 1.88
-            },
-            {
-              "name": "Under",
-              "description": "Tahj Brooks",
-              "point": 320.6,
-              "price": 1.59
-            },
-            {
-              "name": "Over",
-              "description": "TreVeyon Henderson",
-              "point": 209.3,
-              "price": 2.47
-            },
-            {
-              "name": "Under",
-              "description": "TreVeyon Henderson",
-              "point": 209.3,
-              "price": 2.57
-            },
-            {
-              "name": "Over",
-              "description": "Lan Larison",
-              "point": 343.6,
-              "price": 1.56
-            },
-            {
-              "name": "Under",
-              "description": "Lan Larison",
-              "point": 343.6,
-              "price": 1.95
-            },
-            {
-              "name": "Over",
-              "description": "JaMycal Hasty",
-              "point": 258.3,
-              "price": 2.01
-            },
-            {
-              "name": "Under",
-              "description": "JaMycal Hasty",
-              "point": 258.3,
-              "price": 1.88
-            },
-            {
-              "name": "Over",
-              "description": "Rhamondre Stevenson",
-              "point": 339.8,
-              "price": 1.94
-            },
-            {
-              "name": "Under",
-              "description": "Rhamondre Stevenson",
-              "point": 339.8,
-              "price": 1.51
-            },
-            {
-              "name": "Over",
-              "description": "DeMario Douglas",
-              "point": 242.2,
-              "price": 2.78
-            },
-            {
-              "name": "Under",
-              "description": "DeMario Douglas",
-              "point": 242.2,
-              "price": 2.97
-            },
-            {
-              "name": "Over",
-              "description": "Mitchell Tinsley",
-              "point": 276.2,
-              "price": 1.89
-            },
-            {
-              "name": "Under",
-              "description": "Mitchell Tinsley",
-              "point": 276.2,
-              "price": 2.53
-            },
-            {
-              "name": "Over",
-              "description": "Ja'Marr Chase",
-              "point": 292.0,
-              "price": 1.97
-            },
-            {
-              "name": "Under",
-              "description": "Ja'Marr Chase",
-              "point": 292.0,
-              "price": 2.16
-            },
-            {
-              "name": "Over",
-              "description": "Kendric Pryor",
-              "point": 213.3,
-              "price": 2.86
-            },
-            {
-              "name": "Under",
-              "description": "Kendric Pryor",
-              "point": 213.3,
-              "price": 2.15
-            },
-            {
-              "name": "Over",
-              "description": "Kayshon Boutte",
-              "point": 310.8,
-              "price": 2.22
-            },
-            {
-              "name": "Under",
-              "description": "Kayshon Boutte",
-              "point": 310.8,
-              "price": 2.42
-            },
-            {
-              "name": "Over",
-              "description": "Jermaine Burton",
-              "point": 332.3,
-              "price": 2.84
-            },
-            {
-              "name": "Under",
-              "description": "Jermaine Burton",
-              "point": 332.3,
-              "price": 2.87
-            },
-            {
-              "name": "Over",
-              "description": "Javon Baker",
-              "point": 309.7,
-              "price": 2.51
-            },
-            {
-              "name": "Under",
-              "description": "Javon Baker",
-              "point": 309.7,
-              "price": 1.64
-            },
-            {
-              "name": "Over",
-              "description": "Ja'Lynn Polk",
-              "point": 213.4,
-              "price": 2.26
-            },
-            {
-              "name": "Under",
-              "description": "Ja'Lynn Polk",
-              "point": 213.4,
-              "price": 1.56
-            },
-            {
-              "name": "Over",
-              "description": "Kyle Williams",
-              "point": 261.0,
-              "price": 1.52
-            },
-            {
-              "name": "Under",
-              "description": "Kyle Williams",
-              "point": 261.0,
-              "price": 1.86
-            },
-            {
-              "name": "Over",
-              "description": "Efton Chism III",
-              "point": 313.3,
-              "price": 2.35
-            },
-            {
-              "name": "Under",
-              "description": "Efton Chism III",
-              "point": 313.3,
-              "price": 1.59
-            },
-            {
-              "name": "Over",
-              "description": "Mack Hollins",
-              "point": 240.6,
-              "price": 2.5
-            },
-            {
-              "name": "Under",
-              "description": "Mack Hollins",
-              "point": 240.6,
-              "price": 2.06
-            },
-            {
-              "name": "Over",
-              "description": "Andrei Iosivas",
-              "point": 343.1,
-              "price": 2.05
-            },
-            {
-              "name": "Under",
-              "description": "Andrei Iosivas",
-              "point": 343.1,
-              "price": 1.87
-            },
-            {
-              "name": "Over",
-              "description": "Stefon Diggs",
-              "point": 255.7,
-              "price": 2.38
-            },
-            {
-              "name": "Under",
-              "description": "Stefon Diggs",
-              "point": 255.7,
-              "price": 1.92
-            },
-            {
-              "name": "Over",
-              "description": "Matthew Slater",
-              "point": 249.7,
-              "price": 2.16
-            },
-            {
-              "name": "Under",
-              "description": "Matthew Slater",
-              "point": 249.7,
-              "price": 1.75
-            },
-            {
-              "name": "Over",
-              "description": "Tee Higgins",
-              "point": 323.9,
-              "price": 1.96
-            },
-            {
-              "name": "Under",
-              "description": "Tee Higgins",
-              "point": 323.9,
-              "price": 2.06
-            },
-            {
-              "name": "Over",
-              "description": "Charlie Jones",
-              "point": 276.6,
-              "price": 1.86
-            },
-            {
-              "name": "Under",
-              "description": "Charlie Jones",
-              "point": 276.6,
-              "price": 1.85
-            },
-            {
-              "name": "Over",
-              "description": "Kendrick Bourne",
-              "point": 294.6,
-              "price": 2.39
-            },
-            {
-              "name": "Under",
-              "description": "Kendrick Bourne",
-              "point": 294.6,
-              "price": 2.14
-            },
-            {
-              "name": "Over",
-              "description": "Isaiah Williams",
-              "point": 310.3,
-              "price": 1.5
-            },
-            {
-              "name": "Under",
-              "description": "Isaiah Williams",
-              "point": 310.3,
-              "price": 2.25
-            },
-            {
-              "name": "Over",
-              "description": "Cole Fotheringham",
-              "point": 263.6,
-              "price": 2.19
-            },
-            {
-              "name": "Under",
-              "description": "Cole Fotheringham",
-              "point": 263.6,
-              "price": 2.19
-            },
-            {
-              "name": "Over",
-              "description": "Jack Westover",
-              "point": 251.7,
-              "price": 1.76
-            },
-            {
-              "name": "Under",
-              "description": "Jack Westover",
-              "point": 251.7,
-              "price": 2.52
-            },
-            {
-              "name": "Over",
-              "description": "Tanner Hudson",
-              "point": 293.3,
-              "price": 2.05
-            },
-            {
-              "name": "Under",
-              "description": "Tanner Hudson",
-              "point": 293.3,
-              "price": 1.92
-            },
-            {
-              "name": "Over",
-              "description": "Mike Gesicki",
-              "point": 284.4,
-              "price": 2.56
-            },
-            {
-              "name": "Under",
-              "description": "Mike Gesicki",
-              "point": 284.4,
-              "price": 1.78
-            },
-            {
-              "name": "Over",
-              "description": "Erick All Jr.",
-              "point": 220.2,
+              "description": "Braelon Allen",
+              "point": 337.5,
               "price": 1.62
             },
             {
               "name": "Under",
-              "description": "Erick All Jr.",
-              "point": 220.2,
-              "price": 2.32
+              "description": "Braelon Allen",
+              "point": 337.5,
+              "price": 1.75
             },
             {
               "name": "Over",
-              "description": "Jaheim Bell",
-              "point": 263.4,
-              "price": 1.81
+              "description": "Blake Watson",
+              "point": 231.4,
+              "price": 2.55
             },
             {
               "name": "Under",
-              "description": "Jaheim Bell",
-              "point": 263.4,
-              "price": 2.23
+              "description": "Blake Watson",
+              "point": 231.4,
+              "price": 1.68
             },
             {
               "name": "Over",
-              "description": "Noah Fant",
-              "point": 294.3,
-              "price": 1.93
+              "description": "Breece Hall",
+              "point": 297.0,
+              "price": 2.44
             },
             {
               "name": "Under",
-              "description": "Noah Fant",
-              "point": 294.3,
-              "price": 1.57
-            },
-            {
-              "name": "Over",
-              "description": "Tanner McLachlan",
-              "point": 334.1,
-              "price": 2.08
-            },
-            {
-              "name": "Under",
-              "description": "Tanner McLachlan",
-              "point": 334.1,
+              "description": "Breece Hall",
+              "point": 297.0,
               "price": 1.99
             },
             {
               "name": "Over",
-              "description": "Austin Hooper",
-              "point": 326.8,
-              "price": 1.92
+              "description": "Jaleel McLaughlin",
+              "point": 230.3,
+              "price": 2.7
             },
             {
               "name": "Under",
-              "description": "Austin Hooper",
-              "point": 326.8,
-              "price": 2.67
+              "description": "Jaleel McLaughlin",
+              "point": 230.3,
+              "price": 1.66
             },
             {
               "name": "Over",
-              "description": "Drew Sample",
-              "point": 309.6,
+              "description": "Tyler Badie",
+              "point": 322.0,
+              "price": 2.62
+            },
+            {
+              "name": "Under",
+              "description": "Tyler Badie",
+              "point": 322.0,
+              "price": 2.53
+            },
+            {
+              "name": "Over",
+              "description": "Kene Nwangwu",
+              "point": 266.2,
+              "price": 2.8
+            },
+            {
+              "name": "Under",
+              "description": "Kene Nwangwu",
+              "point": 266.2,
+              "price": 2.97
+            },
+            {
+              "name": "Over",
+              "description": "Donovan Edwards",
+              "point": 202.7,
+              "price": 2.27
+            },
+            {
+              "name": "Under",
+              "description": "Donovan Edwards",
+              "point": 202.7,
+              "price": 1.9
+            },
+            {
+              "name": "Over",
+              "description": "Michael Burton",
+              "point": 214.2,
+              "price": 2.29
+            },
+            {
+              "name": "Under",
+              "description": "Michael Burton",
+              "point": 214.2,
+              "price": 1.63
+            },
+            {
+              "name": "Over",
+              "description": "Isaiah Davis",
+              "point": 231.7,
+              "price": 1.6
+            },
+            {
+              "name": "Under",
+              "description": "Isaiah Davis",
+              "point": 231.7,
+              "price": 2.08
+            },
+            {
+              "name": "Over",
+              "description": "Andrew Beck",
+              "point": 337.7,
+              "price": 2.9
+            },
+            {
+              "name": "Under",
+              "description": "Andrew Beck",
+              "point": 337.7,
+              "price": 3.0
+            },
+            {
+              "name": "Over",
+              "description": "RJ Harvey",
+              "point": 301.7,
+              "price": 2.68
+            },
+            {
+              "name": "Under",
+              "description": "RJ Harvey",
+              "point": 301.7,
+              "price": 2.71
+            },
+            {
+              "name": "Over",
+              "description": "Audric Estime",
+              "point": 201.8,
+              "price": 1.95
+            },
+            {
+              "name": "Under",
+              "description": "Audric Estime",
+              "point": 201.8,
+              "price": 2.25
+            },
+            {
+              "name": "Over",
+              "description": "J.K. Dobbins",
+              "point": 255.5,
+              "price": 2.77
+            },
+            {
+              "name": "Under",
+              "description": "J.K. Dobbins",
+              "point": 255.5,
+              "price": 2.36
+            },
+            {
+              "name": "Over",
+              "description": "Tyler Johnson",
+              "point": 273.2,
+              "price": 2.53
+            },
+            {
+              "name": "Under",
+              "description": "Tyler Johnson",
+              "point": 273.2,
+              "price": 1.64
+            },
+            {
+              "name": "Over",
+              "description": "Marvin Mims Jr.",
+              "point": 294.5,
+              "price": 1.78
+            },
+            {
+              "name": "Under",
+              "description": "Marvin Mims Jr.",
+              "point": 294.5,
+              "price": 1.98
+            },
+            {
+              "name": "Over",
+              "description": "Josh Reynolds",
+              "point": 316.9,
+              "price": 2.14
+            },
+            {
+              "name": "Under",
+              "description": "Josh Reynolds",
+              "point": 316.9,
+              "price": 2.93
+            },
+            {
+              "name": "Over",
+              "description": "Xavier Gipson",
+              "point": 209.8,
+              "price": 1.99
+            },
+            {
+              "name": "Under",
+              "description": "Xavier Gipson",
+              "point": 209.8,
+              "price": 2.02
+            },
+            {
+              "name": "Over",
+              "description": "A.T. Perry",
+              "point": 201.5,
+              "price": 2.0
+            },
+            {
+              "name": "Under",
+              "description": "A.T. Perry",
+              "point": 201.5,
+              "price": 2.74
+            },
+            {
+              "name": "Over",
+              "description": "Michael Bandy",
+              "point": 319.4,
+              "price": 2.95
+            },
+            {
+              "name": "Under",
+              "description": "Michael Bandy",
+              "point": 319.4,
+              "price": 2.48
+            },
+            {
+              "name": "Over",
+              "description": "Arian Smith",
+              "point": 272.3,
+              "price": 2.99
+            },
+            {
+              "name": "Under",
+              "description": "Arian Smith",
+              "point": 272.3,
+              "price": 1.65
+            },
+            {
+              "name": "Over",
+              "description": "Troy Franklin",
+              "point": 314.8,
+              "price": 2.97
+            },
+            {
+              "name": "Under",
+              "description": "Troy Franklin",
+              "point": 314.8,
+              "price": 2.21
+            },
+            {
+              "name": "Over",
+              "description": "Malachi Corley",
+              "point": 321.9,
+              "price": 2.01
+            },
+            {
+              "name": "Under",
+              "description": "Malachi Corley",
+              "point": 321.9,
+              "price": 2.89
+            },
+            {
+              "name": "Over",
+              "description": "Trent Sherfield Sr.",
+              "point": 242.4,
+              "price": 2.87
+            },
+            {
+              "name": "Under",
+              "description": "Trent Sherfield Sr.",
+              "point": 242.4,
+              "price": 1.59
+            },
+            {
+              "name": "Over",
+              "description": "Pat Bryant",
+              "point": 266.5,
+              "price": 1.83
+            },
+            {
+              "name": "Under",
+              "description": "Pat Bryant",
+              "point": 266.5,
+              "price": 2.62
+            },
+            {
+              "name": "Over",
+              "description": "Brandon Smith",
+              "point": 268.5,
+              "price": 2.57
+            },
+            {
+              "name": "Under",
+              "description": "Brandon Smith",
+              "point": 268.5,
+              "price": 2.68
+            },
+            {
+              "name": "Over",
+              "description": "Irvin Charles",
+              "point": 292.3,
+              "price": 2.84
+            },
+            {
+              "name": "Under",
+              "description": "Irvin Charles",
+              "point": 292.3,
+              "price": 2.23
+            },
+            {
+              "name": "Over",
+              "description": "Devaughn Vele",
+              "point": 282.9,
+              "price": 2.49
+            },
+            {
+              "name": "Under",
+              "description": "Devaughn Vele",
+              "point": 282.9,
+              "price": 1.91
+            },
+            {
+              "name": "Over",
+              "description": "Garrett Wilson",
+              "point": 261.6,
+              "price": 2.66
+            },
+            {
+              "name": "Under",
+              "description": "Garrett Wilson",
+              "point": 261.6,
+              "price": 1.51
+            },
+            {
+              "name": "Over",
+              "description": "Allen Lazard",
+              "point": 304.9,
+              "price": 2.49
+            },
+            {
+              "name": "Under",
+              "description": "Allen Lazard",
+              "point": 304.9,
               "price": 2.45
             },
             {
+              "name": "Over",
+              "description": "Courtland Sutton",
+              "point": 253.2,
+              "price": 1.72
+            },
+            {
               "name": "Under",
-              "description": "Drew Sample",
-              "point": 309.6,
-              "price": 1.57
+              "description": "Courtland Sutton",
+              "point": 253.2,
+              "price": 2.98
             },
             {
               "name": "Over",
-              "description": "Cam Grandy",
-              "point": 216.6,
-              "price": 1.81
+              "description": "Lucas Krull",
+              "point": 239.9,
+              "price": 2.84
             },
             {
               "name": "Under",
-              "description": "Cam Grandy",
-              "point": 216.6,
-              "price": 2.85
+              "description": "Lucas Krull",
+              "point": 239.9,
+              "price": 1.87
             },
             {
               "name": "Over",
-              "description": "Hunter Henry",
-              "point": 316.8,
-              "price": 2.63
+              "description": "Jeremy Ruckert",
+              "point": 315.9,
+              "price": 2.33
             },
             {
               "name": "Under",
-              "description": "Hunter Henry",
-              "point": 316.8,
-              "price": 2.67
+              "description": "Jeremy Ruckert",
+              "point": 315.9,
+              "price": 2.46
+            },
+            {
+              "name": "Over",
+              "description": "Zack Kuntz",
+              "point": 234.4,
+              "price": 3.0
+            },
+            {
+              "name": "Under",
+              "description": "Zack Kuntz",
+              "point": 234.4,
+              "price": 1.97
+            },
+            {
+              "name": "Over",
+              "description": "Evan Engram",
+              "point": 236.5,
+              "price": 2.26
+            },
+            {
+              "name": "Under",
+              "description": "Evan Engram",
+              "point": 236.5,
+              "price": 1.9
+            },
+            {
+              "name": "Over",
+              "description": "Stone Smartt",
+              "point": 319.8,
+              "price": 1.77
+            },
+            {
+              "name": "Under",
+              "description": "Stone Smartt",
+              "point": 319.8,
+              "price": 2.73
+            },
+            {
+              "name": "Over",
+              "description": "Mason Taylor",
+              "point": 342.9,
+              "price": 1.63
+            },
+            {
+              "name": "Under",
+              "description": "Mason Taylor",
+              "point": 342.9,
+              "price": 2.24
+            },
+            {
+              "name": "Over",
+              "description": "Caleb Lohner",
+              "point": 232.4,
+              "price": 1.68
+            },
+            {
+              "name": "Under",
+              "description": "Caleb Lohner",
+              "point": 232.4,
+              "price": 2.94
+            },
+            {
+              "name": "Over",
+              "description": "Nate Adkins",
+              "point": 246.3,
+              "price": 2.13
+            },
+            {
+              "name": "Under",
+              "description": "Nate Adkins",
+              "point": 246.3,
+              "price": 1.66
+            },
+            {
+              "name": "Over",
+              "description": "Adam Trautman",
+              "point": 210.8,
+              "price": 1.66
+            },
+            {
+              "name": "Under",
+              "description": "Adam Trautman",
+              "point": 210.8,
+              "price": 1.65
             }
           ]
         },
         {
           "key": "player_reception_tds",
-          "last_update": "2025-08-13T23:40:19Z",
+          "last_update": "2025-08-15T19:10:54Z",
           "outcomes": [
             {
               "name": "Over",
-              "description": "Antonio Gibson",
-              "point": 2.5,
-              "price": 2.01
+              "description": "Braelon Allen",
+              "point": 1.2,
+              "price": 1.53
             },
             {
               "name": "Under",
-              "description": "Antonio Gibson",
-              "point": 2.5,
-              "price": 1.66
+              "description": "Braelon Allen",
+              "point": 1.2,
+              "price": 2.06
             },
             {
               "name": "Over",
-              "description": "Gary Brightwell",
-              "point": 3.0,
-              "price": 1.54
+              "description": "Blake Watson",
+              "point": 0.8,
+              "price": 2.7
             },
             {
               "name": "Under",
-              "description": "Gary Brightwell",
-              "point": 3.0,
-              "price": 1.89
+              "description": "Blake Watson",
+              "point": 0.8,
+              "price": 2.89
             },
             {
               "name": "Over",
-              "description": "Samaje Perine",
-              "point": 1.9,
-              "price": 1.96
-            },
-            {
-              "name": "Under",
-              "description": "Samaje Perine",
-              "point": 1.9,
-              "price": 1.57
-            },
-            {
-              "name": "Over",
-              "description": "Terrell Jennings",
-              "point": 3.3,
-              "price": 1.79
-            },
-            {
-              "name": "Under",
-              "description": "Terrell Jennings",
-              "point": 3.3,
-              "price": 1.99
-            },
-            {
-              "name": "Over",
-              "description": "Chase Brown",
-              "point": 1.9,
-              "price": 2.64
-            },
-            {
-              "name": "Under",
-              "description": "Chase Brown",
-              "point": 1.9,
-              "price": 2.51
-            },
-            {
-              "name": "Over",
-              "description": "Kendall Milton",
-              "point": 3.0,
-              "price": 1.58
-            },
-            {
-              "name": "Under",
-              "description": "Kendall Milton",
-              "point": 3.0,
-              "price": 2.94
-            },
-            {
-              "name": "Over",
-              "description": "Tahj Brooks",
-              "point": 2.2,
-              "price": 2.02
-            },
-            {
-              "name": "Under",
-              "description": "Tahj Brooks",
-              "point": 2.2,
-              "price": 2.9
-            },
-            {
-              "name": "Over",
-              "description": "TreVeyon Henderson",
+              "description": "Breece Hall",
               "point": 2.1,
-              "price": 2.21
+              "price": 2.09
             },
             {
               "name": "Under",
-              "description": "TreVeyon Henderson",
+              "description": "Breece Hall",
               "point": 2.1,
+              "price": 2.53
+            },
+            {
+              "name": "Over",
+              "description": "Jaleel McLaughlin",
+              "point": 3.3,
+              "price": 2.95
+            },
+            {
+              "name": "Under",
+              "description": "Jaleel McLaughlin",
+              "point": 3.3,
               "price": 2.71
             },
             {
               "name": "Over",
-              "description": "Lan Larison",
-              "point": 0.5,
-              "price": 2.9
+              "description": "Tyler Badie",
+              "point": 1.5,
+              "price": 2.74
             },
             {
               "name": "Under",
-              "description": "Lan Larison",
-              "point": 0.5,
-              "price": 2.17
+              "description": "Tyler Badie",
+              "point": 1.5,
+              "price": 1.75
             },
             {
               "name": "Over",
-              "description": "JaMycal Hasty",
-              "point": 3.0,
-              "price": 2.25
+              "description": "Kene Nwangwu",
+              "point": 1.1,
+              "price": 1.72
             },
             {
               "name": "Under",
-              "description": "JaMycal Hasty",
-              "point": 3.0,
-              "price": 1.98
+              "description": "Kene Nwangwu",
+              "point": 1.1,
+              "price": 1.94
             },
             {
               "name": "Over",
-              "description": "Rhamondre Stevenson",
-              "point": 1.0,
-              "price": 1.83
+              "description": "Donovan Edwards",
+              "point": 1.4,
+              "price": 2.57
             },
             {
               "name": "Under",
-              "description": "Rhamondre Stevenson",
-              "point": 1.0,
-              "price": 2.37
+              "description": "Donovan Edwards",
+              "point": 1.4,
+              "price": 2.14
             },
             {
               "name": "Over",
-              "description": "DeMario Douglas",
-              "point": 0.8,
-              "price": 1.86
+              "description": "Michael Burton",
+              "point": 1.9,
+              "price": 2.7
             },
             {
               "name": "Under",
-              "description": "DeMario Douglas",
-              "point": 0.8,
-              "price": 2.02
+              "description": "Michael Burton",
+              "point": 1.9,
+              "price": 2.44
             },
             {
               "name": "Over",
-              "description": "Mitchell Tinsley",
+              "description": "Isaiah Davis",
+              "point": 1.9,
+              "price": 2.32
+            },
+            {
+              "name": "Under",
+              "description": "Isaiah Davis",
+              "point": 1.9,
+              "price": 2.78
+            },
+            {
+              "name": "Over",
+              "description": "Andrew Beck",
+              "point": 0.6,
+              "price": 2.07
+            },
+            {
+              "name": "Under",
+              "description": "Andrew Beck",
+              "point": 0.6,
+              "price": 2.74
+            },
+            {
+              "name": "Over",
+              "description": "RJ Harvey",
               "point": 3.2,
-              "price": 1.83
+              "price": 1.59
             },
             {
               "name": "Under",
-              "description": "Mitchell Tinsley",
+              "description": "RJ Harvey",
               "point": 3.2,
+              "price": 2.55
+            },
+            {
+              "name": "Over",
+              "description": "Audric Estime",
+              "point": 2.6,
+              "price": 2.3
+            },
+            {
+              "name": "Under",
+              "description": "Audric Estime",
+              "point": 2.6,
+              "price": 2.95
+            },
+            {
+              "name": "Over",
+              "description": "J.K. Dobbins",
+              "point": 1.3,
+              "price": 1.66
+            },
+            {
+              "name": "Under",
+              "description": "J.K. Dobbins",
+              "point": 1.3,
+              "price": 2.72
+            },
+            {
+              "name": "Over",
+              "description": "Tyler Johnson",
+              "point": 3.0,
               "price": 1.79
             },
             {
+              "name": "Under",
+              "description": "Tyler Johnson",
+              "point": 3.0,
+              "price": 2.6
+            },
+            {
               "name": "Over",
-              "description": "Ja'Marr Chase",
-              "point": 0.5,
-              "price": 2.0
+              "description": "Marvin Mims Jr.",
+              "point": 3.2,
+              "price": 2.45
             },
             {
               "name": "Under",
-              "description": "Ja'Marr Chase",
-              "point": 0.5,
-              "price": 2.51
+              "description": "Marvin Mims Jr.",
+              "point": 3.2,
+              "price": 2.66
             },
             {
               "name": "Over",
-              "description": "Kendric Pryor",
-              "point": 0.8,
+              "description": "Josh Reynolds",
+              "point": 2.3,
+              "price": 2.07
+            },
+            {
+              "name": "Under",
+              "description": "Josh Reynolds",
+              "point": 2.3,
+              "price": 1.87
+            },
+            {
+              "name": "Over",
+              "description": "Xavier Gipson",
+              "point": 2.6,
               "price": 2.2
             },
             {
               "name": "Under",
-              "description": "Kendric Pryor",
-              "point": 0.8,
-              "price": 2.7
+              "description": "Xavier Gipson",
+              "point": 2.6,
+              "price": 2.98
             },
             {
               "name": "Over",
-              "description": "Kayshon Boutte",
-              "point": 3.5,
+              "description": "A.T. Perry",
+              "point": 2.3,
+              "price": 1.6
+            },
+            {
+              "name": "Under",
+              "description": "A.T. Perry",
+              "point": 2.3,
+              "price": 2.67
+            },
+            {
+              "name": "Over",
+              "description": "Michael Bandy",
+              "point": 2.9,
+              "price": 1.54
+            },
+            {
+              "name": "Under",
+              "description": "Michael Bandy",
+              "point": 2.9,
+              "price": 1.64
+            },
+            {
+              "name": "Over",
+              "description": "Arian Smith",
+              "point": 0.8,
+              "price": 1.56
+            },
+            {
+              "name": "Under",
+              "description": "Arian Smith",
+              "point": 0.8,
               "price": 2.21
             },
             {
-              "name": "Under",
-              "description": "Kayshon Boutte",
-              "point": 3.5,
-              "price": 1.78
-            },
-            {
               "name": "Over",
-              "description": "Jermaine Burton",
-              "point": 1.3,
-              "price": 1.61
-            },
-            {
-              "name": "Under",
-              "description": "Jermaine Burton",
-              "point": 1.3,
-              "price": 1.53
-            },
-            {
-              "name": "Over",
-              "description": "Javon Baker",
-              "point": 2.6,
-              "price": 2.03
-            },
-            {
-              "name": "Under",
-              "description": "Javon Baker",
-              "point": 2.6,
-              "price": 1.63
-            },
-            {
-              "name": "Over",
-              "description": "Ja'Lynn Polk",
-              "point": 1.9,
-              "price": 1.91
-            },
-            {
-              "name": "Under",
-              "description": "Ja'Lynn Polk",
-              "point": 1.9,
-              "price": 2.63
-            },
-            {
-              "name": "Over",
-              "description": "Kyle Williams",
-              "point": 2.6,
-              "price": 2.11
-            },
-            {
-              "name": "Under",
-              "description": "Kyle Williams",
-              "point": 2.6,
-              "price": 1.88
-            },
-            {
-              "name": "Over",
-              "description": "Efton Chism III",
-              "point": 2.8,
-              "price": 1.92
-            },
-            {
-              "name": "Under",
-              "description": "Efton Chism III",
-              "point": 2.8,
-              "price": 2.53
-            },
-            {
-              "name": "Over",
-              "description": "Mack Hollins",
-              "point": 0.7,
-              "price": 2.24
-            },
-            {
-              "name": "Under",
-              "description": "Mack Hollins",
-              "point": 0.7,
-              "price": 2.53
-            },
-            {
-              "name": "Over",
-              "description": "Andrei Iosivas",
+              "description": "Troy Franklin",
               "point": 1.0,
+              "price": 1.5
+            },
+            {
+              "name": "Under",
+              "description": "Troy Franklin",
+              "point": 1.0,
+              "price": 2.93
+            },
+            {
+              "name": "Over",
+              "description": "Malachi Corley",
+              "point": 2.5,
               "price": 1.68
             },
             {
               "name": "Under",
-              "description": "Andrei Iosivas",
-              "point": 1.0,
-              "price": 1.57
-            },
-            {
-              "name": "Over",
-              "description": "Stefon Diggs",
-              "point": 3.4,
-              "price": 2.9
-            },
-            {
-              "name": "Under",
-              "description": "Stefon Diggs",
-              "point": 3.4,
-              "price": 1.67
-            },
-            {
-              "name": "Over",
-              "description": "Matthew Slater",
-              "point": 2.4,
-              "price": 2.25
-            },
-            {
-              "name": "Under",
-              "description": "Matthew Slater",
-              "point": 2.4,
-              "price": 2.31
-            },
-            {
-              "name": "Over",
-              "description": "Tee Higgins",
-              "point": 2.0,
-              "price": 2.92
-            },
-            {
-              "name": "Under",
-              "description": "Tee Higgins",
-              "point": 2.0,
-              "price": 1.56
-            },
-            {
-              "name": "Over",
-              "description": "Charlie Jones",
-              "point": 0.7,
-              "price": 2.47
-            },
-            {
-              "name": "Under",
-              "description": "Charlie Jones",
-              "point": 0.7,
-              "price": 2.29
-            },
-            {
-              "name": "Over",
-              "description": "Kendrick Bourne",
+              "description": "Malachi Corley",
               "point": 2.5,
-              "price": 1.58
-            },
-            {
-              "name": "Under",
-              "description": "Kendrick Bourne",
-              "point": 2.5,
-              "price": 2.54
+              "price": 2.74
             },
             {
               "name": "Over",
-              "description": "Isaiah Williams",
-              "point": 1.8,
-              "price": 2.82
-            },
-            {
-              "name": "Under",
-              "description": "Isaiah Williams",
-              "point": 1.8,
-              "price": 2.46
-            },
-            {
-              "name": "Over",
-              "description": "Cole Fotheringham",
-              "point": 2.8,
+              "description": "Trent Sherfield Sr.",
+              "point": 0.6,
               "price": 1.89
             },
             {
               "name": "Under",
-              "description": "Cole Fotheringham",
-              "point": 2.8,
-              "price": 2.37
+              "description": "Trent Sherfield Sr.",
+              "point": 0.6,
+              "price": 1.57
             },
             {
               "name": "Over",
-              "description": "Jack Westover",
+              "description": "Pat Bryant",
+              "point": 2.8,
+              "price": 2.51
+            },
+            {
+              "name": "Under",
+              "description": "Pat Bryant",
+              "point": 2.8,
+              "price": 2.69
+            },
+            {
+              "name": "Over",
+              "description": "Brandon Smith",
+              "point": 3.1,
+              "price": 2.2
+            },
+            {
+              "name": "Under",
+              "description": "Brandon Smith",
+              "point": 3.1,
+              "price": 1.56
+            },
+            {
+              "name": "Over",
+              "description": "Irvin Charles",
+              "point": 2.6,
+              "price": 2.53
+            },
+            {
+              "name": "Under",
+              "description": "Irvin Charles",
+              "point": 2.6,
+              "price": 1.72
+            },
+            {
+              "name": "Over",
+              "description": "Devaughn Vele",
               "point": 1.8,
-              "price": 2.8
+              "price": 1.84
             },
             {
               "name": "Under",
-              "description": "Jack Westover",
+              "description": "Devaughn Vele",
               "point": 1.8,
-              "price": 1.98
+              "price": 2.74
             },
             {
               "name": "Over",
-              "description": "Tanner Hudson",
-              "point": 1.7,
-              "price": 2.83
+              "description": "Garrett Wilson",
+              "point": 0.6,
+              "price": 1.95
             },
             {
               "name": "Under",
-              "description": "Tanner Hudson",
-              "point": 1.7,
-              "price": 2.29
+              "description": "Garrett Wilson",
+              "point": 0.6,
+              "price": 2.18
             },
             {
               "name": "Over",
-              "description": "Mike Gesicki",
-              "point": 2.8,
-              "price": 2.33
+              "description": "Allen Lazard",
+              "point": 0.9,
+              "price": 1.7
             },
             {
               "name": "Under",
-              "description": "Mike Gesicki",
-              "point": 2.8,
-              "price": 2.7
+              "description": "Allen Lazard",
+              "point": 0.9,
+              "price": 1.76
             },
             {
               "name": "Over",
-              "description": "Erick All Jr.",
-              "point": 1.6,
-              "price": 2.46
+              "description": "Courtland Sutton",
+              "point": 2.3,
+              "price": 2.45
             },
             {
               "name": "Under",
-              "description": "Erick All Jr.",
-              "point": 1.6,
-              "price": 2.39
+              "description": "Courtland Sutton",
+              "point": 2.3,
+              "price": 1.99
             },
             {
               "name": "Over",
-              "description": "Jaheim Bell",
-              "point": 0.5,
+              "description": "Lucas Krull",
+              "point": 2.5,
+              "price": 1.78
+            },
+            {
+              "name": "Under",
+              "description": "Lucas Krull",
+              "point": 2.5,
+              "price": 2.2
+            },
+            {
+              "name": "Over",
+              "description": "Jeremy Ruckert",
+              "point": 1.0,
+              "price": 2.67
+            },
+            {
+              "name": "Under",
+              "description": "Jeremy Ruckert",
+              "point": 1.0,
+              "price": 2.15
+            },
+            {
+              "name": "Over",
+              "description": "Zack Kuntz",
+              "point": 2.9,
+              "price": 2.74
+            },
+            {
+              "name": "Under",
+              "description": "Zack Kuntz",
+              "point": 2.9,
+              "price": 2.91
+            },
+            {
+              "name": "Over",
+              "description": "Evan Engram",
+              "point": 2.0,
+              "price": 2.69
+            },
+            {
+              "name": "Under",
+              "description": "Evan Engram",
+              "point": 2.0,
+              "price": 2.19
+            },
+            {
+              "name": "Over",
+              "description": "Stone Smartt",
+              "point": 0.7,
+              "price": 2.23
+            },
+            {
+              "name": "Under",
+              "description": "Stone Smartt",
+              "point": 0.7,
+              "price": 2.32
+            },
+            {
+              "name": "Over",
+              "description": "Mason Taylor",
+              "point": 2.1,
+              "price": 2.93
+            },
+            {
+              "name": "Under",
+              "description": "Mason Taylor",
+              "point": 2.1,
+              "price": 3.0
+            },
+            {
+              "name": "Over",
+              "description": "Caleb Lohner",
+              "point": 1.9,
+              "price": 2.54
+            },
+            {
+              "name": "Under",
+              "description": "Caleb Lohner",
+              "point": 1.9,
+              "price": 2.9
+            },
+            {
+              "name": "Over",
+              "description": "Nate Adkins",
+              "point": 1.0,
+              "price": 2.62
+            },
+            {
+              "name": "Under",
+              "description": "Nate Adkins",
+              "point": 1.0,
+              "price": 1.99
+            },
+            {
+              "name": "Over",
+              "description": "Adam Trautman",
+              "point": 0.9,
               "price": 2.81
             },
             {
               "name": "Under",
-              "description": "Jaheim Bell",
-              "point": 0.5,
-              "price": 1.62
-            },
-            {
-              "name": "Over",
-              "description": "Noah Fant",
-              "point": 2.5,
-              "price": 2.39
-            },
-            {
-              "name": "Under",
-              "description": "Noah Fant",
-              "point": 2.5,
-              "price": 2.36
-            },
-            {
-              "name": "Over",
-              "description": "Tanner McLachlan",
-              "point": 1.6,
-              "price": 1.62
-            },
-            {
-              "name": "Under",
-              "description": "Tanner McLachlan",
-              "point": 1.6,
-              "price": 2.05
-            },
-            {
-              "name": "Over",
-              "description": "Austin Hooper",
-              "point": 3.1,
-              "price": 2.37
-            },
-            {
-              "name": "Under",
-              "description": "Austin Hooper",
-              "point": 3.1,
-              "price": 2.92
-            },
-            {
-              "name": "Over",
-              "description": "Drew Sample",
-              "point": 3.2,
-              "price": 2.72
-            },
-            {
-              "name": "Under",
-              "description": "Drew Sample",
-              "point": 3.2,
-              "price": 2.4
-            },
-            {
-              "name": "Over",
-              "description": "Cam Grandy",
-              "point": 2.9,
-              "price": 2.92
-            },
-            {
-              "name": "Under",
-              "description": "Cam Grandy",
-              "point": 2.9,
-              "price": 1.65
-            },
-            {
-              "name": "Over",
-              "description": "Hunter Henry",
-              "point": 2.1,
-              "price": 2.87
-            },
-            {
-              "name": "Under",
-              "description": "Hunter Henry",
-              "point": 2.1,
-              "price": 2.96
+              "description": "Adam Trautman",
+              "point": 0.9,
+              "price": 1.66
             }
           ]
         }

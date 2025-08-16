@@ -113,7 +113,8 @@ def sync_players_to_mongo(season: int = SEASON):
             "name":      name,
             "position":  pos,
             "team":      tinfo["abbrev"],
-            "espn_link": f"https://www.espn.com/nfl/player/_/id/{espn_id}"
+            "espn_link": f"https://www.espn.com/nfl/player/_/id/{espn_id}",
+            "headshot_url": f"https://a.espncdn.com/i/headshots/nfl/players/full/{espn_id}.png"
         }
         set_on_insert = {"eligible": True}
         headshot = p.get("player", {}).get("headshot", {}).get("url")

@@ -1,34 +1,74 @@
 {% extends "base.html" %}
-
 {% block content %}
-<div class="card card-lg shadow border-0 mb-4" style="background-color: #1e293b;">
-  <div class="card-body">
 
-    <!-- Small player card inside larger container -->
-    <div class="card mb-4 shadow-sm border-0" style="background-color: #334155;">
-      <a href="https://www.espn.com/nfl/player/_/id/{{ player.espn_id }}" target="_blank"
-         class="d-flex align-items-center p-3 text-decoration-none text-reset">
-
-        <img src="{{ player.headshot_url or url_for('static', filename='default-headshot.png') }}"
-             alt="{{ player.player_name }}"
-             class="rounded"
-             style="width: 200px; height: 200px; object-fit: cover; flex-shrink: 0;">
-
-        <div class="ms-4">
-          <h3 class="mb-1">{{ player.player_name }}</h3>
-          <p class="mb-0 text-muted">Team: {{ player.team }}</p>
-          <p class="mb-0 text-muted">Position: {{ player.position }}</p>
-        </div>
-
-      </a>
+<!-- Clickable player card linking to ESPN -->
+<a href="{{ espn_link }}" target="_blank" class="card shadow border-0 mb-4 text-reset text-decoration-none" style="background-color:#1e293b;">
+  <div class="card-body d-flex align-items-center gap-3">
+    <img src="{{ player.headshot_url or url_for('static', filename='default-headshot.png') }}"
+         alt="{{ player.name }}"
+         class="rounded" style="width:96px;height:96px;object-fit:cover;">
+    <div class="d-flex align-items-center gap-2">
+      {% if team_logo %}
+        <img src="{{ team_logo }}" alt="{{ player.team }} logo" style="height:28px;">
+      {% endif %}
+      <div>
+        <h2 class="mb-0">{{ player.name }}</h2>
+        <div class="text-muted">{{ player.team }} • {{ player.position }}</div>
+      </div>
     </div>
+    <span class="ms-auto text-primary">Open on ESPN ↗</span>
+  </div>
+</a>
 
-    <!-- Placeholder for additional content later -->
-    <div class="mt-3 text-muted">
-      <p>More stats and charts coming soon...</p>
-    </div>
-
+<!-- Scoring toggle -->
+<div class="d-flex justify-content-between align-items-center mt-2 mb-2">
+  <h4 class="mb-0">Games</h4>
+  <div class="btn-group btn-group-sm" role="group" aria-label="Scoring">
+    <button type="button" class="btn btn-primary scoring-btn" data-scoring="espn_ppr">PPR</button>
+    <button type="button" class="btn btn-outline-primary scoring-btn" data-scoring="espn_half">Half</button>
+    <button type="button" class="btn btn-outline-primary scoring-btn" data-scoring="espn_std">Standard</button>
   </div>
 </div>
 
+<div class="table-responsive">
+  <table class="table table-vcenter card-table table-dark sortable-table">
+    <thead>
+      <tr>
+        <th class="sorter-false">#</th>
+        <th>Date</th>
+        <th>Opponent</th>
+        <th class="fantasy-col-header">Fantasy (PPR)</th>
+        {% for title in prop_titles %}
+          <th>{{ title }}</th>
+        {% endfor %}
+      </tr>
+    </thead>
+    <tbody>
+      {% for r in rows %}
+      <tr>
+        <td>{{ loop.index }}</td>
+        <td>{{ r.date_str }}</td>
+        <td>
+          {% if r.opp_logo %}
+            <img src="{{ r.opp_logo }}" alt="{{ r.opp_abbrev }} logo"
+                 style="height:20px;vertical-align:middle;margin-right:6px;">
+          {% endif %}
+          {{ r.opp_abbrev or '—' }}
+        </td>
+
+        {% set ppr  = '%.2f'|format(r.fantasy.espn_ppr) %}
+        {% set half = '%.2f'|format(r.fantasy.espn_half) %}
+        {% set std  = '%.2f'|format(r.fantasy.espn_std) %}
+        <td class="fantasy-col" data-ppr="{{ ppr }}" data-half="{{ half }}" data-std="{{ std }}">
+          {{ ppr }}
+        </td>
+
+        {% for v in r.props %}
+          <td>{{ '%.2f'|format(v) }}</td>
+        {% endfor %}
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
 {% endblock %}

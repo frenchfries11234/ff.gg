@@ -3,11 +3,33 @@
 {% block content %}
 <h2>NFL Stats</h2>
 
-<div class="btn-group mt-1 mb-3" role="group" aria-label="Scoring">
-    <button type="button" class="btn btn-primary scoring-btn" data-scoring="espn_ppr">PPR</button>
-    <button type="button" class="btn btn-outline-primary scoring-btn" data-scoring="espn_half">Half</button>
-    <button type="button" class="btn btn-outline-primary scoring-btn" data-scoring="espn_std">Standard</button>
+<div class="row g-2 align-items-center mb-2">
+    <div class="col">
+        <input id="player-search" class="form-control bg-dark text-white border-primary" placeholder="Search players…"
+            autocomplete="off">
+        <div id="player-suggestions" class="dropdown-menu show"
+            style="display:none; max-height:320px; overflow:auto; width:100%;"></div>
+    </div>
+
+    <!-- segmented buttons on md+ -->
+    <div class="col-auto d-none d-md-block">
+        <div class="btn-group btn-group-sm scoring-btns" role="group">
+            <button type="button" class="btn btn-primary scoring-btn" data-scoring="espn_ppr">PPR</button>
+            <button type="button" class="btn btn-outline-primary scoring-btn" data-scoring="espn_half">Half</button>
+            <button type="button" class="btn btn-outline-primary scoring-btn" data-scoring="espn_std">Standard</button>
+        </div>
+    </div>
+
+    <!-- compact select on mobile -->
+    <div class="col-12 d-md-none">
+        <select id="scoring-select" class="form-select form-select-sm">
+            <option value="espn_ppr" selected>PPR</option>
+            <option value="espn_half">Half</option>
+            <option value="espn_std">Standard</option>
+        </select>
+    </div>
 </div>
+
 
 <ul class="nav nav-tabs" id="roleTabs">
     {% for role in players %}
@@ -21,8 +43,6 @@
 </ul>
 
 {% set scoring = request.args.get('scoring', 'espn_ppr') %}
-{% set scoring_labels = {'espn_ppr':'Fantasy (PPR)', 'espn_half':'Fantasy (Half)', 'espn_std':'Fantasy (Standard)'} %}
-
 
 <div class="tab-content">
     {% for role, data in players.items() %}
@@ -51,11 +71,13 @@
                     {% if loop.index0 == 0 or loop.index0 == 1 %}
                     {# Team / Opponent cells (logo + abbrev) #}
                     <td>
-                        {% if stat.logo %}
-                        <img src="{{ stat.logo }}" alt="{{ stat.abbrev or '—' }} logo"
-                            style="height:20px;vertical-align:middle;margin-right:6px;">
-                        {% endif %}
-                        {{ stat.abbrev or '—' }}
+                        <span class="cell-pack">
+                            {% if stat.logo %}
+                            <img src="{{ stat.logo }}" alt="{{ stat.abbrev or '—' }} logo"
+                                style="height:20px;vertical-align:middle;">
+                            {% endif %}
+                            <span class="cell-pack__abbr">{{ stat.abbrev or '—' }}</span>
+                        </span>
                     </td>
 
                     {% elif stat is mapping and stat['type'] == 'fantasy' %}

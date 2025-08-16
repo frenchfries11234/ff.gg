@@ -4,29 +4,123 @@
 <h2 class="mb-4">My Teams</h2>
 
 {% if teams and teams|length > 0 %}
-<!-- Nav tabs -->
+
+<!-- Team tabs -->
 <ul class="nav nav-tabs mb-3" id="teamTabs" role="tablist">
-    {% for team in teams %}
-    <li class="nav-item" role="presentation">
-        <a class="nav-link {% if loop.first %}active{% endif %}" id="tab-{{ loop.index }}" data-bs-toggle="tab"
-            href="#team-{{ loop.index }}" role="tab">
-            {{ team.teamName }}
-        </a>
-    </li>
-    {% endfor %}
+  {% for team in teams %}
+  <li class="nav-item" role="presentation">
+    <a class="nav-link {% if loop.first %}active{% endif %}" id="tab-{{ loop.index }}" data-bs-toggle="tab"
+      href="#team-{{ loop.index }}" role="tab">
+      {{ team.teamName or 'Unnamed Team' }}
+    </a>
+  </li>
+  {% endfor %}
 </ul>
 
-<!-- Tab content -->
+<!-- Tab content: one table per team -->
 <div class="tab-content">
-    {% for team in teams %}
-    <div class="tab-pane fade {% if loop.first %}show active{% endif %}" id="team-{{ loop.index }}" role="tabpanel">
-        <div class="card p-3 bg-dark border text-light mb-3">
-            <strong>League ID:</strong> {{ team.leagueId }}<br>
-            <strong>Team ID:</strong> {{ team.teamId }}<br>
-            <strong>Season ID:</strong> {{ team.seasonId }}
+  {% for team in teams %}
+  <div class="tab-pane fade {% if loop.first %}show active{% endif %}" id="team-{{ loop.index }}" role="tabpanel">
+    <div class="row g-3 align-items-stretch mb-3">
+      <!-- Left: clickable team card (goes to league) -->
+      <div class="col-md">
+        <div class="card bg-dark border text-light team-card position-relative h-100">
+          <div class="card-body d-flex align-items-center gap-3">
+            {% if team.team_logo %}
+            <img src="{{ team.team_logo }}" alt="Team logo" class="team-logo rounded">
+            {% endif %}
+            <div class="team-meta">
+              <div class="h6 mb-1">{{ team.teamName or 'My Team' }}</div>
+              <div class="text-muted small">
+                {{ team.league_name or 'League' }}{% if team.leagueId %} • ID {{ team.leagueId }}{% endif %}
+              </div>
+            </div>
+            {% if team.league_url %}
+            <a class="stretched-link" href="{{ team.league_url }}" target="_blank" rel="noopener"
+              aria-label="Open league"></a>
+            {% endif %}
+          </div>
         </div>
+      </div>
+
+      <!-- Right: scoring controls (outside the card, pinned right) -->
+      <div class="col-md-auto d-flex flex-column justify-content-center">
+        <div class="d-none d-md-flex scoring-btns btn-group btn-group-sm">
+          <button type="button" class="btn btn-primary scoring-btn" data-scoring="espn_ppr">PPR</button>
+          <button type="button" class="btn btn-outline-primary scoring-btn" data-scoring="espn_half">Half</button>
+          <button type="button" class="btn btn-outline-primary scoring-btn" data-scoring="espn_std">Standard</button>
+        </div>
+        <select class="form-select form-select-sm team-scoring-select d-md-none w-auto mt-1"
+          id="scoring-select-{{ loop.index }}">
+          <option value="espn_ppr" selected>PPR</option>
+          <option value="espn_half">Half</option>
+          <option value="espn_std">Standard</option>
+        </select>
+      </div>
     </div>
-    {% endfor %}
+
+
+
+    {% if team.table and team.table.rows and team.table.rows|length > 0 %}
+    {% with table=team.table %}
+    <div class="table-responsive">
+      <table class="table table-vcenter card-table tablesorter table-dark sortable-table">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Name</th>
+            {% for col in table.columns %}
+            {% if 'Fantasy' in col %}
+            <th class="fantasy-col-header">Fantasy (PPR)</th>
+            {% else %}
+            <th>{{ col }}</th>
+            {% endif %}
+            {% endfor %}
+          </tr>
+        </thead>
+        <tbody>
+          {% for row in table.rows %}
+          <tr class="clickable-row" data-href="/nfl/players/{{ row.espn_id }}">
+            <td>{{ loop.index }}</td>
+            <td>{{ row.name }}</td>
+
+            {% for stat in row.stats %}
+            {% if loop.index0 == 0 or loop.index0 == 1 %}
+            {# Team / Opponent cells (logo + abbrev) #}
+            <td>
+              <span class="cell-pack">
+                {% if stat.logo %}
+                <img src="{{ stat.logo }}" alt="{{ stat.abbrev or '—' }} logo"
+                  style="height:20px;vertical-align:middle;">
+                {% endif %}
+                <span class="cell-pack__abbr">{{ stat.abbrev or '—' }}</span>
+              </span>
+            </td>
+
+            {% elif stat is mapping and stat['type'] == 'fantasy' %}
+            {# Fantasy cell with all three values baked in for JS toggle #}
+            {% set ppr = '%.2f'|format(stat['values'].get('espn_ppr', 0)) %}
+            {% set half = '%.2f'|format(stat['values'].get('espn_half', 0)) %}
+            {% set std = '%.2f'|format(stat['values'].get('espn_std', 0)) %}
+            <td class="fantasy-col" data-ppr="{{ ppr }}" data-half="{{ half }}" data-std="{{ std }}">
+              {{ ppr }}
+            </td>
+
+            {% else %}
+            <td>{{ stat }}</td>
+            {% endif %}
+            {% endfor %}
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+    {% endwith %}
+    {% else %}
+    <div class="alert alert-dark border text-light">No players captured for this team yet.</div>
+    {% endif %}
+  </div>
+  {% endfor %}
 </div>
 
 {% else %}
@@ -34,10 +128,9 @@
   <p class="mb-1">You haven’t imported any teams yet.</p>
   <p class="mb-1">
     Install the browser extension, visit your fantasy team on
-    <a href="https://fantasy.espn.com" target="_blank">fantasy.espn.com</a>.
+    <a href="https://fantasy.espn.com" target="_blank" rel="noopener">fantasy.espn.com</a>.
   </p>
   <p class="mb-0">Then click the button to import your team.</p>
 </div>
-
 {% endif %}
 {% endblock %}
